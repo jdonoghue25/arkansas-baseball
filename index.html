@@ -371,7 +371,7 @@ function getFiltered(){
 function render(){
   destroyCharts();
   const games=getFiltered();
-  const upcoming=games.filter(g=>g.result==='Upcoming');
+  const upcoming=games.filter(g=>g.result==='Upcoming').sort((a,b)=>dateVal(a)-dateVal(b));
   const played=games.filter(g=>g.result!=='Upcoming');
   const q=document.getElementById('search').value.trim();
   const sort=document.getElementById('sort').value;
