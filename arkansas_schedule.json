@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-01 18:32",
+  "last_updated": "2026-05-01 18:38",
   "games": [
     {
       "game_date": "Feb 13, 2026",
@@ -20,7 +20,8 @@
       "temp_hi": 79.0,
       "precip_in": 0.0,
       "wind_mph": 11.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Feb 14, 2026",
@@ -41,7 +42,8 @@
       "temp_hi": 68.0,
       "precip_in": 0.4,
       "wind_mph": 13.0,
-      "weather_icon": "\ud83c\udf26"
+      "weather_icon": "\ud83c\udf26",
+      "weather_type": null
     },
     {
       "game_date": "Feb 15, 2026",
@@ -62,7 +64,8 @@
       "temp_hi": 66.0,
       "precip_in": 0.0,
       "wind_mph": 14.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Feb 16, 2026",
@@ -83,7 +86,8 @@
       "temp_hi": 70.0,
       "precip_in": 0.0,
       "wind_mph": 10.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Feb 20, 2026",
@@ -104,7 +108,8 @@
       "temp_hi": 54.0,
       "precip_in": 0.03,
       "wind_mph": 10.0,
-      "weather_icon": "\ud83c\udf24"
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": null
     },
     {
       "game_date": "Feb 21, 2026",
@@ -125,7 +130,8 @@
       "temp_hi": 49.0,
       "precip_in": 0.03,
       "wind_mph": 13.0,
-      "weather_icon": "\ud83c\udf24"
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": null
     },
     {
       "game_date": "Feb 22, 2026",
@@ -146,7 +152,8 @@
       "temp_hi": 41.0,
       "precip_in": 0.0,
       "wind_mph": 14.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Feb 24, 2026",
@@ -167,7 +174,8 @@
       "temp_hi": 62.0,
       "precip_in": 0.0,
       "wind_mph": 20.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Feb 25, 2026",
@@ -188,7 +196,8 @@
       "temp_hi": 70.0,
       "precip_in": 0.0,
       "wind_mph": 14.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Feb 27, 2026",
@@ -209,7 +218,8 @@
       "temp_hi": 74.0,
       "precip_in": 0.0,
       "wind_mph": 10.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Feb 28, 2026",
@@ -230,7 +240,8 @@
       "temp_hi": 78.0,
       "precip_in": 0.03,
       "wind_mph": 15.0,
-      "weather_icon": "\ud83c\udf24"
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": null
     },
     {
       "game_date": "Mar 01, 2026",
@@ -251,7 +262,8 @@
       "temp_hi": 75.0,
       "precip_in": 0.28,
       "wind_mph": 12.0,
-      "weather_icon": "\ud83c\udf26"
+      "weather_icon": "\ud83c\udf26",
+      "weather_type": null
     },
     {
       "game_date": "Mar 03, 2026",
@@ -272,7 +284,8 @@
       "temp_hi": 77.0,
       "precip_in": 0.0,
       "wind_mph": 19.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Mar 06, 2026",
@@ -293,7 +306,8 @@
       "temp_hi": 76.0,
       "precip_in": 0.02,
       "wind_mph": 21.0,
-      "weather_icon": "\ud83c\udf24"
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": null
     },
     {
       "game_date": "Mar 07, 2026",
@@ -314,7 +328,8 @@
       "temp_hi": 68.0,
       "precip_in": 0.28,
       "wind_mph": 17.0,
-      "weather_icon": "\ud83c\udf26"
+      "weather_icon": "\ud83c\udf26",
+      "weather_type": null
     },
     {
       "game_date": "Mar 08, 2026",
@@ -335,7 +350,8 @@
       "temp_hi": 69.0,
       "precip_in": 0.0,
       "wind_mph": 15.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Mar 09, 2026",
@@ -356,7 +372,8 @@
       "temp_hi": 74.0,
       "precip_in": 0.0,
       "wind_mph": 19.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Mar 13, 2026",
@@ -377,7 +394,8 @@
       "temp_hi": 68.0,
       "precip_in": 0.0,
       "wind_mph": 17.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Mar 14, 2026",
@@ -398,7 +416,8 @@
       "temp_hi": 74.0,
       "precip_in": 0.0,
       "wind_mph": 21.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Mar 14, 2026",
@@ -419,7 +438,8 @@
       "temp_hi": 74.0,
       "precip_in": 0.0,
       "wind_mph": 21.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Mar 17, 2026",
@@ -440,7 +460,8 @@
       "temp_hi": 50.0,
       "precip_in": 0.0,
       "wind_mph": 18.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Mar 18, 2026",
@@ -461,7 +482,8 @@
       "temp_hi": 66.0,
       "precip_in": 0.0,
       "wind_mph": 17.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Mar 20, 2026",
@@ -482,7 +504,8 @@
       "temp_hi": 74.0,
       "precip_in": 0.0,
       "wind_mph": 9.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Mar 21, 2026",
@@ -503,7 +526,8 @@
       "temp_hi": 87.0,
       "precip_in": 0.0,
       "wind_mph": 9.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Mar 22, 2026",
@@ -524,7 +548,8 @@
       "temp_hi": 89.0,
       "precip_in": 0.0,
       "wind_mph": 12.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Mar 24, 2026",
@@ -545,7 +570,8 @@
       "temp_hi": 66.0,
       "precip_in": 0.0,
       "wind_mph": 10.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Mar 27, 2026",
@@ -566,7 +592,8 @@
       "temp_hi": 70.0,
       "precip_in": 0.19,
       "wind_mph": 17.0,
-      "weather_icon": "\ud83c\udf26"
+      "weather_icon": "\ud83c\udf26",
+      "weather_type": null
     },
     {
       "game_date": "Mar 28, 2026",
@@ -587,7 +614,8 @@
       "temp_hi": 61.0,
       "precip_in": 0.0,
       "wind_mph": 14.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Mar 29, 2026",
@@ -608,7 +636,8 @@
       "temp_hi": 74.0,
       "precip_in": 0.0,
       "wind_mph": 16.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Mar 31, 2026",
@@ -629,7 +658,8 @@
       "temp_hi": 82.0,
       "precip_in": 0.02,
       "wind_mph": 17.0,
-      "weather_icon": "\ud83c\udf24"
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": null
     },
     {
       "game_date": "Apr 02, 2026",
@@ -650,7 +680,8 @@
       "temp_hi": 82.0,
       "precip_in": 0.0,
       "wind_mph": 10.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Apr 03, 2026",
@@ -671,7 +702,8 @@
       "temp_hi": 80.0,
       "precip_in": 0.03,
       "wind_mph": 9.0,
-      "weather_icon": "\ud83c\udf24"
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": null
     },
     {
       "game_date": "Apr 04, 2026",
@@ -692,7 +724,8 @@
       "temp_hi": 84.0,
       "precip_in": 0.09,
       "wind_mph": 12.0,
-      "weather_icon": "\ud83c\udf24"
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": null
     },
     {
       "game_date": "Apr 07, 2026",
@@ -713,7 +746,8 @@
       "temp_hi": 69.0,
       "precip_in": 0.0,
       "wind_mph": 10.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Apr 10, 2026",
@@ -734,7 +768,8 @@
       "temp_hi": 77.0,
       "precip_in": 0.0,
       "wind_mph": 8.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Apr 11, 2026",
@@ -755,7 +790,8 @@
       "temp_hi": 82.0,
       "precip_in": 0.0,
       "wind_mph": 6.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Apr 12, 2026",
@@ -776,7 +812,8 @@
       "temp_hi": 84.0,
       "precip_in": 0.0,
       "wind_mph": 11.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Apr 14, 2026",
@@ -797,7 +834,8 @@
       "temp_hi": 82.0,
       "precip_in": 0.0,
       "wind_mph": 14.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Apr 16, 2026",
@@ -818,7 +856,8 @@
       "temp_hi": 75.0,
       "precip_in": 0.08,
       "wind_mph": 15.0,
-      "weather_icon": "\ud83c\udf24"
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": null
     },
     {
       "game_date": "Apr 17, 2026",
@@ -839,7 +878,8 @@
       "temp_hi": 78.0,
       "precip_in": 0.0,
       "wind_mph": 20.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Apr 18, 2026",
@@ -860,7 +900,8 @@
       "temp_hi": 70.0,
       "precip_in": 0.6,
       "wind_mph": 16.0,
-      "weather_icon": "\ud83c\udf27"
+      "weather_icon": "\ud83c\udf27",
+      "weather_type": null
     },
     {
       "game_date": "Apr 21, 2026",
@@ -881,7 +922,8 @@
       "temp_hi": 72.0,
       "precip_in": 0.0,
       "wind_mph": 15.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Apr 23, 2026",
@@ -902,7 +944,8 @@
       "temp_hi": 80.0,
       "precip_in": 0.02,
       "wind_mph": 17.0,
-      "weather_icon": "\ud83c\udf24"
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": null
     },
     {
       "game_date": "Apr 24, 2026",
@@ -923,7 +966,8 @@
       "temp_hi": 69.0,
       "precip_in": 0.67,
       "wind_mph": 9.0,
-      "weather_icon": "\ud83c\udf27"
+      "weather_icon": "\ud83c\udf27",
+      "weather_type": null
     },
     {
       "game_date": "Apr 25, 2026",
@@ -944,7 +988,8 @@
       "temp_hi": 75.0,
       "precip_in": 0.0,
       "wind_mph": 11.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "Apr 28, 2026",
@@ -965,7 +1010,8 @@
       "temp_hi": 77.0,
       "precip_in": 0.32,
       "wind_mph": 12.0,
-      "weather_icon": "\ud83c\udf26"
+      "weather_icon": "\ud83c\udf26",
+      "weather_type": null
     },
     {
       "game_date": "Apr 29, 2026",
@@ -986,7 +1032,8 @@
       "temp_hi": 65.0,
       "precip_in": 0.0,
       "wind_mph": 13.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": null
     },
     {
       "game_date": "May 01, 2026",
@@ -1007,7 +1054,8 @@
       "temp_hi": 62.0,
       "precip_in": 0.0,
       "wind_mph": 11.0,
-      "weather_icon": "\u2600\ufe0f"
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "May 02, 2026",
@@ -1025,10 +1073,11 @@
       "recap_url": null,
       "is_conference": 1,
       "series_name": null,
-      "temp_hi": null,
-      "precip_in": null,
-      "wind_mph": null,
-      "weather_icon": null
+      "temp_hi": 66.0,
+      "precip_in": 0.0,
+      "wind_mph": 13.0,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "forecast"
     },
     {
       "game_date": "May 03, 2026",
@@ -1046,10 +1095,11 @@
       "recap_url": null,
       "is_conference": 1,
       "series_name": null,
-      "temp_hi": null,
-      "precip_in": null,
-      "wind_mph": null,
-      "weather_icon": null
+      "temp_hi": 73.0,
+      "precip_in": 0.0,
+      "wind_mph": 15.0,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "forecast"
     },
     {
       "game_date": "May 08, 2026",
@@ -1067,10 +1117,11 @@
       "recap_url": null,
       "is_conference": 1,
       "series_name": null,
-      "temp_hi": null,
-      "precip_in": null,
-      "wind_mph": null,
-      "weather_icon": null
+      "temp_hi": 74.0,
+      "precip_in": 0.0,
+      "wind_mph": 14.0,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "forecast"
     },
     {
       "game_date": "May 09, 2026",
@@ -1088,10 +1139,11 @@
       "recap_url": null,
       "is_conference": 1,
       "series_name": null,
-      "temp_hi": null,
-      "precip_in": null,
-      "wind_mph": null,
-      "weather_icon": null
+      "temp_hi": 82.0,
+      "precip_in": 0.0,
+      "wind_mph": 17.0,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "forecast"
     },
     {
       "game_date": "May 10, 2026",
@@ -1109,10 +1161,11 @@
       "recap_url": null,
       "is_conference": 1,
       "series_name": null,
-      "temp_hi": null,
-      "precip_in": null,
-      "wind_mph": null,
-      "weather_icon": null
+      "temp_hi": 70.0,
+      "precip_in": 0.22,
+      "wind_mph": 18.0,
+      "weather_icon": "\ud83c\udf26",
+      "weather_type": "forecast"
     },
     {
       "game_date": "May 14, 2026",
@@ -1130,10 +1183,11 @@
       "recap_url": null,
       "is_conference": 1,
       "series_name": null,
-      "temp_hi": null,
-      "precip_in": null,
-      "wind_mph": null,
-      "weather_icon": null
+      "temp_hi": 71.0,
+      "precip_in": 0.04,
+      "wind_mph": 18.0,
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": "forecast"
     },
     {
       "game_date": "May 15, 2026",
@@ -1151,10 +1205,11 @@
       "recap_url": null,
       "is_conference": 1,
       "series_name": null,
-      "temp_hi": null,
-      "precip_in": null,
-      "wind_mph": null,
-      "weather_icon": null
+      "temp_hi": 72.0,
+      "precip_in": 0.04,
+      "wind_mph": 22.0,
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": "forecast"
     },
     {
       "game_date": "May 16, 2026",
@@ -1172,10 +1227,11 @@
       "recap_url": null,
       "is_conference": 1,
       "series_name": null,
-      "temp_hi": null,
-      "precip_in": null,
-      "wind_mph": null,
-      "weather_icon": null
+      "temp_hi": 64.0,
+      "precip_in": 0.0,
+      "wind_mph": 10.0,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "forecast"
     },
     {
       "game_date": "May 19, 2026",
@@ -1193,10 +1249,11 @@
       "recap_url": null,
       "is_conference": 0,
       "series_name": "SEC Tournament",
-      "temp_hi": null,
-      "precip_in": null,
-      "wind_mph": null,
-      "weather_icon": null
+      "temp_hi": 82.0,
+      "precip_in": 0.01,
+      "wind_mph": 9.0,
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": "avg"
     }
   ],
   "summary": {
