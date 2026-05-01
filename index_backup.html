@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arkansas Razorbacks Baseball 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --red: #CC0000;
+      --red-dark: #990000;
+      --red-glow: rgba(204,0,0,0.25);
+      --bg: #0d0f14;
+      --bg2: #13161e;
+      --bg3: #1a1e29;
+      --border: rgba(255,255,255,0.07);
+      --text: #f0f0f0;
+      --muted: #7a8499;
+      --win: #22c55e;
+      --loss: #ef4444;
+      --upcoming: #60a5fa;
+      --canceled: #6b7280;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: linear-gradient(180deg, #100204 0%, var(--bg) 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 20px 16px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .razorback-logo {
+      width: 38px;
+      height: 38px;
+      background: var(--red);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 20px;
+      color: white;
+      flex-shrink: 0;
+    }
+
+    .header-title h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 26px;
+      letter-spacing: 2px;
+      color: white;
+      line-height: 1;
+    }
+
+    .header-title p {
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* ── Stat Bar ── */
+    .stat-bar {
+      display: flex;
+      justify-content: center;
+      gap: 0;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      padding-bottom: 14px;
+    }
+
+    .stat-bar::-webkit-scrollbar { display: none; }
+
+    .stat-item {
+      text-align: center;
+      padding: 4px 14px;
+      border-right: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+
+    .stat-item:last-child { border-right: none; }
+
+    .stat-value {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 22px;
+      color: var(--red);
+      line-height: 1;
+    }
+
+    .stat-value.streak-w { color: var(--win); }
+    .stat-value.streak-l { color: var(--loss); }
+
+    .stat-label {
+      font-size: 9px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    /* ── Filter Tabs ── */
+    .filters {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      padding: 12px 16px;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .filters::-webkit-scrollbar { display: none; }
+
+    .filter-btn {
+      background: var(--bg3);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      border-radius: 20px;
+      padding: 6px 14px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.15s;
+      flex-shrink: 0;
+    }
+
+    .filter-btn:hover { border-color: var(--red); color: var(--text); }
+
+    .filter-btn.active {
+      background: var(--red);
+      border-color: var(--red);
+      color: white;
+    }
+
+    /* ── Next Game Banner ── */
+    .next-game-wrapper {
+      padding: 14px 16px 0;
+    }
+
+    .next-game-label {
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .next-game-card {
+      background: linear-gradient(135deg, var(--bg3) 0%, rgba(204,0,0,0.12) 100%);
+      border: 1px solid rgba(204,0,0,0.35);
+      border-radius: 12px;
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .next-game-dot {
+      width: 10px;
+      height: 10px;
+      background: var(--red);
+      border-radius: 50%;
+      flex-shrink: 0;
+      box-shadow: 0 0 8px var(--red);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; box-shadow: 0 0 8px var(--red); }
+      50% { opacity: 0.5; box-shadow: 0 0 3px var(--red); }
+    }
+
+    .next-game-info { flex: 1; min-width: 0; }
+
+    .next-game-opponent {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 20px;
+      letter-spacing: 1px;
+      color: white;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .next-game-details {
+      font-size: 12px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    .next-game-time {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 18px;
+      color: var(--upcoming);
+      flex-shrink: 0;
+      text-align: right;
+    }
+
+    .next-game-time span {
+      display: block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 10px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    /* ── Schedule List ── */
+    .schedule-wrapper {
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      padding: 8px 0 4px;
+    }
+
+    /* ── Game Card ── */
+    .game-card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 14px;
+      display: grid;
+      grid-template-columns: 52px 1fr auto;
+      gap: 10px;
+      align-items: center;
+      cursor: default;
+      transition: border-color 0.15s, background 0.15s;
+    }
+
+    .game-card.has-recap {
+      cursor: pointer;
+    }
+
+    .game-card.has-recap:hover {
+      background: var(--bg3);
+      border-color: rgba(255,255,255,0.15);
+    }
+
+    .game-card.upcoming {
+      opacity: 0.75;
+    }
+
+    .game-card.canceled {
+      opacity: 0.45;
+    }
+
+    /* Date column */
+    .game-date-col {
+      text-align: center;
+    }
+
+    .game-month {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+    }
+
+    .game-day-num {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 26px;
+      line-height: 1;
+      color: white;
+    }
+
+    .game-dow {
+      font-size: 10px;
+      color: var(--muted);
+      text-transform: uppercase;
+    }
+
+    /* Middle column */
+    .game-main { min-width: 0; }
+
+    .game-opponent {
+      font-weight: 600;
+      font-size: 15px;
+      color: white;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .rank-badge {
+      font-size: 11px;
+      color: var(--muted);
+      font-weight: 500;
+      flex-shrink: 0;
+    }
+
+    .dh-badge {
+      font-size: 10px;
+      background: rgba(255,255,255,0.1);
+      color: var(--muted);
+      border-radius: 4px;
+      padding: 1px 5px;
+      flex-shrink: 0;
+    }
+
+    .game-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 3px;
+      flex-wrap: wrap;
+    }
+
+    .loc-badge {
+      font-size: 10px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    .loc-home { background: rgba(204,0,0,0.2); color: #ff6060; }
+    .loc-away { background: rgba(96,165,250,0.15); color: #93c5fd; }
+    .loc-neutral { background: rgba(255,255,255,0.08); color: var(--muted); }
+
+    .sec-badge {
+      font-size: 10px;
+      font-weight: 600;
+      color: #fbbf24;
+      letter-spacing: 0.5px;
+    }
+
+    .game-city {
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 2px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .series-name {
+      font-size: 10px;
+      color: rgba(204,0,0,0.7);
+      margin-top: 2px;
+    }
+
+    /* Right column */
+    .game-result-col {
+      text-align: right;
+      flex-shrink: 0;
+    }
+
+    .result-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .result-w { background: rgba(34,197,94,0.15); color: var(--win); border: 1.5px solid rgba(34,197,94,0.4); }
+    .result-l { background: rgba(239,68,68,0.15); color: var(--loss); border: 1.5px solid rgba(239,68,68,0.4); }
+    .result-upcoming { background: rgba(96,165,250,0.1); color: var(--upcoming); border: 1.5px solid rgba(96,165,250,0.3); width: auto; padding: 0 8px; font-size: 13px; font-family: 'DM Sans', sans-serif; font-weight: 500; border-radius: 6px; height: auto; padding: 4px 8px; }
+    .result-canceled { background: rgba(107,114,128,0.1); color: var(--canceled); border: 1.5px solid rgba(107,114,128,0.3); font-size: 11px; font-family: 'DM Sans', sans-serif; font-weight: 500; width: auto; height: auto; padding: 4px 8px; border-radius: 6px; }
+
+    .game-score {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 16px;
+      color: white;
+      line-height: 1.1;
+    }
+
+    .game-score .innings-note {
+      display: block;
+      font-size: 10px;
+      color: var(--muted);
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .recap-hint {
+      font-size: 10px;
+      color: rgba(204,0,0,0.6);
+      margin-top: 3px;
+    }
+
+    /* ── Empty State ── */
+    .empty-state {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 24px 16px 32px;
+      color: var(--muted);
+      font-size: 11px;
+      border-top: 1px solid var(--border);
+      margin-top: 8px;
+    }
+
+    footer a { color: var(--red); text-decoration: none; }
+
+    /* ── Loading ── */
+    .loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 30vh;
+      flex-direction: column;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .spinner {
+      width: 28px;
+      height: 28px;
+      border: 3px solid var(--border);
+      border-top-color: var(--red);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Desktop ── */
+    @media (min-width: 640px) {
+      header { padding: 24px 24px 0; }
+      .header-title h1 { font-size: 32px; }
+      .stat-value { font-size: 26px; }
+      .stat-item { padding: 4px 20px; }
+      .filters { padding: 14px 24px; }
+      .next-game-wrapper { padding: 16px 24px 0; max-width: 680px; margin: 0 auto; }
+      .schedule-wrapper { padding: 16px 24px; }
+      .game-card { padding: 14px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <div class="razorback-logo">A</div>
+    <div class="header-title">
+      <h1>RAZORBACK BASEBALL</h1>
+      <p>2026 Season Schedule</p>
+    </div>
+  </div>
+  <div class="stat-bar" id="stat-bar">
+    <div class="loading"><div class="spinner"></div></div>
+  </div>
+</header>
+
+<div class="filters" id="filters" style="display:none">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="wins">Wins</button>
+  <button class="filter-btn" data-filter="losses">Losses</button>
+  <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+  <button class="filter-btn" data-filter="home">Home</button>
+  <button class="filter-btn" data-filter="away">Away</button>
+  <button class="filter-btn" data-filter="sec">SEC Only</button>
+</div>
+
+<div id="next-game-wrapper" style="display:none" class="next-game-wrapper"></div>
+
+<div class="schedule-wrapper" id="schedule-list">
+  <div class="loading"><div class="spinner"></div><span>Loading schedule…</span></div>
+</div>
+
+<footer id="footer" style="display:none">
+  <div id="last-updated"></div>
+  <div style="margin-top:6px">Arkansas Razorbacks · Baum-Walker Stadium · Fayetteville, AR</div>
+</footer>
+
+<script>
+  let allGames = [];
+  let activeFilter = 'all';
+
+  function parseDateNum(dateStr) {
+    // "Feb 13, 2026" → Date object
+    return new Date(dateStr);
+  }
+
+  function getMonthAbbr(dateStr) {
+    const d = new Date(dateStr);
+    return d.toLocaleString('en-US', { month: 'short' }).toUpperCase();
+  }
+
+  function getDayNum(dateStr) {
+    return new Date(dateStr).getDate();
+  }
+
+  function cleanOpponent(name) {
+    // Strip [DH-1] or [DH-2] for display
+    return name.replace(/\s*\[DH-\d+\]\s*$/, '').trim();
+  }
+
+  function getDHTag(name) {
+    const m = name.match(/\[DH-(\d+)\]/);
+    return m ? `DH${m[1]}` : null;
+  }
+
+  function buildStatBar(summary) {
+    const streakClass = summary.current_streak.startsWith('W') ? 'streak-w' : 'streak-l';
+    const rdSign = summary.run_differential >= 0 ? '+' : '';
+    return `
+      <div class="stat-item">
+        <div class="stat-value">${summary.overall_record}</div>
+        <div class="stat-label">Overall</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">${summary.sec_record}</div>
+        <div class="stat-label">SEC</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">${summary.home_record}</div>
+        <div class="stat-label">Home</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">${summary.away_record}</div>
+        <div class="stat-label">Away</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value">${rdSign}${summary.run_differential}</div>
+        <div class="stat-label">Run Diff</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-value ${streakClass}">${summary.current_streak}</div>
+        <div class="stat-label">Streak</div>
+      </div>
+    `;
+  }
+
+  function buildNextGame(games) {
+    const next = games.find(g => g.result === 'Upcoming');
+    if (!next) return '';
+    const opp = cleanOpponent(next.opponent);
+    const rankStr = next.opponent_rank ? `#${next.opponent_rank} ` : '';
+    const locClass = next.location_type === 'Home' ? 'Home' : next.location_type === 'Away' ? `@ ` : 'Neutral';
+    const atPrefix = next.location_type === 'Away' ? 'at ' : next.location_type === 'Neutral' ? 'vs. ' : 'vs. ';
+    const city = next.city || '';
+    return `
+      <div class="next-game-label">Next Game</div>
+      <div class="next-game-card">
+        <div class="next-game-dot"></div>
+        <div class="next-game-info">
+          <div class="next-game-opponent">${rankStr}${opp}</div>
+          <div class="next-game-details">${next.day_of_week} · ${next.game_date} · ${atPrefix.trim()} ${city}</div>
+        </div>
+        <div class="next-game-time">
+          ${next.time_ct || 'TBD'}
+          <span>${next.location_type}</span>
+        </div>
+      </div>
+    `;
+  }
+
+  function buildGameCard(game) {
+    const opp = cleanOpponent(game.opponent);
+    const dhTag = getDHTag(game.opponent);
+    const rankStr = game.opponent_rank ? `<span class="rank-badge">#${game.opponent_rank}</span>` : '';
+    const dhStr = dhTag ? `<span class="dh-badge">${dhTag}</span>` : '';
+    const monthAbbr = getMonthAbbr(game.game_date);
+    const dayNum = getDayNum(game.game_date);
+
+    const locClass = game.location_type === 'Home' ? 'loc-home'
+                   : game.location_type === 'Away' ? 'loc-away' : 'loc-neutral';
+    const secBadge = game.is_conference ? '<span class="sec-badge">SEC</span>' : '';
+    const seriesStr = game.series_name ? `<div class="series-name">${game.series_name}</div>` : '';
+
+    let resultHtml = '';
+    let scoreHtml = '';
+
+    if (game.result === 'W' || game.result === 'L') {
+      const rc = game.result === 'W' ? 'result-w' : 'result-l';
+      resultHtml = `<div class="result-badge ${rc}">${game.result}</div>`;
+      const inningsNote = game.innings ? `<span class="innings-note">${game.innings} inn</span>` : '';
+      scoreHtml = `<div class="game-score">${game.ark_score}–${game.opp_score}${inningsNote}</div>`;
+    } else if (game.result === 'Upcoming') {
+      resultHtml = `<div class="result-badge result-upcoming">${game.time_ct || 'TBD'}</div>`;
+    } else if (game.result === 'Canceled') {
+      resultHtml = `<div class="result-badge result-canceled">Canceled</div>`;
+    }
+
+    const hasRecap = !!game.recap_url;
+    const recapHint = hasRecap ? '<div class="recap-hint">Tap for recap →</div>' : '';
+    const cardClass = `game-card${game.result === 'Upcoming' ? ' upcoming' : ''}${game.result === 'Canceled' ? ' canceled' : ''}${hasRecap ? ' has-recap' : ''}`;
+    const clickAttr = hasRecap ? `onclick="window.open('${game.recap_url}','_blank')"` : '';
+
+    return `
+      <div class="${cardClass}" ${clickAttr}>
+        <div class="game-date-col">
+          <div class="game-month">${monthAbbr}</div>
+          <div class="game-day-num">${dayNum}</div>
+          <div class="game-dow">${game.day_of_week || ''}</div>
+        </div>
+        <div class="game-main">
+          <div class="game-opponent">${rankStr}${opp}${dhStr}</div>
+          <div class="game-meta">
+            <span class="loc-badge ${locClass}">${game.location_type}</span>
+            ${secBadge}
+          </div>
+          <div class="game-city">${game.city || ''}</div>
+          ${seriesStr}
+          ${recapHint}
+        </div>
+        <div class="game-result-col">
+          ${resultHtml}
+          ${scoreHtml}
+        </div>
+      </div>
+    `;
+  }
+
+  function filterGames(games, filter) {
+    switch (filter) {
+      case 'wins':     return games.filter(g => g.result === 'W');
+      case 'losses':   return games.filter(g => g.result === 'L');
+      case 'upcoming': return games.filter(g => g.result === 'Upcoming');
+      case 'home':     return games.filter(g => g.location_type === 'Home');
+      case 'away':     return games.filter(g => g.location_type === 'Away');
+      case 'sec':      return games.filter(g => g.is_conference);
+      default:         return games;
+    }
+  }
+
+  function renderSchedule() {
+    const filtered = filterGames(allGames, activeFilter);
+    const list = document.getElementById('schedule-list');
+
+    if (filtered.length === 0) {
+      list.innerHTML = '<div class="empty-state">No games match this filter.</div>';
+      return;
+    }
+
+    // Group into completed vs upcoming
+    const completed = filtered.filter(g => g.result !== 'Upcoming' && g.result !== 'Canceled' || g.result === 'Canceled');
+    const upcoming  = filtered.filter(g => g.result === 'Upcoming');
+
+    let html = '';
+
+    if (activeFilter === 'all') {
+      if (completed.length) {
+        html += '<div class="section-label">Results</div>';
+        html += completed.map(buildGameCard).join('');
+      }
+      if (upcoming.length) {
+        html += '<div class="section-label">Upcoming</div>';
+        html += upcoming.map(buildGameCard).join('');
+      }
+    } else {
+      html = filtered.map(buildGameCard).join('');
+    }
+
+    list.innerHTML = html;
+  }
+
+  async function init() {
+    try {
+      const res = await fetch('./arkansas_schedule.json');
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+
+      allGames = data.games || [];
+
+      // Stat bar
+      document.getElementById('stat-bar').innerHTML = buildStatBar(data.summary);
+
+      // Next game banner
+      const ngWrapper = document.getElementById('next-game-wrapper');
+      const ngHtml = buildNextGame(allGames);
+      if (ngHtml) {
+        ngWrapper.innerHTML = ngHtml;
+        ngWrapper.style.display = 'block';
+      }
+
+      // Filters
+      document.getElementById('filters').style.display = 'flex';
+
+      // Schedule
+      renderSchedule();
+
+      // Footer
+      const footer = document.getElementById('footer');
+      footer.style.display = 'block';
+      const lu = document.getElementById('last-updated');
+      lu.textContent = data.last_updated ? `Last updated: ${data.last_updated} CT` : '';
+
+    } catch (err) {
+      document.getElementById('schedule-list').innerHTML =
+        `<div class="empty-state">Failed to load schedule data.<br><small>${err.message}</small></div>`;
+    }
+  }
+
+  // Filter button clicks
+  document.getElementById('filters').addEventListener('click', e => {
+    const btn = e.target.closest('.filter-btn');
+    if (!btn) return;
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    activeFilter = btn.dataset.filter;
+    renderSchedule();
+  });
+
+  init();
+</script>
+</body>
+</html>
