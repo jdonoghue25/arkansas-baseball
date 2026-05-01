@@ -412,7 +412,7 @@ const THEAD=`<thead><tr>
   <th class="col-date">Date</th>
   <th style="width:28px"></th>
   <th>Opponent</th>
-  <th class="h-str" style="width:110px">Starter</th>
+  <th class="h-str" style="width:110px">Weather</th>
   <th style="width:88px">Score</th>
   <th style="width:52px">W-L</th>
   <th class="h-ven" style="width:130px">Venue</th>
@@ -466,6 +466,16 @@ function buildSeriesTable(games,label){
   </div>`;
 }
 
+/* Weather cell */
+function formatWeather(g){
+  if(g.temp_hi==null) return '<span style="color:var(--text3)">–</span>';
+  const icon=g.weather_icon||'⛅';
+  const temp=`${Math.round(g.temp_hi)}°`;
+  const precip=g.precip_in>0?` <span style="color:var(--text3);font-size:11px">${g.precip_in}"</span>`:'';
+  const fcst=g.result==='Upcoming'?` <span style="color:var(--text3);font-size:10px">fcst</span>`:'';
+  return `${icon} ${temp}${precip}${fcst}`;
+}
+
 /* Game Row */
 function renderRow(g){
   const isUp=g.result==='Upcoming';
@@ -473,7 +483,7 @@ function renderRow(g){
   const sec=g.is_conference?`<span class="sec-tag">SEC</span>`:'';
   const ha=g.location_type==='Home'?'vs':g.location_type==='Away'?'@':'N';
   const haClass=g.location_type==='Home'?'home':g.location_type==='Away'?'away':'';
-  const starter=g.pitcher||g.starter||'–';
+  const weather=formatWeather(g);
   const venue=g.city||g.stadium||'–';
   const wl=RUNNING_RECORDS.get(g.game_date+'|'+g.opponent)||'–';
   let score='';
@@ -490,7 +500,7 @@ function renderRow(g){
     <td class="col-date">${shortDate(g.game_date)}</td>
     <td class="col-ha ${haClass}">${ha}</td>
     <td class="col-opp"><div class="col-opp-inner">${rk}<span class="opp-name">${cleanOpp(g.opponent)}</span>${sec}</div></td>
-    <td class="col-starter">${starter}</td>
+    <td class="col-starter">${weather}</td>
     <td class="col-score">${score}</td>
     <td class="col-wl">${wl}</td>
     <td class="col-venue">${venue}</td>
