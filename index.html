@@ -812,7 +812,7 @@ header {
 <script>
 let GAMES = [], META = {};
 let activeFilter = 'all';
-let sectionOpen = true;
+let sectionOpen = false;
 let trendChart = null, wlChart = null;
 let theme = localStorage.getItem('theme') || 'light';
 
@@ -954,36 +954,35 @@ function render() {
   const sorted = sort !== 'date-desc' && sort !== 'date-asc';
 
   const showSplits = !searching && (activeFilter === 'all' || activeFilter === 'sec' || activeFilter === 'ranked');
-  const hasCollapsible = showSplits || upcoming.length > 0;
 
   let html = '';
 
-  /* ── Collapsible: Splits + Charts + Upcoming ── */
-  if (hasCollapsible) {
+  /* ── Collapsible: Splits + Charts only ── */
+  if (showSplits) {
     const arrowClass = sectionOpen ? 'open' : 'closed';
     const hint = sectionOpen ? 'Hide' : 'Show';
     html += `
       <div class="section-toggle" onclick="toggleSection()">
         <div class="stog-label">
           <i class="stog-arrow ${arrowClass}">▾</i>
-          Stats &amp; Upcoming
+          Stats
         </div>
         <div class="stog-hint">${hint}</div>
       </div>`;
 
     if (sectionOpen) {
-      if (showSplits) {
-        html += renderSplits();
-        html += renderChartPlaceholders();
-      }
-      if (upcoming.length) {
-        html += `<div class="section-label">Upcoming Games</div>`;
-        const [next, ...rest] = upcoming;
-        html += renderNextHero(next);
-        rest.forEach((g,i) => { html += renderUpcomingSmall(g, i); });
-        if (played.length) html += `<div class="section-gap"></div>`;
-      }
+      html += renderSplits();
+      html += renderChartPlaceholders();
     }
+  }
+
+  /* ── Upcoming Games (always visible) ── */
+  if (upcoming.length) {
+    html += `<div class="section-label">Upcoming Games</div>`;
+    const [next, ...rest] = upcoming;
+    html += renderNextHero(next);
+    rest.forEach((g,i) => { html += renderUpcomingSmall(g, i); });
+    if (played.length) html += `<div class="section-gap"></div>`;
   }
 
   /* Results */
