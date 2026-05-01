@@ -4,59 +4,58 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Arkansas Baseball 2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <style>
-
-/* ── Reset & Tokens ─────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --red:       #CC0000;
-  --red-soft:  #fff0f0;
-  --red-mid:   #ffd5d5;
+  --red: #CC0000;
+  --red-soft: #fff0f0;
+  --red-mid: #ffd5d5;
+  --gold: #b8860b;
+  --gold-bg: #fdf6e3;
 
-  /* Light */
-  --bg:        #f2f3f5;
-  --surface:   #ffffff;
-  --surface2:  #f8f9fa;
-  --border:    #e8eaed;
-  --text:      #0f1111;
-  --text2:     #555d6b;
-  --text3:     #8d97a5;
-  --shadow:    0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.06);
-  --shadow-md: 0 4px 12px rgba(0,0,0,.09);
+  --bg: #f2f3f5;
+  --surface: #ffffff;
+  --surface2: #f8f9fa;
+  --border: #e8eaed;
+  --text: #0f1111;
+  --text2: #555d6b;
+  --text3: #8d97a5;
+  --shadow: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.05);
+  --shadow-md: 0 4px 12px rgba(0,0,0,.1);
 
-  --win:       #0b6e31;
-  --win-bg:    #e8f5ec;
-  --loss:      #b12704;
-  --loss-bg:   #fdecea;
-  --upcoming:  #0066c0;
-  --upcoming-bg:#ebf3fd;
+  --win: #0b6e31;
+  --win-bg: #e8f5ec;
+  --loss: #b12704;
+  --loss-bg: #fdecea;
+  --upcoming: #0066c0;
+  --upcoming-bg: #ebf3fd;
 
-  --radius:    10px;
-  --font:      'Outfit', sans-serif;
+  --radius: 10px;
+  --font: 'Outfit', sans-serif;
 }
 
 [data-theme="dark"] {
-  --bg:        #0d0f14;
-  --surface:   #161a24;
-  --surface2:  #1e2330;
-  --border:    #272d3d;
-  --text:      #e8eaf0;
-  --text2:     #9ba3b5;
-  --text3:     #5a6275;
-  --shadow:    0 1px 3px rgba(0,0,0,.4), 0 1px 2px rgba(0,0,0,.3);
+  --bg: #0d0f14;
+  --surface: #161a24;
+  --surface2: #1e2330;
+  --border: #272d3d;
+  --text: #e8eaf0;
+  --text2: #9ba3b5;
+  --text3: #5a6275;
+  --shadow: 0 1px 3px rgba(0,0,0,.4);
   --shadow-md: 0 4px 16px rgba(0,0,0,.5);
-
-  --win:       #2ecc71;
-  --win-bg:    rgba(46,204,113,.1);
-  --loss:      #e74c3c;
-  --loss-bg:   rgba(231,76,60,.1);
-  --upcoming:  #5b9bd5;
-  --upcoming-bg:rgba(91,155,213,.1);
-
-  --red-soft:  rgba(204,0,0,.12);
-  --red-mid:   rgba(204,0,0,.2);
+  --win: #2ecc71;
+  --win-bg: rgba(46,204,113,.1);
+  --loss: #e74c3c;
+  --loss-bg: rgba(231,76,60,.1);
+  --upcoming: #5b9bd5;
+  --upcoming-bg: rgba(91,155,213,.1);
+  --red-soft: rgba(204,0,0,.12);
+  --red-mid: rgba(204,0,0,.2);
+  --gold-bg: rgba(184,134,11,.1);
 }
 
 body {
@@ -68,7 +67,7 @@ body {
   transition: background .2s, color .2s;
 }
 
-/* ── Header ─────────────────────────────────────────── */
+/* ── Header ── */
 header {
   background: var(--surface);
   border-bottom: 1px solid var(--border);
@@ -79,54 +78,44 @@ header {
 }
 
 .header-inner {
-  max-width: 680px;
+  max-width: 720px;
   margin: 0 auto;
-  padding: 14px 16px;
+  padding: 12px 16px;
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
 .logo-mark {
-  width: 36px;
-  height: 36px;
+  width: 34px;
+  height: 34px;
   background: var(--red);
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-}
-
-.logo-mark svg {
-  width: 20px;
-  height: 20px;
-  fill: white;
-}
-
-.header-title {
-  flex: 1;
+  font-size: 18px;
 }
 
 .header-title h1 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
-  color: var(--text);
-  line-height: 1.1;
   letter-spacing: -.2px;
+  line-height: 1.1;
 }
 
 .header-title p {
-  font-size: 12px;
+  font-size: 11px;
   color: var(--text3);
-  font-weight: 400;
   margin-top: 1px;
 }
 
 .header-right {
+  margin-left: auto;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .record-chip {
@@ -135,14 +124,13 @@ header {
   color: var(--red);
   font-size: 13px;
   font-weight: 700;
-  padding: 5px 10px;
+  padding: 4px 10px;
   border-radius: 100px;
-  white-space: nowrap;
 }
 
-.theme-toggle {
-  width: 34px;
-  height: 34px;
+.icon-btn {
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   border: 1px solid var(--border);
   background: var(--surface2);
@@ -150,25 +138,22 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 16px;
+  font-size: 15px;
   transition: background .15s;
-  flex-shrink: 0;
 }
+.icon-btn:hover { background: var(--border); }
 
-.theme-toggle:hover { background: var(--border); }
-
-/* ── Stats Strip ────────────────────────────────────── */
+/* ── Stats Strip ── */
 .stats-strip {
   background: var(--surface);
   border-bottom: 1px solid var(--border);
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
 }
 .stats-strip::-webkit-scrollbar { display: none; }
 
 .stats-inner {
-  max-width: 680px;
+  max-width: 720px;
   margin: 0 auto;
   padding: 10px 16px;
   display: flex;
@@ -180,327 +165,415 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 6px 18px;
+  padding: 5px 16px;
   border-right: 1px solid var(--border);
+  cursor: default;
 }
-
 .stat:last-child { border-right: none; }
 .stat:first-child { padding-left: 0; }
 
 .stat-val {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 800;
   color: var(--text);
   line-height: 1;
   letter-spacing: -.5px;
 }
-
-.stat-val.positive { color: var(--win); }
-.stat-val.negative { color: var(--loss); }
+.stat-val.pos { color: var(--win); }
+.stat-val.neg { color: var(--loss); }
 
 .stat-label {
-  font-size: 10px;
-  font-weight: 500;
+  font-size: 9px;
+  font-weight: 600;
   color: var(--text3);
   text-transform: uppercase;
   letter-spacing: .8px;
   margin-top: 3px;
 }
 
-/* ── Filters ────────────────────────────────────────── */
-.filters-wrap {
+/* ── Toolbar ── */
+.toolbar {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.toolbar-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Search */
+.search-wrap {
+  position: relative;
+  flex: 1;
+  min-width: 160px;
+}
+
+.search-wrap svg {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  color: var(--text3);
+  pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  padding: 7px 12px 7px 32px;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  background: var(--surface2);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 13px;
+  outline: none;
+  transition: border-color .15s, box-shadow .15s;
+}
+.search-input::placeholder { color: var(--text3); }
+.search-input:focus {
+  border-color: var(--red);
+  box-shadow: 0 0 0 3px rgba(204,0,0,.1);
+  background: var(--surface);
+}
+
+/* Sort */
+.sort-select {
+  padding: 7px 28px 7px 10px;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  background: var(--surface2);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 13px;
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'%3E%3Cpath fill='%238d97a5' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+}
+.sort-select:focus { border-color: var(--red); }
+
+/* Filter pills */
+.pills-wrap {
   background: var(--surface);
   border-bottom: 1px solid var(--border);
   overflow-x: auto;
   scrollbar-width: none;
 }
-.filters-wrap::-webkit-scrollbar { display: none; }
+.pills-wrap::-webkit-scrollbar { display: none; }
 
-.filters-inner {
-  max-width: 680px;
+.pills-inner {
+  max-width: 720px;
   margin: 0 auto;
-  padding: 10px 16px;
+  padding: 8px 16px;
   display: flex;
   gap: 6px;
   min-width: max-content;
 }
 
 .pill {
-  padding: 6px 14px;
+  padding: 5px 13px;
   border-radius: 100px;
   border: 1px solid var(--border);
   background: transparent;
   color: var(--text2);
   font-family: var(--font);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
   cursor: pointer;
   transition: all .15s;
   white-space: nowrap;
 }
-
 .pill:hover { border-color: var(--text3); color: var(--text); }
+.pill.active { background: var(--text); border-color: var(--text); color: var(--surface); }
 
-.pill.active {
-  background: var(--text);
-  border-color: var(--text);
-  color: var(--surface);
-}
-
-/* ── Main Content ───────────────────────────────────── */
+/* ── Content ── */
 .content {
-  max-width: 680px;
+  max-width: 720px;
   margin: 0 auto;
   padding: 20px 16px 80px;
 }
 
-/* ── Upcoming Hero ──────────────────────────────────── */
-.section-label {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  color: var(--text3);
-  margin-bottom: 10px;
-  padding-left: 2px;
+/* ── Splits Grid ── */
+.splits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-bottom: 20px;
 }
 
-.upcoming-hero {
+.split-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 14px 16px;
+}
+
+.split-title {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text3);
+  margin-bottom: 6px;
+}
+
+.split-record {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: var(--text);
+  line-height: 1;
+}
+
+.split-pct {
+  font-size: 12px;
+  color: var(--text3);
+  margin-top: 2px;
+}
+
+.split-bar {
+  height: 3px;
+  background: var(--border);
+  border-radius: 100px;
+  margin-top: 8px;
+  overflow: hidden;
+}
+
+.split-bar-fill {
+  height: 100%;
+  background: var(--red);
+  border-radius: 100px;
+  transition: width .5s ease;
+}
+
+/* ── Charts ── */
+.charts-section {
+  margin-bottom: 20px;
+}
+
+.chart-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px;
+  margin-bottom: 8px;
+}
+
+.chart-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.chart-sub {
+  font-size: 11px;
+  color: var(--text3);
+  margin-bottom: 14px;
+}
+
+.chart-wrap {
+  position: relative;
+  height: 160px;
+}
+
+/* ── Next Game Hero ── */
+.next-hero {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   overflow: hidden;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
-.upcoming-hero-top {
+.next-hero-bar {
   background: var(--red);
-  padding: 10px 16px;
+  padding: 8px 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.upcoming-hero-top .label {
-  font-size: 11px;
+.next-hero-bar span {
+  font-size: 10px;
   font-weight: 700;
-  letter-spacing: 1px;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
-  color: rgba(255,255,255,.8);
+  color: rgba(255,255,255,.85);
 }
 
 .live-dot {
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   background: white;
   border-radius: 50%;
-  animation: pulse 1.5s infinite;
+  animation: blink 1.4s infinite;
 }
 
-@keyframes pulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: .5; transform: scale(.8); }
+@keyframes blink {
+  0%,100% { opacity:1; } 50% { opacity:.3; }
 }
 
-.upcoming-hero-body {
-  padding: 18px 16px 16px;
+.next-hero-body {
+  padding: 16px;
 }
 
-.upcoming-matchup {
+.next-matchup {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
-.team-block { text-align: center; }
+.next-team { text-align: center; }
+.next-team-name { font-size: 14px; font-weight: 700; color: var(--text); }
+.next-team-sub { font-size: 11px; color: var(--text3); margin-top: 2px; }
 
-.team-name {
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--text);
-  line-height: 1.2;
+.next-vs {
+  text-align: center;
+  flex: 1;
 }
 
-.team-record {
-  font-size: 12px;
-  color: var(--text3);
-  margin-top: 2px;
-}
-
-.vs-block { text-align: center; }
-
-.vs-time {
+.next-time {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 28px;
+  font-size: 30px;
   color: var(--red);
   line-height: 1;
 }
 
-.vs-date {
-  font-size: 12px;
-  color: var(--text3);
-  margin-top: 2px;
-}
+.next-date-str { font-size: 11px; color: var(--text3); margin-top: 2px; }
 
-.upcoming-meta {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-}
+.next-chips { display: flex; gap: 6px; flex-wrap: wrap; }
 
-.meta-chip {
-  font-size: 12px;
+.chip {
+  font-size: 11px;
   font-weight: 500;
-  padding: 4px 10px;
+  padding: 3px 9px;
   border-radius: 100px;
   background: var(--surface2);
   border: 1px solid var(--border);
   color: var(--text2);
 }
+.chip.home { background: var(--red-soft); border-color: var(--red-mid); color: var(--red); }
+.chip.sec { background: var(--upcoming-bg); border-color: transparent; color: var(--upcoming); }
 
-.meta-chip.home { background: var(--red-soft); border-color: var(--red-mid); color: var(--red); }
-.meta-chip.sec { background: var(--upcoming-bg); border-color: transparent; color: var(--upcoming); }
+/* ── Series Group ── */
+.series-group {
+  margin-bottom: 16px;
+}
 
-/* ── Upcoming Small Cards ───────────────────────────── */
-.upcoming-small {
+.series-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 2px;
+  margin-bottom: 4px;
+}
+
+.series-name {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text2);
+  letter-spacing: .2px;
+}
+
+.series-record {
+  font-size: 12px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 100px;
+}
+
+.series-record.sweep { background: var(--win-bg); color: var(--win); }
+.series-record.loss  { background: var(--loss-bg); color: var(--loss); }
+.series-record.split { background: var(--surface2); color: var(--text2); border: 1px solid var(--border); }
+.series-record.upcoming { background: var(--upcoming-bg); color: var(--upcoming); }
+
+/* ── Game Card ── */
+.game-card {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding: 13px 16px;
-  display: flex;
+  padding: 11px 14px;
+  display: grid;
+  grid-template-columns: 40px 1fr auto;
+  gap: 12px;
   align-items: center;
-  gap: 14px;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow .15s, transform .1s;
+  position: relative;
   cursor: default;
-  transition: box-shadow .15s;
 }
 
-.upcoming-small:hover { box-shadow: var(--shadow-md); }
+.game-card[href] { cursor: pointer; }
+.game-card:hover { box-shadow: var(--shadow-md); }
+.game-card[href]:hover { transform: translateX(2px); }
 
-.upcoming-date-col {
-  text-align: center;
-  min-width: 36px;
+.game-card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 10px; bottom: 10px;
+  width: 3px;
+  border-radius: 0 2px 2px 0;
 }
+.game-card.win::before  { background: var(--win); }
+.game-card.loss::before { background: var(--loss); }
 
-.up-day { font-size: 10px; font-weight: 600; color: var(--text3); text-transform: uppercase; letter-spacing: .5px; }
-.up-num { font-size: 22px; font-weight: 800; color: var(--text); line-height: 1; letter-spacing: -1px; }
-.up-month { font-size: 10px; font-weight: 500; color: var(--text3); text-transform: uppercase; }
+/* Date */
+.g-date { text-align: center; }
+.g-day { font-size: 9px; font-weight: 600; color: var(--text3); text-transform: uppercase; letter-spacing: .5px; }
+.g-num { font-size: 19px; font-weight: 800; color: var(--text); line-height: 1; letter-spacing: -1px; }
+.g-mon { font-size: 9px; color: var(--text3); text-transform: uppercase; font-weight: 500; }
 
-.upcoming-opp {
-  flex: 1;
-  min-width: 0;
-}
+/* Info */
+.g-info { min-width: 0; }
 
-.up-opp-name {
-  font-size: 15px;
+.g-opp {
+  font-size: 14px;
   font-weight: 600;
   color: var(--text);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
+  margin-bottom: 3px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .rank-badge {
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
   color: white;
-  background: #b8860b;
+  background: var(--gold);
   padding: 1px 5px;
   border-radius: 4px;
   flex-shrink: 0;
 }
 
-.up-meta {
-  font-size: 12px;
-  color: var(--text3);
-  margin-top: 2px;
-  display: flex;
-  gap: 6px;
-}
-
-.up-time-col {
-  text-align: right;
-  flex-shrink: 0;
-}
-
-.up-time {
-  font-size: 14px;
-  font-weight: 700;
-  color: var(--upcoming);
-}
-
-.up-loc {
-  font-size: 11px;
-  color: var(--text3);
-  margin-top: 2px;
-}
-
-/* ── Section Divider ────────────────────────────────── */
-.section-gap { margin-top: 24px; }
-
-/* ── Results ────────────────────────────────────────── */
-.result-card {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  padding: 12px 16px;
-  display: grid;
-  grid-template-columns: 42px 1fr auto;
-  gap: 12px;
-  align-items: center;
-  margin-bottom: 5px;
-  cursor: default;
-  transition: box-shadow .15s;
-  text-decoration: none;
-  position: relative;
-}
-
-.result-card:hover { box-shadow: var(--shadow-md); }
-.result-card[href]:hover { cursor: pointer; }
-
-.result-card::after {
-  content: '';
-  position: absolute;
-  left: 0; top: 12px; bottom: 12px;
-  width: 3px;
-  border-radius: 0 2px 2px 0;
-}
-
-.result-card.win::after { background: var(--win); }
-.result-card.loss::after { background: var(--loss); }
-.result-card.canceled::after { background: var(--border); }
-
-/* Date col */
-.r-date { text-align: center; }
-.r-day { font-size: 10px; font-weight: 600; color: var(--text3); text-transform: uppercase; }
-.r-num { font-size: 20px; font-weight: 800; color: var(--text); line-height: 1; letter-spacing: -1px; }
-.r-mon { font-size: 10px; color: var(--text3); text-transform: uppercase; font-weight: 500; }
-
-/* Info col */
-.r-info { min-width: 0; }
-
-.r-opp {
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--text);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin-bottom: 3px;
-}
-
 .loc-tag {
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 700;
   letter-spacing: .5px;
   text-transform: uppercase;
@@ -508,13 +581,12 @@ header {
   border-radius: 4px;
   flex-shrink: 0;
 }
-
-.loc-tag.home { background: var(--red-soft); color: var(--red); }
-.loc-tag.away { background: var(--upcoming-bg); color: var(--upcoming); }
+.loc-tag.home    { background: var(--red-soft); color: var(--red); }
+.loc-tag.away    { background: var(--upcoming-bg); color: var(--upcoming); }
 .loc-tag.neutral { background: var(--surface2); color: var(--text3); border: 1px solid var(--border); }
 
 .sec-tag {
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 700;
   color: var(--text3);
   background: var(--surface2);
@@ -524,65 +596,63 @@ header {
   flex-shrink: 0;
 }
 
-.r-sub {
+.g-sub {
   font-size: 11px;
   color: var(--text3);
   display: flex;
+  gap: 4px;
   align-items: center;
-  gap: 5px;
 }
 
-.r-sub .dot { color: var(--border); }
-
-/* Score col */
-.r-score { text-align: right; flex-shrink: 0; }
+/* Score */
+.g-score { text-align: right; flex-shrink: 0; }
 
 .result-badge {
   display: inline-block;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 800;
-  letter-spacing: .5px;
-  padding: 2px 8px;
+  padding: 2px 7px;
   border-radius: 100px;
   margin-bottom: 3px;
+  letter-spacing: .3px;
 }
-
 .result-badge.W { background: var(--win-bg); color: var(--win); }
 .result-badge.L { background: var(--loss-bg); color: var(--loss); }
 .result-badge.C { background: var(--surface2); color: var(--text3); }
 
 .score-num {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 800;
   color: var(--text);
   letter-spacing: -1px;
   line-height: 1;
 }
 
-.score-sub {
+.score-sub { font-size: 10px; color: var(--text3); margin-top: 1px; }
+.up-time { font-size: 13px; font-weight: 700; color: var(--upcoming); }
+
+/* ── Section Label ── */
+.section-label {
   font-size: 10px;
-  color: var(--text3);
-  margin-top: 1px;
-}
-
-/* Month label */
-.month-label {
-  font-size: 12px;
   font-weight: 700;
-  color: var(--text2);
-  padding: 10px 2px 6px;
-  letter-spacing: .3px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--text3);
+  margin-bottom: 10px;
+  padding-left: 2px;
 }
 
-/* Empty */
-.empty {
+.section-gap { margin-top: 24px; }
+
+/* ── Empty / Loading ── */
+.empty, .loading {
   text-align: center;
   padding: 48px 20px;
   color: var(--text3);
   font-size: 14px;
 }
 
-/* Updated timestamp */
+/* ── Updated ── */
 .updated {
   text-align: center;
   font-size: 11px;
@@ -590,78 +660,99 @@ header {
   padding: 20px 0 8px;
 }
 
-/* Loading */
-.loading {
-  text-align: center;
-  padding: 60px 20px;
-  color: var(--text3);
-  font-size: 14px;
+/* ── Day of Week Chart ── */
+.dow-grid {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 4px;
+  height: 80px;
+  margin-top: 8px;
 }
+
+.dow-col { display: flex; flex-direction: column; align-items: center; flex: 1; }
+
+.dow-bar-wrap {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  padding: 0 2px;
+}
+
+.dow-bar {
+  width: 100%;
+  border-radius: 4px 4px 0 0;
+  min-height: 3px;
+  background: var(--red);
+  opacity: .85;
+  transition: opacity .15s;
+  position: relative;
+}
+
+.dow-bar:hover { opacity: 1; }
+
+.dow-bar-empty { background: var(--border); }
+
+.dow-label { font-size: 10px; color: var(--text3); margin-top: 4px; font-weight: 600; }
+.dow-pct   { font-size: 10px; color: var(--text2); font-weight: 700; }
 
 /* Animations */
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(8px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from { opacity:0; transform:translateY(6px); }
+  to   { opacity:1; transform:translateY(0); }
 }
-
-.upcoming-hero, .upcoming-small, .result-card {
-  animation: fadeUp .25s ease both;
-}
-
+.animate { animation: fadeUp .2s ease both; }
 </style>
 </head>
 <body>
 
-<!-- ── Header ── -->
 <header>
   <div class="header-inner">
-    <div class="logo-mark">
-      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
-    </div>
+    <div class="logo-mark">🐗</div>
     <div class="header-title">
       <h1>Arkansas Baseball</h1>
-      <p>2025–26 Season</p>
+      <p>2025–26 · SEC</p>
     </div>
     <div class="header-right">
-      <div class="record-chip" id="header-record">–</div>
-      <button class="theme-toggle" id="theme-btn" onclick="toggleTheme()" aria-label="Toggle theme">🌙</button>
+      <div class="record-chip" id="hdr-record">–</div>
+      <button class="icon-btn" onclick="toggleTheme()" id="theme-btn">🌙</button>
     </div>
   </div>
 </header>
 
-<!-- ── Stats Strip ── -->
 <div class="stats-strip">
   <div class="stats-inner">
-    <div class="stat">
-      <div class="stat-val" id="s-overall">–</div>
-      <div class="stat-label">Overall</div>
-    </div>
-    <div class="stat">
-      <div class="stat-val" id="s-sec">–</div>
-      <div class="stat-label">SEC</div>
-    </div>
-    <div class="stat">
-      <div class="stat-val" id="s-home">–</div>
-      <div class="stat-label">Home</div>
-    </div>
-    <div class="stat">
-      <div class="stat-val" id="s-away">–</div>
-      <div class="stat-label">Away</div>
-    </div>
-    <div class="stat">
-      <div class="stat-val" id="s-diff">–</div>
-      <div class="stat-label">Run Diff</div>
-    </div>
-    <div class="stat">
-      <div class="stat-val" id="s-streak">–</div>
-      <div class="stat-label">Streak</div>
-    </div>
+    <div class="stat"><div class="stat-val" id="s-overall">–</div><div class="stat-label">Overall</div></div>
+    <div class="stat"><div class="stat-val" id="s-sec">–</div><div class="stat-label">SEC</div></div>
+    <div class="stat"><div class="stat-val" id="s-ranked">–</div><div class="stat-label">vs Ranked</div></div>
+    <div class="stat"><div class="stat-val" id="s-home">–</div><div class="stat-label">Home</div></div>
+    <div class="stat"><div class="stat-val" id="s-away">–</div><div class="stat-label">Away</div></div>
+    <div class="stat"><div class="stat-val" id="s-diff">–</div><div class="stat-label">Run Diff</div></div>
+    <div class="stat"><div class="stat-val" id="s-streak">–</div><div class="stat-label">Streak</div></div>
   </div>
 </div>
 
-<!-- ── Filters ── -->
-<div class="filters-wrap">
-  <div class="filters-inner">
+<div class="toolbar">
+  <div class="toolbar-inner">
+    <div class="search-wrap">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input class="search-input" id="search" placeholder="Search opponent…" oninput="render()" autocomplete="off">
+    </div>
+    <select class="sort-select" id="sort" onchange="render()">
+      <option value="date-desc">Newest First</option>
+      <option value="date-asc">Oldest First</option>
+      <option value="rank">By Opp. Rank</option>
+      <option value="rundiff">By Run Diff</option>
+      <option value="result">Wins First</option>
+    </select>
+  </div>
+</div>
+
+<div class="pills-wrap">
+  <div class="pills-inner">
     <button class="pill active" onclick="setFilter('all',this)">All</button>
     <button class="pill" onclick="setFilter('upcoming',this)">Upcoming</button>
     <button class="pill" onclick="setFilter('W',this)">Wins</button>
@@ -669,19 +760,18 @@ header {
     <button class="pill" onclick="setFilter('Home',this)">Home</button>
     <button class="pill" onclick="setFilter('Away',this)">Away</button>
     <button class="pill" onclick="setFilter('sec',this)">SEC</button>
+    <button class="pill" onclick="setFilter('ranked',this)">vs Ranked</button>
   </div>
 </div>
 
-<!-- ── Content ── -->
 <div class="content" id="content">
-  <div class="loading">Loading schedule…</div>
+  <div class="loading">Loading…</div>
 </div>
 
 <script>
-/* ── State ── */
-let GAMES = [];
-let META  = {};
+let GAMES = [], META = {};
 let activeFilter = 'all';
+let trendChart = null, wlChart = null;
 let theme = localStorage.getItem('theme') || 'light';
 
 /* ── Theme ── */
@@ -689,83 +779,89 @@ function toggleTheme() {
   theme = theme === 'light' ? 'dark' : 'light';
   applyTheme();
   localStorage.setItem('theme', theme);
+  if (trendChart || wlChart) { destroyCharts(); renderCharts(); }
 }
-
 function applyTheme() {
   document.documentElement.setAttribute('data-theme', theme);
   document.getElementById('theme-btn').textContent = theme === 'light' ? '🌙' : '☀️';
 }
-
 applyTheme();
 
-/* ── Load Data ── */
+/* ── Load ── */
 async function loadData() {
   try {
-    const res = await fetch('./arkansas_schedule.json?t=' + Date.now());
-    const data = await res.json();
-    GAMES = data.games || [];
-    META  = { ...(data.summary || data.stats || {}), last_updated: data.last_updated };
+    const r = await fetch('./arkansas_schedule.json?t=' + Date.now());
+    const d = await r.json();
+    GAMES = d.games || [];
+    META = { ...(d.summary || d.stats || {}), last_updated: d.last_updated };
     renderStats();
-    renderContent();
+    render();
   } catch(e) {
-    document.getElementById('content').innerHTML =
-      '<div class="empty">Could not load schedule data.<br>Check that arkansas_schedule.json exists.</div>';
+    document.getElementById('content').innerHTML = '<div class="empty">Could not load schedule data.</div>';
   }
 }
 
 /* ── Stats ── */
 function renderStats() {
-  const played = GAMES.filter(g => g.result === 'W' || g.result === 'L');
-  const W = played.filter(g => g.result === 'W').length;
-  const L = played.filter(g => g.result === 'L').length;
-  const secP = played.filter(g => g.is_conference);
-  const sW = secP.filter(g => g.result === 'W').length;
-  const sL = secP.filter(g => g.result === 'L').length;
-  const hP = played.filter(g => g.location_type === 'Home');
-  const hW = hP.filter(g => g.result === 'W').length;
-  const hL = hP.filter(g => g.result === 'L').length;
-  const aP = played.filter(g => g.location_type === 'Away');
-  const aW = aP.filter(g => g.result === 'W').length;
-  const aL = aP.filter(g => g.result === 'L').length;
-  const rf = played.reduce((a,g) => a + (g.ark_score||0), 0);
-  const ra = played.reduce((a,g) => a + (g.opp_score||0), 0);
+  const played = GAMES.filter(g => g.result==='W'||g.result==='L');
+  const W = played.filter(g=>g.result==='W').length;
+  const L = played.filter(g=>g.result==='L').length;
+  const sec = played.filter(g=>g.is_conference);
+  const sW = sec.filter(g=>g.result==='W').length;
+  const sL = sec.filter(g=>g.result==='L').length;
+  const ranked = played.filter(g=>g.opponent_rank);
+  const rW = ranked.filter(g=>g.result==='W').length;
+  const rL = ranked.filter(g=>g.result==='L').length;
+  const home = played.filter(g=>g.location_type==='Home');
+  const hW = home.filter(g=>g.result==='W').length;
+  const hL = home.filter(g=>g.result==='L').length;
+  const away = played.filter(g=>g.location_type==='Away');
+  const aW = away.filter(g=>g.result==='W').length;
+  const aL = away.filter(g=>g.result==='L').length;
+  const rf = played.reduce((a,g)=>a+(g.ark_score||0),0);
+  const ra = played.reduce((a,g)=>a+(g.opp_score||0),0);
   const diff = rf - ra;
 
-  // Streak
+  // streak
   let streak = '–';
   const rev = [...played].reverse();
   if (rev.length) {
-    let last = rev[0].result, cnt = 0;
-    for (const g of rev) { if (g.result === last) cnt++; else break; }
-    streak = last + cnt;
+    let last=rev[0].result, cnt=0;
+    for (const g of rev) { if(g.result===last) cnt++; else break; }
+    streak = last+cnt;
   }
 
-  document.getElementById('header-record').textContent = `${W}–${L}`;
+  document.getElementById('hdr-record').textContent = `${W}–${L}`;
   document.getElementById('s-overall').textContent = `${W}–${L}`;
   document.getElementById('s-sec').textContent = `${sW}–${sL}`;
+  document.getElementById('s-ranked').textContent = `${rW}–${rL}`;
   document.getElementById('s-home').textContent = `${hW}–${hL}`;
   document.getElementById('s-away').textContent = `${aW}–${aL}`;
 
-  const diffEl = document.getElementById('s-diff');
-  diffEl.textContent = (diff >= 0 ? '+' : '') + diff;
-  diffEl.className = 'stat-val ' + (diff > 0 ? 'positive' : diff < 0 ? 'negative' : '');
+  const dEl = document.getElementById('s-diff');
+  dEl.textContent = (diff>=0?'+':'')+diff;
+  dEl.className = 'stat-val '+(diff>0?'pos':diff<0?'neg':'');
 
-  const strEl = document.getElementById('s-streak');
-  strEl.textContent = streak;
-  if (streak.startsWith('W')) strEl.className = 'stat-val positive';
-  else if (streak.startsWith('L')) strEl.className = 'stat-val negative';
+  const sEl = document.getElementById('s-streak');
+  sEl.textContent = streak;
+  sEl.className = 'stat-val '+(streak.startsWith('W')?'pos':streak.startsWith('L')?'neg':'');
 }
 
 /* ── Filter ── */
 function setFilter(f, btn) {
   activeFilter = f;
-  document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.pill').forEach(p=>p.classList.remove('active'));
   btn.classList.add('active');
-  renderContent();
+  render();
 }
 
-function filtered() {
-  return GAMES.filter(g => {
+function getFiltered() {
+  const q = document.getElementById('search').value.toLowerCase().trim();
+  const sort = document.getElementById('sort').value;
+
+  let games = GAMES.filter(g => {
+    const oppMatch = !q || cleanOpp(g.opponent).toLowerCase().includes(q);
+    if (!oppMatch) return false;
     if (activeFilter === 'all') return true;
     if (activeFilter === 'upcoming') return g.result === 'Upcoming';
     if (activeFilter === 'W') return g.result === 'W';
@@ -773,140 +869,76 @@ function filtered() {
     if (activeFilter === 'Home') return g.location_type === 'Home';
     if (activeFilter === 'Away') return g.location_type === 'Away';
     if (activeFilter === 'sec') return g.is_conference;
+    if (activeFilter === 'ranked') return g.opponent_rank;
     return true;
   });
+
+  // Sort
+  games = [...games];
+  if (sort === 'date-desc') games.sort((a,b) => dateVal(b) - dateVal(a));
+  else if (sort === 'date-asc') games.sort((a,b) => dateVal(a) - dateVal(b));
+  else if (sort === 'rank') games.sort((a,b) => {
+    const ar = a.opponent_rank || 999, br = b.opponent_rank || 999;
+    return ar - br;
+  });
+  else if (sort === 'rundiff') games.sort((a,b) => {
+    const ad = (a.ark_score||0)-(a.opp_score||0);
+    const bd = (b.ark_score||0)-(b.opp_score||0);
+    return bd - ad;
+  });
+  else if (sort === 'result') games.sort((a,b) => {
+    const order = {W:0, L:1, Upcoming:2, Canceled:3};
+    return (order[a.result]||3) - (order[b.result]||3);
+  });
+
+  return games;
 }
 
-/* ── Render ── */
-function renderContent() {
-  const games = filtered();
-  const upcoming = games.filter(g => g.result === 'Upcoming');
-  const results  = games.filter(g => g.result !== 'Upcoming');
+/* ── Main Render ── */
+function render() {
+  destroyCharts();
+  const games = getFiltered();
+  const upcoming = games.filter(g=>g.result==='Upcoming');
+  const played   = games.filter(g=>g.result!=='Upcoming');
+  const q = document.getElementById('search').value.trim();
+  const sort = document.getElementById('sort').value;
+  const searching = q.length > 0;
+  const sorted = sort !== 'date-desc' && sort !== 'date-asc';
+
   let html = '';
 
-  /* Upcoming section */
-  if (upcoming.length && (activeFilter === 'all' || activeFilter === 'upcoming' || activeFilter === 'Home' || activeFilter === 'Away' || activeFilter === 'sec')) {
+  /* Splits + Charts — only when showing all games, no search */
+  if (!searching && (activeFilter === 'all' || activeFilter === 'sec' || activeFilter === 'ranked')) {
+    html += renderSplits();
+    html += renderChartPlaceholders();
+  }
+
+  /* Upcoming */
+  if (upcoming.length) {
     html += `<div class="section-label">Upcoming Games</div>`;
     const [next, ...rest] = upcoming;
-
-    /* Hero card */
-    const rankStr = next.opponent_rank ? `<span class="rank-badge">#${next.opponent_rank}</span>` : '';
-    const locCls = next.location_type === 'Home' ? 'home' : '';
-    const secStr = next.is_conference ? `<span class="meta-chip sec">SEC</span>` : '';
-    html += `
-      <div class="upcoming-hero" style="animation-delay:.05s">
-        <div class="upcoming-hero-top">
-          <span class="label">Next Game</span>
-          <div class="live-dot"></div>
-        </div>
-        <div class="upcoming-hero-body">
-          <div class="upcoming-matchup">
-            <div class="team-block">
-              <div class="team-name">Arkansas</div>
-              <div class="team-record" id="ark-record">–</div>
-            </div>
-            <div class="vs-block">
-              <div class="vs-time">${next.time_ct || 'TBD'}</div>
-              <div class="vs-date">${next.day_of_week || ''} · ${shortDate(next.game_date)}</div>
-            </div>
-            <div class="team-block">
-              <div class="team-name" style="display:flex;align-items:center;gap:5px;justify-content:center">${rankStr}${cleanOpp(next.opponent)}</div>
-              <div class="team-record">${next.city || ''}</div>
-            </div>
-          </div>
-          <div class="upcoming-meta">
-            <span class="meta-chip ${locCls}">${next.location_type}</span>
-            ${secStr}
-            ${next.series_name ? `<span class="meta-chip">${next.series_name}</span>` : ''}
-          </div>
-        </div>
-      </div>`;
-
-    /* Remaining upcoming */
-    rest.forEach((g, i) => {
-      const rk = g.opponent_rank ? `<span class="rank-badge">#${g.opponent_rank}</span>` : '';
-      const lc = (g.location_type || '').toLowerCase();
-      html += `
-        <div class="upcoming-small" style="animation-delay:${.1 + i*.04}s">
-          <div class="upcoming-date-col">
-            <div class="up-day">${g.day_of_week || ''}</div>
-            <div class="up-num">${dayNum(g.game_date)}</div>
-            <div class="up-month">${monthStr(g.game_date)}</div>
-          </div>
-          <div class="upcoming-opp">
-            <div class="up-opp-name">${rk}${cleanOpp(g.opponent)}</div>
-            <div class="up-meta">
-              <span>${g.location_type}</span>
-              <span>·</span>
-              <span>${g.city || ''}</span>
-              ${g.is_conference ? '<span>·</span><span style="color:var(--upcoming)">SEC</span>' : ''}
-            </div>
-          </div>
-          <div class="up-time-col">
-            <div class="up-time">${g.time_ct || 'TBD'}</div>
-            <div class="up-loc">${monthStr(g.game_date)} ${dayNum(g.game_date)}</div>
-          </div>
-        </div>`;
-    });
+    html += renderNextHero(next);
+    rest.forEach((g,i) => { html += renderUpcomingSmall(g, i); });
+    if (played.length) html += `<div class="section-gap"></div>`;
   }
 
-  /* Results section */
-  if (results.length) {
-    if (upcoming.length && html) {
-      html += `<div class="section-gap"></div>`;
+  /* Results */
+  if (played.length) {
+    html += `<div class="section-label">${upcoming.length ? 'Results' : 'Schedule'}</div>`;
+
+    if (searching || sorted) {
+      /* Flat list when searching or sorting */
+      played.forEach((g,i) => { html += renderGameCard(g, i); });
+    } else {
+      /* Series grouped view */
+      html += renderSeriesGroups(played);
     }
-    html += `<div class="section-label">Results</div>`;
-
-    const months = [...new Set(results.map(g => monthStr(g.game_date)))];
-    const MONTH_ORDER = ['Feb','Mar','Apr','May','Jun'];
-    months.sort((a,b) => MONTH_ORDER.indexOf(b) - MONTH_ORDER.indexOf(a));
-
-    months.forEach(month => {
-      const mg = results.filter(g => monthStr(g.game_date) === month);
-      html += `<div class="month-label">${fullMonth(month)}</div>`;
-      mg.reverse().forEach((g, i) => {
-        const rc = g.result === 'W' ? 'win' : g.result === 'L' ? 'loss' : 'canceled';
-        const rb = g.result === 'W' ? 'W' : g.result === 'L' ? 'L' : 'C';
-        const rk = g.opponent_rank ? `<span class="rank-badge">#${g.opponent_rank}</span>` : '';
-        const lc = (g.location_type || '').toLowerCase();
-        const sc = g.is_conference ? `<span class="sec-tag">SEC</span>` : '';
-        const inn = g.innings ? ` (${g.innings})` : '';
-        const scoreHtml = (g.result === 'W' || g.result === 'L')
-          ? `<div class="score-num">${g.ark_score}–${g.opp_score}</div><div class="score-sub">ARK–OPP${inn}</div>`
-          : `<div class="score-sub" style="color:var(--text3);font-size:12px">Canceled</div>`;
-        const href = g.recap_url ? `href="${g.recap_url}" target="_blank"` : '';
-        html += `
-          <a class="result-card ${rc}" ${href} style="animation-delay:${i*.03}s">
-            <div class="r-date">
-              <div class="r-day">${g.day_of_week||''}</div>
-              <div class="r-num">${dayNum(g.game_date)}</div>
-              <div class="r-mon">${monthStr(g.game_date)}</div>
-            </div>
-            <div class="r-info">
-              <div class="r-opp">
-                <span class="loc-tag ${lc}">${g.location_type}</span>
-                ${rk}${cleanOpp(g.opponent)}${sc}
-              </div>
-              <div class="r-sub">
-                <span>${g.city||''}</span>
-                ${g.series_name ? `<span class="dot">·</span><span>${g.series_name}</span>` : ''}
-              </div>
-            </div>
-            <div class="r-score">
-              <span class="result-badge ${rb}">${rb === 'C' ? 'CXLD' : rb}</span>
-              ${scoreHtml}
-            </div>
-          </a>`;
-      });
-    });
   }
 
-  /* Empty */
-  if (!html) {
-    html = '<div class="empty">No games match this filter.</div>';
+  if (!upcoming.length && !played.length) {
+    html += '<div class="empty">No games match your search.</div>';
   }
 
-  /* Timestamp */
   if (META.last_updated) {
     const d = new Date(META.last_updated);
     html += `<div class="updated">Last updated ${d.toLocaleDateString('en-US',{month:'short',day:'numeric'})} at ${d.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'})}</div>`;
@@ -914,41 +946,368 @@ function renderContent() {
 
   document.getElementById('content').innerHTML = html;
 
-  /* Set ark record in hero */
-  const played = GAMES.filter(g => g.result==='W'||g.result==='L');
-  const W = played.filter(g=>g.result==='W').length;
-  const L = played.filter(g=>g.result==='L').length;
-  const el = document.getElementById('ark-record');
-  if (el) el.textContent = `${W}–${L}`;
+  /* Render charts after DOM update */
+  if (!searching && (activeFilter === 'all' || activeFilter === 'sec' || activeFilter === 'ranked')) {
+    renderCharts();
+  }
+}
+
+/* ── Splits ── */
+function renderSplits() {
+  const played = GAMES.filter(g=>g.result==='W'||g.result==='L');
+
+  function rec(arr) {
+    const w = arr.filter(g=>g.result==='W').length;
+    const l = arr.filter(g=>g.result==='L').length;
+    const pct = (w+l) > 0 ? Math.round(w/(w+l)*100) : 0;
+    return { w, l, pct };
+  }
+
+  const ranked = rec(played.filter(g=>g.opponent_rank));
+  const home   = rec(played.filter(g=>g.location_type==='Home'));
+  const away   = rec(played.filter(g=>g.location_type==='Away'));
+  const fri    = rec(played.filter(g=>g.day_of_week==='Fri'));
+  const sec    = rec(played.filter(g=>g.is_conference));
+  const extras = rec(played.filter(g=>g.innings && g.innings > 9));
+
+  function card(title, r) {
+    return `
+      <div class="split-card">
+        <div class="split-title">${title}</div>
+        <div class="split-record">${r.w}–${r.l}</div>
+        <div class="split-pct">${r.pct}% win rate</div>
+        <div class="split-bar"><div class="split-bar-fill" style="width:${r.pct}%"></div></div>
+      </div>`;
+  }
+
+  return `
+    <div class="section-label">Splits</div>
+    <div class="splits-grid" style="margin-bottom:20px">
+      ${card('vs Ranked', ranked)}
+      ${card('Home Games', home)}
+      ${card('Away Games', away)}
+      ${card('SEC Games', sec)}
+      ${card('Friday Games', fri)}
+      ${card('Extra Innings', extras)}
+    </div>`;
+}
+
+/* ── Chart Placeholders ── */
+function renderChartPlaceholders() {
+  return `
+    <div class="section-label">Trends</div>
+    <div class="chart-card animate">
+      <div class="chart-title">Win % Over Season</div>
+      <div class="chart-sub">Rolling win percentage as the season progresses</div>
+      <div class="chart-wrap"><canvas id="trend-chart"></canvas></div>
+    </div>
+    <div class="chart-card animate">
+      <div class="chart-title">Win / Loss by Game</div>
+      <div class="chart-sub">Run differential per game — green = win, red = loss</div>
+      <div class="chart-wrap"><canvas id="wl-chart"></canvas></div>
+    </div>
+    <div class="chart-card animate">
+      <div class="chart-title">Win % by Day of Week</div>
+      <div class="chart-sub">How Arkansas performs on each day</div>
+      ${renderDowChart()}
+    </div>
+    <div class="section-gap"></div>`;
+}
+
+/* ── Chart: Win % trend ── */
+function renderCharts() {
+  const played = GAMES.filter(g=>g.result==='W'||g.result==='L')
+    .sort((a,b)=>dateVal(a)-dateVal(b));
+
+  const isDark = theme === 'dark';
+  const gridColor = isDark ? 'rgba(255,255,255,.06)' : 'rgba(0,0,0,.06)';
+  const textColor = isDark ? '#5a6275' : '#8d97a5';
+
+  /* Trend chart */
+  const trendCtx = document.getElementById('trend-chart');
+  if (trendCtx) {
+    let wins = 0;
+    const labels = [], data = [];
+    played.forEach((g,i) => {
+      if (g.result==='W') wins++;
+      labels.push(shortDate(g.game_date));
+      data.push(Math.round(wins/(i+1)*100));
+    });
+
+    trendChart = new Chart(trendCtx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [{
+          data,
+          borderColor: '#CC0000',
+          borderWidth: 2,
+          pointRadius: 0,
+          pointHoverRadius: 4,
+          fill: true,
+          backgroundColor: isDark ? 'rgba(204,0,0,.15)' : 'rgba(204,0,0,.08)',
+          tension: .4
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: {
+          callbacks: { label: ctx => ` ${ctx.parsed.y}% win rate` }
+        }},
+        scales: {
+          x: { display: false },
+          y: {
+            min: 0, max: 100,
+            grid: { color: gridColor },
+            ticks: { color: textColor, callback: v => v+'%', maxTicksLimit: 4 }
+          }
+        }
+      }
+    });
+  }
+
+  /* W/L bar chart */
+  const wlCtx = document.getElementById('wl-chart');
+  if (wlCtx) {
+    const labels = played.map(g => shortDate(g.game_date));
+    const data   = played.map(g => {
+      const diff = (g.ark_score||0) - (g.opp_score||0);
+      return diff;
+    });
+    const colors = played.map(g => g.result==='W'
+      ? (isDark ? 'rgba(46,204,113,.7)' : 'rgba(11,110,49,.7)')
+      : (isDark ? 'rgba(231,76,60,.7)' : 'rgba(177,39,4,.7)')
+    );
+
+    wlChart = new Chart(wlCtx, {
+      type: 'bar',
+      data: {
+        labels,
+        datasets: [{
+          data,
+          backgroundColor: colors,
+          borderRadius: 3,
+          borderSkipped: false
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: {
+          callbacks: { label: ctx => {
+            const g = played[ctx.dataIndex];
+            return ` ARK ${g.ark_score}–${g.opp_score} ${cleanOpp(g.opponent)}`;
+          }}
+        }},
+        scales: {
+          x: { display: false },
+          y: {
+            grid: { color: gridColor },
+            ticks: { color: textColor, maxTicksLimit: 5 }
+          }
+        }
+      }
+    });
+  }
+}
+
+function destroyCharts() {
+  if (trendChart) { trendChart.destroy(); trendChart = null; }
+  if (wlChart)    { wlChart.destroy();    wlChart = null; }
+}
+
+/* ── Day of Week Chart ── */
+function renderDowChart() {
+  const days = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+  const played = GAMES.filter(g=>g.result==='W'||g.result==='L');
+  const maxPct = 100;
+
+  const bars = days.map(day => {
+    const d = played.filter(g=>g.day_of_week===day);
+    const w = d.filter(g=>g.result==='W').length;
+    const pct = d.length > 0 ? Math.round(w/d.length*100) : null;
+    return { day, w, total: d.length, pct };
+  });
+
+  const html = bars.map(b => `
+    <div class="dow-col">
+      <div class="dow-bar-wrap">
+        <div class="dow-bar ${b.pct===null?'dow-bar-empty':''}" style="height:${b.pct !== null ? b.pct : 15}%"></div>
+      </div>
+      <div class="dow-label">${b.day}</div>
+      <div class="dow-pct">${b.pct !== null ? b.pct+'%' : '–'}</div>
+    </div>`).join('');
+
+  return `<div class="dow-grid">${html}</div>`;
+}
+
+/* ── Series Grouping ── */
+function renderSeriesGroups(games) {
+  /* Group by opponent base name + approximate week */
+  const groups = [];
+  const used = new Set();
+
+  games.forEach(g => {
+    if (used.has(g.game_date + g.opponent)) return;
+    const base = cleanOpp(g.opponent);
+    const dv = dateVal(g);
+
+    /* Find all games vs same opponent within 5 days */
+    const series = games.filter(g2 => {
+      const b2 = cleanOpp(g2.opponent);
+      const diff = Math.abs(dateVal(g2) - dv);
+      return b2 === base && diff <= 5 * 86400000;
+    });
+
+    series.forEach(s => used.add(s.game_date + s.opponent));
+
+    /* Determine if midweek (Tue/Wed/Mon/Thu) or weekend */
+    const isMidweek = series.every(s => ['Mon','Tue','Wed','Thu'].includes(s.day_of_week));
+    const label = isMidweek ? `Midweek — ${base}` : `${base} Series`;
+
+    const played_s = series.filter(s=>s.result==='W'||s.result==='L');
+    const w = played_s.filter(s=>s.result==='W').length;
+    const l = played_s.filter(s=>s.result==='L').length;
+    const hasUpcoming = series.some(s=>s.result==='Upcoming');
+
+    let recClass='split', recText=`${w}-${l}`;
+    if (hasUpcoming && played_s.length === 0) { recClass='upcoming'; recText='Upcoming'; }
+    else if (hasUpcoming) { recClass='upcoming'; recText=`${w}-${l}`; }
+    else if (w > l && l === 0) { recClass='sweep'; recText=`Sweep ${w}-0`; }
+    else if (l > w && w === 0) { recClass='loss';  recText=`${w}-${l}`; }
+    else if (w > l) { recClass='sweep'; recText=`${w}-${l} W`; }
+    else if (l > w) { recClass='loss';  recText=`${w}-${l} L`; }
+
+    groups.push({ label, series, recClass, recText });
+  });
+
+  return groups.map(grp => `
+    <div class="series-group">
+      <div class="series-header">
+        <div class="series-name">${grp.label}</div>
+        <div class="series-record ${grp.recClass}">${grp.recText}</div>
+      </div>
+      ${grp.series.map((g,i) => renderGameCard(g, i)).join('')}
+    </div>`).join('');
+}
+
+/* ── Next Hero ── */
+function renderNextHero(g) {
+  const rk = g.opponent_rank ? `<span class="rank-badge">#${g.opponent_rank}</span>` : '';
+  const lc = (g.location_type||'').toLowerCase();
+  const sec = g.is_conference ? `<span class="chip sec">SEC</span>` : '';
+  const played = GAMES.filter(x=>x.result==='W'||x.result==='L');
+  const W = played.filter(x=>x.result==='W').length;
+  const L = played.filter(x=>x.result==='L').length;
+
+  return `
+    <div class="next-hero animate">
+      <div class="next-hero-bar">
+        <span>Next Game</span>
+        <div class="live-dot"></div>
+      </div>
+      <div class="next-hero-body">
+        <div class="next-matchup">
+          <div class="next-team">
+            <div class="next-team-name">Arkansas</div>
+            <div class="next-team-sub">${W}–${L}</div>
+          </div>
+          <div class="next-vs">
+            <div class="next-time">${g.time_ct||'TBD'}</div>
+            <div class="next-date-str">${g.day_of_week||''} · ${shortDate(g.game_date)}</div>
+          </div>
+          <div class="next-team">
+            <div class="next-team-name" style="display:flex;align-items:center;gap:5px;justify-content:center">${rk}${cleanOpp(g.opponent)}</div>
+            <div class="next-team-sub">${g.city||''}</div>
+          </div>
+        </div>
+        <div class="next-chips">
+          <span class="chip ${lc}">${g.location_type}</span>
+          ${sec}
+          ${g.series_name ? `<span class="chip">${g.series_name}</span>` : ''}
+        </div>
+      </div>
+    </div>`;
+}
+
+function renderUpcomingSmall(g, i) {
+  const rk = g.opponent_rank ? `<span class="rank-badge">#${g.opponent_rank}</span>` : '';
+  const lc = (g.location_type||'').toLowerCase();
+  return `
+    <div class="game-card animate" style="animation-delay:${i*.04}s">
+      <div class="g-date">
+        <div class="g-day">${g.day_of_week||''}</div>
+        <div class="g-num">${dayNum(g.game_date)}</div>
+        <div class="g-mon">${monStr(g.game_date)}</div>
+      </div>
+      <div class="g-info">
+        <div class="g-opp">
+          <span class="loc-tag ${lc}">${g.location_type}</span>
+          ${rk}${cleanOpp(g.opponent)}
+          ${g.is_conference?'<span class="sec-tag">SEC</span>':''}
+        </div>
+        <div class="g-sub">${g.city||''}</div>
+      </div>
+      <div class="g-score">
+        <div class="up-time">${g.time_ct||'TBD'}</div>
+        <div class="score-sub">${monStr(g.game_date)} ${dayNum(g.game_date)}</div>
+      </div>
+    </div>`;
+}
+
+/* ── Game Card ── */
+function renderGameCard(g, i) {
+  const rc = g.result==='W'?'win':g.result==='L'?'loss':'';
+  const rb = g.result==='W'?'W':g.result==='L'?'L':g.result==='Canceled'?'C':'U';
+  const rk = g.opponent_rank ? `<span class="rank-badge">#${g.opponent_rank}</span>` : '';
+  const lc = (g.location_type||'').toLowerCase();
+  const inn = g.innings ? ` (${g.innings})` : '';
+  const href = g.recap_url ? `href="${g.recap_url}" target="_blank"` : '';
+
+  let scoreHtml = '';
+  if (g.result==='W'||g.result==='L') {
+    scoreHtml = `<span class="result-badge ${rb}">${rb}</span>
+      <div class="score-num">${g.ark_score}–${g.opp_score}</div>
+      <div class="score-sub">ARK–OPP${inn}</div>`;
+  } else if (g.result==='Upcoming') {
+    scoreHtml = `<div class="up-time">${g.time_ct||'TBD'}</div>`;
+  } else {
+    scoreHtml = `<span class="result-badge C">CXLD</span>`;
+  }
+
+  return `
+    <a class="game-card ${rc} animate" ${href} style="animation-delay:${i*.025}s">
+      <div class="g-date">
+        <div class="g-day">${g.day_of_week||''}</div>
+        <div class="g-num">${dayNum(g.game_date)}</div>
+        <div class="g-mon">${monStr(g.game_date)}</div>
+      </div>
+      <div class="g-info">
+        <div class="g-opp">
+          <span class="loc-tag ${lc}">${g.location_type}</span>
+          ${rk}${cleanOpp(g.opponent)}
+          ${g.is_conference?'<span class="sec-tag">SEC</span>':''}
+        </div>
+        <div class="g-sub">${g.city||''}</div>
+      </div>
+      <div class="g-score">${scoreHtml}</div>
+    </a>`;
 }
 
 /* ── Helpers ── */
-function cleanOpp(s) {
-  return (s||'').replace(/\s*\[DH-\d\]/i,'').trim();
+function cleanOpp(s) { return (s||'').replace(/\s*\[DH-\d\]/i,'').trim(); }
+function dayNum(d)   { const m=d?.match(/(\d{1,2}),/); return m?m[1]:''; }
+function monStr(d)   { const m=d?.match(/^([A-Za-z]+)/); return m?m[1]:''; }
+function shortDate(d){ return (d||'').replace(', 2026','').replace(',',''); }
+
+const MONTH_IDX = {Jan:1,Feb:2,Mar:3,Apr:4,May:5,Jun:6,Jul:7,Aug:8,Sep:9,Oct:10,Nov:11,Dec:12};
+function dateVal(g) {
+  const m = (g.game_date||'').match(/^([A-Za-z]+)\s+(\d+)/);
+  if (!m) return 0;
+  return (MONTH_IDX[m[1]]||0)*100 + parseInt(m[2]);
 }
 
-function dayNum(dateStr) {
-  if (!dateStr) return '';
-  const m = dateStr.match(/(\d{1,2}),/);
-  return m ? m[1] : '';
-}
-
-function monthStr(dateStr) {
-  if (!dateStr) return '';
-  const m = dateStr.match(/^([A-Za-z]+)/);
-  return m ? m[1] : '';
-}
-
-function shortDate(dateStr) {
-  if (!dateStr) return '';
-  const parts = dateStr.replace(',','').split(' ');
-  return parts.slice(0,2).join(' ');
-}
-
-const FULL_MONTHS = {Feb:'February',Mar:'March',Apr:'April',May:'May',Jun:'June',Jan:'January'};
-function fullMonth(s) { return FULL_MONTHS[s] || s; }
-
-/* ── Init ── */
 loadData();
 </script>
 </body>
