@@ -102,6 +102,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:1
 .opp-name{font-weight:600;color:var(--text);}
 .col-starter{width:110px;color:var(--text2)!important;font-size:12px!important;}
 .col-score{width:88px;white-space:nowrap;}
+.col-opp-rec{width:64px;color:var(--text2)!important;font-size:12px!important;white-space:nowrap;}
 .col-wl{width:52px;color:var(--text2)!important;font-size:12px!important;white-space:nowrap;}
 .col-venue{width:130px;color:var(--text3)!important;font-size:11px!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:130px;}
 
@@ -179,8 +180,8 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:1
   .page-wrap{grid-template-columns:1fr;padding:12px 12px 0;}
   .col-side{order:-1;}
   .hdr-search{max-width:none;flex:1;}
-  .col-venue,.col-starter{display:none!important;}
-  th.h-ven,th.h-str{display:none;}
+  .col-venue,.col-starter,.col-opp-rec{display:none!important;}
+  th.h-ven,th.h-str,th.h-opp-rec{display:none;}
 }
 @media(max-width:600px){
   .hdr-search{display:none;}
@@ -414,6 +415,7 @@ const THEAD=`<thead><tr>
   <th>Opponent</th>
   <th class="h-str" style="width:110px">Weather</th>
   <th style="width:88px">Score</th>
+  <th class="h-opp-rec" style="width:64px" title="Opponent's current season record">Opp</th>
   <th style="width:52px">W-L</th>
   <th class="h-ven" style="width:130px">Venue</th>
 </tr></thead>`;
@@ -457,7 +459,7 @@ function buildSeriesTable(games,label){
     groups.push({seriesLabel,series,bc,bt});
   });
   const rows=groups.map(grp=>{
-    const hdr=`<tr class="series-hdr"><td colspan="7">${grp.seriesLabel}<span class="series-badge ${grp.bc}">${grp.bt}</span></td></tr>`;
+    const hdr=`<tr class="series-hdr"><td colspan="8">${grp.seriesLabel}<span class="series-badge ${grp.bc}">${grp.bt}</span></td></tr>`;
     return hdr+grp.series.map(g=>renderRow(g)).join('');
   }).join('');
   return `<div class="table-wrap animate">
@@ -495,6 +497,7 @@ function renderRow(g){
   } else {
     score=`<span class="res-badge C">CXLD</span>`;
   }
+  const oppRec=g.opp_wins!=null?`${g.opp_wins}–${g.opp_losses}`:'<span style="color:var(--text3)">–</span>';
   const clickable=g.recap_url?` class="clickable" onclick="window.open('${g.recap_url}','_blank')" title="View recap"`:'';
   return `<tr${clickable}>
     <td class="col-date">${shortDate(g.game_date)}</td>
@@ -502,6 +505,7 @@ function renderRow(g){
     <td class="col-opp"><div class="col-opp-inner">${rk}<span class="opp-name">${cleanOpp(g.opponent)}</span>${sec}</div></td>
     <td class="col-starter">${weather}</td>
     <td class="col-score">${score}</td>
+    <td class="col-opp-rec h-opp-rec">${oppRec}</td>
     <td class="col-wl">${wl}</td>
     <td class="col-venue">${venue}</td>
   </tr>`;
