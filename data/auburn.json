@@ -7,7 +7,7 @@
     "color": "0C2340",
     "logo": ""
   },
-  "last_updated": "2026-05-01 19:25",
+  "last_updated": "2026-05-01 19:40",
   "games": [
     {
       "game_date": "Feb 13, 2026",
@@ -23,7 +23,12 @@
       "innings": null,
       "is_conference": 0,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 65,
+      "precip_in": 0.0,
+      "wind_mph": 9,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Feb 14, 2026",
@@ -39,7 +44,12 @@
       "innings": null,
       "is_conference": 0,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 68,
+      "precip_in": 0.0,
+      "wind_mph": 9,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Feb 14, 2026",
@@ -55,7 +65,12 @@
       "innings": null,
       "is_conference": 0,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 68,
+      "precip_in": 0.0,
+      "wind_mph": 9,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Feb 17, 2026",
@@ -71,7 +86,12 @@
       "innings": null,
       "is_conference": 0,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 70,
+      "precip_in": 0.0,
+      "wind_mph": 8,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Feb 20, 2026",
@@ -87,7 +107,12 @@
       "innings": null,
       "is_conference": 0,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 59,
+      "precip_in": 0.0,
+      "wind_mph": 9,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Feb 21, 2026",
@@ -103,7 +128,12 @@
       "innings": null,
       "is_conference": 0,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 60,
+      "precip_in": 0.03,
+      "wind_mph": 14,
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": "actual"
     },
     {
       "game_date": "Feb 22, 2026",
@@ -119,7 +149,12 @@
       "innings": null,
       "is_conference": 0,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 57,
+      "precip_in": 0.0,
+      "wind_mph": 8,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Feb 25, 2026",
@@ -135,7 +170,12 @@
       "innings": null,
       "is_conference": 0,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 66,
+      "precip_in": 0.0,
+      "wind_mph": 15,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Feb 27, 2026",
@@ -151,7 +191,12 @@
       "innings": null,
       "is_conference": 0,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 66,
+      "precip_in": 0.59,
+      "wind_mph": 8,
+      "weather_icon": "\ud83c\udf27",
+      "weather_type": "actual"
     },
     {
       "game_date": "Feb 28, 2026",
@@ -167,7 +212,12 @@
       "innings": null,
       "is_conference": 0,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 71,
+      "precip_in": 0.0,
+      "wind_mph": 7,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Mar 1, 2026",
@@ -183,7 +233,12 @@
       "innings": null,
       "is_conference": 0,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 76,
+      "precip_in": 0.0,
+      "wind_mph": 7,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Mar 3, 2026",
@@ -199,7 +254,12 @@
       "innings": null,
       "is_conference": 0,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 66,
+      "precip_in": 0.01,
+      "wind_mph": 11,
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": "actual"
     },
     {
       "game_date": "Mar 6, 2026",
@@ -215,7 +275,12 @@
       "innings": null,
       "is_conference": 0,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 82,
+      "precip_in": 0.06,
+      "wind_mph": 10,
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": "actual"
     },
     {
       "game_date": "Mar 7, 2026",
@@ -231,7 +296,12 @@
       "innings": null,
       "is_conference": 0,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 82,
+      "precip_in": 0.03,
+      "wind_mph": 10,
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": "actual"
     },
     {
       "game_date": "Mar 7, 2026",
@@ -247,7 +317,12 @@
       "innings": null,
       "is_conference": 0,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 82,
+      "precip_in": 0.03,
+      "wind_mph": 10,
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": "actual"
     },
     {
       "game_date": "Mar 10, 2026",
@@ -263,7 +338,12 @@
       "innings": null,
       "is_conference": 0,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 82,
+      "precip_in": 0.05,
+      "wind_mph": 8,
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": "actual"
     },
     {
       "game_date": "Mar 13, 2026",
@@ -279,7 +359,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 56,
+      "precip_in": 0.0,
+      "wind_mph": 18,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Mar 14, 2026",
@@ -295,7 +380,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 66,
+      "precip_in": 0.0,
+      "wind_mph": 14,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Mar 14, 2026",
@@ -311,7 +401,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 66,
+      "precip_in": 0.0,
+      "wind_mph": 14,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Mar 17, 2026",
@@ -327,7 +422,12 @@
       "innings": null,
       "is_conference": 0,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 49,
+      "precip_in": 0.0,
+      "wind_mph": 10,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Mar 20, 2026",
@@ -343,7 +443,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 75,
+      "precip_in": 0.0,
+      "wind_mph": 8,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Mar 21, 2026",
@@ -359,7 +464,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 79,
+      "precip_in": 0.0,
+      "wind_mph": 9,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Mar 22, 2026",
@@ -375,7 +485,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 81,
+      "precip_in": 0.0,
+      "wind_mph": 10,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Mar 24, 2026",
@@ -391,7 +506,12 @@
       "innings": null,
       "is_conference": 0,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 75,
+      "precip_in": 0.0,
+      "wind_mph": 11,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Mar 27, 2026",
@@ -407,7 +527,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 79,
+      "precip_in": 0.01,
+      "wind_mph": 14,
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": "actual"
     },
     {
       "game_date": "Mar 28, 2026",
@@ -423,7 +548,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 66,
+      "precip_in": 0.0,
+      "wind_mph": 15,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Mar 29, 2026",
@@ -439,7 +569,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 74,
+      "precip_in": 0.0,
+      "wind_mph": 11,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Mar 31, 2026",
@@ -455,7 +590,12 @@
       "innings": null,
       "is_conference": 0,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 81,
+      "precip_in": 0.03,
+      "wind_mph": 8,
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": "actual"
     },
     {
       "game_date": "Apr 2, 2026",
@@ -471,7 +611,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 82,
+      "precip_in": 0.0,
+      "wind_mph": 10,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Apr 3, 2026",
@@ -487,7 +632,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 80,
+      "precip_in": 0.03,
+      "wind_mph": 9,
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": "actual"
     },
     {
       "game_date": "Apr 4, 2026",
@@ -503,7 +653,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 84,
+      "precip_in": 0.09,
+      "wind_mph": 12,
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": "actual"
     },
     {
       "game_date": "Apr 7, 2026",
@@ -519,7 +674,12 @@
       "innings": null,
       "is_conference": 0,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 74,
+      "precip_in": 0.0,
+      "wind_mph": 11,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Apr 10, 2026",
@@ -535,7 +695,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 76,
+      "precip_in": 0.0,
+      "wind_mph": 8,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Apr 11, 2026",
@@ -551,7 +716,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 83,
+      "precip_in": 0.0,
+      "wind_mph": 6,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Apr 12, 2026",
@@ -567,7 +737,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 84,
+      "precip_in": 0.0,
+      "wind_mph": 10,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Apr 14, 2026",
@@ -583,7 +758,12 @@
       "innings": null,
       "is_conference": 0,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 84,
+      "precip_in": 0.0,
+      "wind_mph": 7,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Apr 16, 2026",
@@ -599,7 +779,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 85,
+      "precip_in": 0.0,
+      "wind_mph": 6,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Apr 17, 2026",
@@ -615,7 +800,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 87,
+      "precip_in": 0.0,
+      "wind_mph": 6,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Apr 18, 2026",
@@ -631,7 +821,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 90,
+      "precip_in": 0.0,
+      "wind_mph": 10,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Apr 21, 2026",
@@ -647,7 +842,12 @@
       "innings": null,
       "is_conference": 0,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 79,
+      "precip_in": 0.0,
+      "wind_mph": 6,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Apr 24, 2026",
@@ -663,7 +863,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 82,
+      "precip_in": 0.0,
+      "wind_mph": 7,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "actual"
     },
     {
       "game_date": "Apr 25, 2026",
@@ -679,7 +884,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 77,
+      "precip_in": 0.06,
+      "wind_mph": 8,
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": "actual"
     },
     {
       "game_date": "Apr 26, 2026",
@@ -695,7 +905,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 83,
+      "precip_in": 0.04,
+      "wind_mph": 5,
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": "actual"
     },
     {
       "game_date": "May 2, 2026",
@@ -711,7 +926,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 71,
+      "precip_in": 0.0,
+      "wind_mph": 8,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "forecast"
     },
     {
       "game_date": "May 2, 2026",
@@ -727,7 +947,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 71,
+      "precip_in": 0.0,
+      "wind_mph": 8,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "forecast"
     },
     {
       "game_date": "May 3, 2026",
@@ -743,7 +968,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 76,
+      "precip_in": 0.0,
+      "wind_mph": 9,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "forecast"
     },
     {
       "game_date": "May 5, 2026",
@@ -759,7 +989,12 @@
       "innings": null,
       "is_conference": 0,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 79,
+      "precip_in": 0.0,
+      "wind_mph": 10,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "forecast"
     },
     {
       "game_date": "May 7, 2026",
@@ -775,7 +1010,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 70,
+      "precip_in": 0.07,
+      "wind_mph": 15,
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": "forecast"
     },
     {
       "game_date": "May 8, 2026",
@@ -791,7 +1031,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 77,
+      "precip_in": 0.0,
+      "wind_mph": 9,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "forecast"
     },
     {
       "game_date": "May 9, 2026",
@@ -807,7 +1052,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 85,
+      "precip_in": 0.0,
+      "wind_mph": 8,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "forecast"
     },
     {
       "game_date": "May 12, 2026",
@@ -823,7 +1073,12 @@
       "innings": null,
       "is_conference": 0,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 81,
+      "precip_in": 0.0,
+      "wind_mph": 9,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "forecast"
     },
     {
       "game_date": "May 14, 2026",
@@ -839,7 +1094,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 85,
+      "precip_in": 0.0,
+      "wind_mph": 6,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "forecast"
     },
     {
       "game_date": "May 15, 2026",
@@ -855,7 +1115,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 89,
+      "precip_in": 0.0,
+      "wind_mph": 10,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "forecast"
     },
     {
       "game_date": "May 16, 2026",
@@ -871,7 +1136,12 @@
       "innings": null,
       "is_conference": 1,
       "opp_wins": null,
-      "opp_losses": null
+      "opp_losses": null,
+      "temp_hi": 90,
+      "precip_in": 0.0,
+      "wind_mph": 10,
+      "weather_icon": "\u2600\ufe0f",
+      "weather_type": "forecast"
     }
   ],
   "summary": {
