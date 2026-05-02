@@ -7,7 +7,7 @@
     "color": "9E1B32",
     "logo": ""
   },
-  "last_updated": "2026-05-01 19:40",
+  "last_updated": "2026-05-02 12:05",
   "games": [
     {
       "game_date": "Feb 13, 2026",
@@ -1011,11 +1011,11 @@
       "is_conference": 1,
       "opp_wins": null,
       "opp_losses": null,
-      "temp_hi": 68,
-      "precip_in": 0.11,
-      "wind_mph": 14,
-      "weather_icon": "\ud83c\udf26",
-      "weather_type": "forecast"
+      "temp_hi": 70,
+      "precip_in": 0.07,
+      "wind_mph": 11,
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": "actual"
     },
     {
       "game_date": "May 5, 2026",
@@ -1032,9 +1032,9 @@
       "is_conference": 0,
       "opp_wins": null,
       "opp_losses": null,
-      "temp_hi": 80,
+      "temp_hi": 81,
       "precip_in": 0.0,
-      "wind_mph": 8,
+      "wind_mph": 10,
       "weather_icon": "\u2600\ufe0f",
       "weather_type": "forecast"
     },
@@ -1053,9 +1053,9 @@
       "is_conference": 1,
       "opp_wins": null,
       "opp_losses": null,
-      "temp_hi": 74,
+      "temp_hi": 76,
       "precip_in": 0.0,
-      "wind_mph": 9,
+      "wind_mph": 10,
       "weather_icon": "\u2600\ufe0f",
       "weather_type": "forecast"
     },
@@ -1074,9 +1074,9 @@
       "is_conference": 1,
       "opp_wins": null,
       "opp_losses": null,
-      "temp_hi": 86,
+      "temp_hi": 87,
       "precip_in": 0.0,
-      "wind_mph": 6,
+      "wind_mph": 12,
       "weather_icon": "\u2600\ufe0f",
       "weather_type": "forecast"
     },
@@ -1095,10 +1095,10 @@
       "is_conference": 1,
       "opp_wins": null,
       "opp_losses": null,
-      "temp_hi": 91,
-      "precip_in": 0.01,
-      "wind_mph": 14,
-      "weather_icon": "\ud83c\udf24",
+      "temp_hi": 92,
+      "precip_in": 0.0,
+      "wind_mph": 13,
+      "weather_icon": "\u2600\ufe0f",
       "weather_type": "forecast"
     },
     {
@@ -1116,9 +1116,9 @@
       "is_conference": 1,
       "opp_wins": null,
       "opp_losses": null,
-      "temp_hi": 89,
+      "temp_hi": 85,
       "precip_in": 0.0,
-      "wind_mph": 8,
+      "wind_mph": 4,
       "weather_icon": "\u2600\ufe0f",
       "weather_type": "forecast"
     },
@@ -1137,7 +1137,7 @@
       "is_conference": 1,
       "opp_wins": null,
       "opp_losses": null,
-      "temp_hi": 89,
+      "temp_hi": 90,
       "precip_in": 0.0,
       "wind_mph": 7,
       "weather_icon": "\u2600\ufe0f",
@@ -1158,11 +1158,11 @@
       "is_conference": 1,
       "opp_wins": null,
       "opp_losses": null,
-      "temp_hi": 83,
-      "precip_in": 0.01,
-      "wind_mph": 12,
-      "weather_icon": "\ud83c\udf24",
-      "weather_type": "forecast"
+      "temp_hi": null,
+      "precip_in": null,
+      "wind_mph": null,
+      "weather_icon": null,
+      "weather_type": null
     }
   ],
   "summary": {

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-01 18:44",
+  "last_updated": "2026-05-02 12:05",
   "games": [
     {
       "game_date": "Feb 13, 2026",
@@ -22,7 +22,7 @@
       "wind_mph": 11.0,
       "weather_icon": "\u2600\ufe0f",
       "weather_type": null,
-      "opp_wins": 28,
+      "opp_wins": 29,
       "opp_losses": 17
     },
     {
@@ -47,7 +47,7 @@
       "weather_icon": "\ud83c\udf26",
       "weather_type": null,
       "opp_wins": 29,
-      "opp_losses": 15
+      "opp_losses": 16
     },
     {
       "game_date": "Feb 15, 2026",
@@ -118,7 +118,7 @@
       "wind_mph": 10.0,
       "weather_icon": "\ud83c\udf24",
       "weather_type": null,
-      "opp_wins": 21,
+      "opp_wins": 22,
       "opp_losses": 25
     },
     {
@@ -142,7 +142,7 @@
       "wind_mph": 13.0,
       "weather_icon": "\ud83c\udf24",
       "weather_type": null,
-      "opp_wins": 21,
+      "opp_wins": 22,
       "opp_losses": 25
     },
     {
@@ -166,7 +166,7 @@
       "wind_mph": 14.0,
       "weather_icon": "\u2600\ufe0f",
       "weather_type": null,
-      "opp_wins": 21,
+      "opp_wins": 22,
       "opp_losses": 25
     },
     {
@@ -190,7 +190,7 @@
       "wind_mph": 20.0,
       "weather_icon": "\u2600\ufe0f",
       "weather_type": null,
-      "opp_wins": 26,
+      "opp_wins": 27,
       "opp_losses": 18
     },
     {
@@ -214,7 +214,7 @@
       "wind_mph": 14.0,
       "weather_icon": "\u2600\ufe0f",
       "weather_type": null,
-      "opp_wins": 26,
+      "opp_wins": 27,
       "opp_losses": 18
     },
     {
@@ -335,7 +335,7 @@
       "weather_icon": "\ud83c\udf24",
       "weather_type": null,
       "opp_wins": 18,
-      "opp_losses": 26
+      "opp_losses": 27
     },
     {
       "game_date": "Mar 07, 2026",
@@ -359,7 +359,7 @@
       "weather_icon": "\ud83c\udf26",
       "weather_type": null,
       "opp_wins": 18,
-      "opp_losses": 26
+      "opp_losses": 27
     },
     {
       "game_date": "Mar 08, 2026",
@@ -383,7 +383,7 @@
       "weather_icon": "\u2600\ufe0f",
       "weather_type": null,
       "opp_wins": 18,
-      "opp_losses": 26
+      "opp_losses": 27
     },
     {
       "game_date": "Mar 09, 2026",
@@ -407,7 +407,7 @@
       "weather_icon": "\u2600\ufe0f",
       "weather_type": null,
       "opp_wins": 18,
-      "opp_losses": 26
+      "opp_losses": 27
     },
     {
       "game_date": "Mar 13, 2026",
@@ -431,7 +431,7 @@
       "weather_icon": "\u2600\ufe0f",
       "weather_type": null,
       "opp_wins": 35,
-      "opp_losses": 10
+      "opp_losses": 11
     },
     {
       "game_date": "Mar 14, 2026",
@@ -455,7 +455,7 @@
       "weather_icon": "\u2600\ufe0f",
       "weather_type": null,
       "opp_wins": 35,
-      "opp_losses": 10
+      "opp_losses": 11
     },
     {
       "game_date": "Mar 14, 2026",
@@ -479,7 +479,7 @@
       "weather_icon": "\u2600\ufe0f",
       "weather_type": null,
       "opp_wins": 35,
-      "opp_losses": 10
+      "opp_losses": 11
     },
     {
       "game_date": "Mar 17, 2026",
@@ -623,7 +623,7 @@
       "weather_icon": "\u2600\ufe0f",
       "weather_type": null,
       "opp_wins": 26,
-      "opp_losses": 19
+      "opp_losses": 20
     },
     {
       "game_date": "Mar 27, 2026",
@@ -647,7 +647,7 @@
       "weather_icon": "\ud83c\udf26",
       "weather_type": null,
       "opp_wins": 29,
-      "opp_losses": 16
+      "opp_losses": 17
     },
     {
       "game_date": "Mar 28, 2026",
@@ -671,7 +671,7 @@
       "weather_icon": "\u2600\ufe0f",
       "weather_type": null,
       "opp_wins": 29,
-      "opp_losses": 16
+      "opp_losses": 17
     },
     {
       "game_date": "Mar 29, 2026",
@@ -695,7 +695,7 @@
       "weather_icon": "\u2600\ufe0f",
       "weather_type": null,
       "opp_wins": 29,
-      "opp_losses": 16
+      "opp_losses": 17
     },
     {
       "game_date": "Mar 31, 2026",
@@ -718,7 +718,7 @@
       "wind_mph": 17.0,
       "weather_icon": "\ud83c\udf24",
       "weather_type": null,
-      "opp_wins": 26,
+      "opp_wins": 27,
       "opp_losses": 15
     },
     {
@@ -934,7 +934,7 @@
       "wind_mph": 15.0,
       "weather_icon": "\ud83c\udf24",
       "weather_type": null,
-      "opp_wins": 35,
+      "opp_wins": 36,
       "opp_losses": 11
     },
     {
@@ -958,7 +958,7 @@
       "wind_mph": 20.0,
       "weather_icon": "\u2600\ufe0f",
       "weather_type": null,
-      "opp_wins": 35,
+      "opp_wins": 36,
       "opp_losses": 11
     },
     {
@@ -982,7 +982,7 @@
       "wind_mph": 16.0,
       "weather_icon": "\ud83c\udf27",
       "weather_type": null,
-      "opp_wins": 35,
+      "opp_wins": 36,
       "opp_losses": 11
     },
     {
@@ -1006,7 +1006,7 @@
       "wind_mph": 15.0,
       "weather_icon": "\u2600\ufe0f",
       "weather_type": null,
-      "opp_wins": 26,
+      "opp_wins": 27,
       "opp_losses": 15
     },
     {
@@ -1031,7 +1031,7 @@
       "weather_icon": "\ud83c\udf24",
       "weather_type": null,
       "opp_wins": 21,
-      "opp_losses": 23
+      "opp_losses": 24
     },
     {
       "game_date": "Apr 24, 2026",
@@ -1055,7 +1055,7 @@
       "weather_icon": "\ud83c\udf27",
       "weather_type": null,
       "opp_wins": 21,
-      "opp_losses": 23
+      "opp_losses": 24
     },
     {
       "game_date": "Apr 25, 2026",
@@ -1079,7 +1079,7 @@
       "weather_icon": "\u2600\ufe0f",
       "weather_type": null,
       "opp_wins": 21,
-      "opp_losses": 23
+      "opp_losses": 24
     },
     {
       "game_date": "Apr 28, 2026",
@@ -1137,12 +1137,12 @@
       "city": "Fayetteville, Ark.",
       "opponent": "Ole Miss",
       "opponent_rank": 17,
-      "result": "Upcoming",
-      "ark_score": null,
-      "opp_score": null,
-      "innings": null,
-      "box_score_url": null,
-      "recap_url": null,
+      "result": "W",
+      "ark_score": 12,
+      "opp_score": 2,
+      "innings": 7,
+      "box_score_url": "https://arkansasrazorbacks.com/stats/baseball/2026/ARK47.pdf",
+      "recap_url": "https://arkansasrazorbacks.com/hogs-use-homer-barrage-to-beat-rebs-by-run-rule/",
       "is_conference": 1,
       "series_name": null,
       "temp_hi": 63.0,
@@ -1151,7 +1151,7 @@
       "weather_icon": "\u2600\ufe0f",
       "weather_type": "actual",
       "opp_wins": 31,
-      "opp_losses": 15
+      "opp_losses": 16
     },
     {
       "game_date": "May 02, 2026",
@@ -1169,13 +1169,13 @@
       "recap_url": null,
       "is_conference": 1,
       "series_name": null,
-      "temp_hi": 66.0,
-      "precip_in": 0.0,
-      "wind_mph": 13.0,
-      "weather_icon": "\u2600\ufe0f",
-      "weather_type": "forecast",
+      "temp_hi": 63.0,
+      "precip_in": 0.01,
+      "wind_mph": 10.0,
+      "weather_icon": "\ud83c\udf24",
+      "weather_type": "actual",
       "opp_wins": 31,
-      "opp_losses": 15
+      "opp_losses": 16
     },
     {
       "game_date": "May 03, 2026",
@@ -1193,13 +1193,13 @@
       "recap_url": null,
       "is_conference": 1,
       "series_name": null,
-      "temp_hi": 73.0,
+      "temp_hi": 79.0,
       "precip_in": 0.0,
-      "wind_mph": 15.0,
+      "wind_mph": 14.0,
       "weather_icon": "\u2600\ufe0f",
       "weather_type": "forecast",
       "opp_wins": 31,
-      "opp_losses": 15
+      "opp_losses": 16
     },
     {
       "game_date": "May 08, 2026",
@@ -1219,10 +1219,10 @@
       "series_name": null,
       "temp_hi": 74.0,
       "precip_in": 0.0,
-      "wind_mph": 14.0,
+      "wind_mph": 15.0,
       "weather_icon": "\u2600\ufe0f",
       "weather_type": "forecast",
-      "opp_wins": 29,
+      "opp_wins": 30,
       "opp_losses": 14
     },
     {
@@ -1241,12 +1241,12 @@
       "recap_url": null,
       "is_conference": 1,
       "series_name": null,
-      "temp_hi": 82.0,
+      "temp_hi": 81.0,
       "precip_in": 0.0,
       "wind_mph": 16.0,
       "weather_icon": "\u2600\ufe0f",
       "weather_type": "forecast",
-      "opp_wins": 29,
+      "opp_wins": 30,
       "opp_losses": 14
     },
     {
@@ -1265,12 +1265,12 @@
       "recap_url": null,
       "is_conference": 1,
       "series_name": null,
-      "temp_hi": 70.0,
-      "precip_in": 0.22,
+      "temp_hi": 75.0,
+      "precip_in": 0.66,
       "wind_mph": 18.0,
-      "weather_icon": "\ud83c\udf26",
+      "weather_icon": "\ud83c\udf27",
       "weather_type": "forecast",
-      "opp_wins": 29,
+      "opp_wins": 30,
       "opp_losses": 14
     },
     {
@@ -1289,12 +1289,12 @@
       "recap_url": null,
       "is_conference": 1,
       "series_name": null,
-      "temp_hi": 71.0,
-      "precip_in": 0.04,
-      "wind_mph": 22.0,
-      "weather_icon": "\ud83c\udf24",
+      "temp_hi": 67.0,
+      "precip_in": 0.0,
+      "wind_mph": 20.0,
+      "weather_icon": "\u2600\ufe0f",
       "weather_type": "forecast",
-      "opp_wins": 27,
+      "opp_wins": 28,
       "opp_losses": 15
     },
     {
@@ -1313,12 +1313,12 @@
       "recap_url": null,
       "is_conference": 1,
       "series_name": null,
-      "temp_hi": 72.0,
-      "precip_in": 0.04,
-      "wind_mph": 18.0,
+      "temp_hi": 75.0,
+      "precip_in": 0.01,
+      "wind_mph": 14.0,
       "weather_icon": "\ud83c\udf24",
       "weather_type": "forecast",
-      "opp_wins": 27,
+      "opp_wins": 28,
       "opp_losses": 15
     },
     {
@@ -1337,12 +1337,12 @@
       "recap_url": null,
       "is_conference": 1,
       "series_name": null,
-      "temp_hi": 64.0,
+      "temp_hi": 80.0,
       "precip_in": 0.0,
-      "wind_mph": 9.0,
+      "wind_mph": 19.0,
       "weather_icon": "\u2600\ufe0f",
       "weather_type": "forecast",
-      "opp_wins": 27,
+      "opp_wins": 28,
       "opp_losses": 15
     },
     {
@@ -1371,11 +1371,11 @@
     }
   ],
   "summary": {
-    "overall_record": "30-16",
-    "sec_record": "11-10",
-    "home_record": "18-10",
+    "overall_record": "31-16",
+    "sec_record": "12-10",
+    "home_record": "19-10",
     "away_record": "8-5",
-    "run_differential": 243,
-    "current_streak": "W1"
+    "run_differential": 253,
+    "current_streak": "W2"
   }
 }
