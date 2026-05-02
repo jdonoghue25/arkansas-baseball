@@ -76,7 +76,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:1
 .col-side{display:flex;flex-direction:column;gap:12px;}
 
 /* Table Wrapper */
-.table-wrap{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;margin-bottom:12px;}
+.table-wrap{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow-x:auto;overflow-y:hidden;margin-bottom:12px;}
 .table-section-label{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--text3);padding:12px 14px 6px;}
 
 /* Schedule Table */
@@ -180,8 +180,6 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:1
   .page-wrap{grid-template-columns:1fr;padding:12px 12px 0;}
   .col-side{order:-1;}
   .hdr-search{max-width:none;flex:1;}
-  .col-venue,.col-starter,.col-opp-rec{display:none!important;}
-  th.h-ven,th.h-str,th.h-opp-rec{display:none;}
 }
 @media(max-width:600px){
   .hdr-search{display:none;}
