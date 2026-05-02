@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="page-title">SEC Baseball 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --red:#CC0000;--red-soft:#fff5f5;--red-mid:#ffd5d5;
+  --gold:#b8860b;
+  --bg:#f0f2f2;--surface:#ffffff;--surface2:#f8f9fa;
+  --border:#e3e6e6;--row-border:#f0f0f0;
+  --text:#0f1111;--text2:#565959;--text3:#8d97a5;
+  --hdr-bg:#131921;--hdr-sub:#1a2332;
+  --win:#0b6e31;--win-bg:#e8f5ec;
+  --loss:#b12704;--loss-bg:#fdecea;
+  --upcoming:#0066c0;--upcoming-bg:#ebf3fd;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  --radius:6px;
+}
+[data-theme="dark"]{
+  --bg:#0d0f14;--surface:#161a24;--surface2:#1e2330;
+  --border:#272d3d;--row-border:#1e2330;
+  --text:#e8eaf0;--text2:#9ba3b5;--text3:#5a6275;
+  --hdr-bg:#0a0d14;--hdr-sub:#111827;
+  --win:#2ecc71;--win-bg:rgba(46,204,113,.1);
+  --loss:#e74c3c;--loss-bg:rgba(231,76,60,.1);
+  --upcoming:#5b9bd5;--upcoming-bg:rgba(91,155,213,.1);
+  --red-soft:rgba(204,0,0,.12);--red-mid:rgba(204,0,0,.2);
+}
+body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:100vh;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s;font-size:13px;}
+
+/* Header */
+.hdr{background:var(--hdr-bg);border-bottom:1px solid rgba(255,255,255,.07);position:sticky;top:0;z-index:200;}
+.hdr-inner{max-width:1240px;margin:0 auto;padding:0 20px;height:54px;display:flex;align-items:center;gap:16px;}
+.logo-mark{width:32px;height:32px;background:var(--red);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0;}
+.site-title h1{font-size:15px;font-weight:700;color:#fff;letter-spacing:-.2px;line-height:1.1;}
+.site-title p{font-size:11px;color:rgba(255,255,255,.4);margin-top:1px;}
+.hdr-search{flex:1;max-width:420px;position:relative;}
+.hdr-search svg{position:absolute;left:10px;top:50%;transform:translateY(-50%);width:14px;height:14px;color:rgba(255,255,255,.35);pointer-events:none;}
+.hdr-search input{width:100%;padding:7px 12px 7px 32px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.14);border-radius:4px;color:#fff;font-family:var(--font);font-size:13px;outline:none;transition:border-color .15s,background .15s;}
+.hdr-search input::placeholder{color:rgba(255,255,255,.3);}
+.hdr-search input:focus{border-color:rgba(255,255,255,.35);background:rgba(255,255,255,.15);}
+.hdr-right{margin-left:auto;display:flex;align-items:center;gap:10px;flex-shrink:0;}
+.record-chip{background:rgba(204,0,0,.2);border:1px solid rgba(204,0,0,.4);color:#ff9090;font-size:13px;font-weight:700;padding:4px 10px;border-radius:100px;}
+.icon-btn{width:32px;height:32px;border-radius:50%;border:1px solid rgba(255,255,255,.14);background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:15px;transition:background .15s;}
+.icon-btn:hover{background:rgba(255,255,255,.1);}
+.back-link{color:rgba(255,255,255,.5);font-size:18px;text-decoration:none;line-height:1;padding:4px 6px;border-radius:4px;transition:color .15s;}
+.back-link:hover{color:#fff;}
+
+/* Stats Bar */
+.stats-bar{background:var(--hdr-sub);border-bottom:1px solid rgba(0,0,0,.25);}
+.stats-inner{max-width:1240px;margin:0 auto;padding:0 20px;display:flex;overflow-x:auto;scrollbar-width:none;}
+.stats-inner::-webkit-scrollbar{display:none;}
+.stat{display:flex;flex-direction:column;align-items:center;padding:8px 20px;border-right:1px solid rgba(255,255,255,.07);flex-shrink:0;}
+.stat:last-child{border-right:none;}
+.stat-val{font-size:15px;font-weight:700;color:#fff;line-height:1;letter-spacing:-.3px;}
+.stat-val.pos{color:#2ecc71;}
+.stat-val.neg{color:#e74c3c;}
+.stat-label{font-size:9px;font-weight:600;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.8px;margin-top:3px;}
+
+/* Toolbar */
+.toolbar{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:54px;z-index:100;}
+.toolbar-inner{max-width:1240px;margin:0 auto;padding:0 20px;display:flex;align-items:center;gap:8px;height:44px;overflow-x:auto;scrollbar-width:none;}
+.toolbar-inner::-webkit-scrollbar{display:none;}
+.pills{display:flex;gap:5px;flex-shrink:0;}
+.pill{padding:4px 12px;border-radius:100px;border:1px solid var(--border);background:transparent;color:var(--text2);font-family:var(--font);font-size:12px;font-weight:500;cursor:pointer;transition:all .15s;white-space:nowrap;}
+.pill:hover{border-color:var(--text3);color:var(--text);}
+.pill.active{background:var(--text);border-color:var(--text);color:var(--surface);}
+.toolbar-right{margin-left:auto;flex-shrink:0;}
+.sort-select{padding:5px 24px 5px 8px;border:1px solid var(--border);border-radius:4px;background:var(--surface2);color:var(--text);font-family:var(--font);font-size:12px;font-weight:500;outline:none;cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'%3E%3Cpath fill='%238d97a5' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 6px center;}
+
+/* Page Layout */
+.page-wrap{max-width:1240px;margin:0 auto;padding:16px 20px 0;display:grid;grid-template-columns:1fr 300px;gap:16px;align-items:start;}
+.col-side{display:flex;flex-direction:column;gap:12px;}
+
+/* Table Wrapper */
+.table-wrap{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow-x:auto;overflow-y:hidden;margin-bottom:12px;}
+.table-section-label{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--text3);padding:12px 14px 6px;}
+
+/* Schedule Table */
+.sched-table{width:100%;border-collapse:collapse;}
+.sched-table thead th{font-size:10px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:var(--text3);padding:7px 12px;border-bottom:1px solid var(--border);background:var(--surface2);text-align:left;white-space:nowrap;}
+.sched-table tbody tr{border-bottom:1px solid var(--row-border);transition:background .1s;}
+.sched-table tbody tr:last-child{border-bottom:none;}
+.sched-table tbody tr:hover{background:var(--surface2);}
+.sched-table tbody tr.clickable{cursor:pointer;}
+.sched-table tbody td{padding:8px 12px;vertical-align:middle;font-size:13px;}
+
+/* Series header rows */
+.series-hdr td{padding:6px 12px;background:var(--surface2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);font-size:11px;font-weight:700;color:var(--text2);}
+.series-hdr:first-child td{border-top:none;}
+
+/* Column widths */
+.col-date{width:96px;color:var(--text2)!important;font-size:12px!important;white-space:nowrap;}
+.col-ha{width:28px;font-size:11px!important;font-weight:700;text-transform:uppercase;letter-spacing:.3px;}
+.col-ha.home{color:var(--red)!important;}
+.col-ha.away{color:var(--text3)!important;}
+.col-opp{min-width:150px;}
+.col-opp-inner{display:flex;align-items:center;gap:6px;flex-wrap:nowrap;}
+.opp-name{font-weight:600;color:var(--text);}
+.col-starter{width:110px;color:var(--text2)!important;font-size:12px!important;}
+.col-score{width:88px;white-space:nowrap;}
+.col-opp-rec{width:64px;color:var(--text2)!important;font-size:12px!important;white-space:nowrap;}
+.col-wl{width:52px;color:var(--text2)!important;font-size:12px!important;white-space:nowrap;}
+.col-venue{width:130px;color:var(--text3)!important;font-size:11px!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:130px;}
+
+/* Badges */
+.res-badge{display:inline-block;font-size:10px;font-weight:800;padding:1px 6px;border-radius:3px;margin-right:5px;}
+.res-badge.W{background:var(--win-bg);color:var(--win);}
+.res-badge.L{background:var(--loss-bg);color:var(--loss);}
+.res-badge.C{background:var(--surface2);color:var(--text3);}
+.rank-tag{font-size:10px;font-weight:700;color:#fff;background:var(--gold);padding:1px 5px;border-radius:3px;flex-shrink:0;}
+.sec-tag{font-size:9px;font-weight:600;color:var(--text3);background:var(--surface2);padding:1px 5px;border-radius:3px;border:1px solid var(--border);flex-shrink:0;}
+.series-badge{display:inline-block;font-size:10px;font-weight:700;padding:1px 8px;border-radius:100px;margin-left:8px;}
+.series-badge.sweep{background:var(--win-bg);color:var(--win);}
+.series-badge.loss-s{background:var(--loss-bg);color:var(--loss);}
+.series-badge.split{background:var(--surface2);color:var(--text2);border:1px solid var(--border);}
+.series-badge.upcoming-s{background:var(--upcoming-bg);color:var(--upcoming);}
+.up-time{color:var(--upcoming);font-weight:700;}
+
+/* Sidebar Cards */
+.side-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;}
+.side-head{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text3);padding:9px 14px;border-bottom:1px solid var(--border);background:var(--surface2);display:flex;align-items:center;justify-content:space-between;}
+.live-dot{width:6px;height:6px;background:var(--red);border-radius:50%;animation:blink 1.4s infinite;}
+
+/* Next Game */
+.next-matchup{padding:14px;display:flex;align-items:center;justify-content:space-between;gap:8px;border-bottom:1px solid var(--border);}
+.next-team{text-align:center;flex:1;}
+.next-team-name{font-size:13px;font-weight:700;color:var(--text);line-height:1.2;}
+.next-team-sub{font-size:10px;color:var(--text3);margin-top:2px;}
+.next-vs{text-align:center;flex-shrink:0;}
+.next-time{font-family:'Bebas Neue',sans-serif;font-size:26px;color:var(--red);line-height:1;}
+.next-date-s{font-size:10px;color:var(--text3);margin-top:2px;}
+.next-meta{padding:8px 14px;display:flex;flex-wrap:wrap;gap:5px;}
+.meta-chip{font-size:11px;font-weight:500;padding:2px 8px;border-radius:100px;background:var(--surface2);border:1px solid var(--border);color:var(--text2);}
+.meta-chip.home{background:var(--red-soft);border-color:var(--red-mid);color:var(--red);}
+.meta-chip.away{background:var(--upcoming-bg);color:var(--upcoming);border-color:transparent;}
+.meta-chip.sec{background:var(--upcoming-bg);color:var(--upcoming);border-color:transparent;}
+
+/* Splits Sidebar */
+.splits-grid{display:grid;grid-template-columns:1fr 1fr;}
+.split-item{padding:10px 14px;border-bottom:1px solid var(--row-border);border-right:1px solid var(--row-border);}
+.split-item:nth-child(2n){border-right:none;}
+.split-item:nth-last-child(-n+2){border-bottom:none;}
+.split-label{font-size:9px;font-weight:600;text-transform:uppercase;letter-spacing:.6px;color:var(--text3);margin-bottom:3px;}
+.split-rec{font-size:16px;font-weight:800;color:var(--text);letter-spacing:-.5px;line-height:1;}
+.split-pct{font-size:10px;color:var(--text3);margin-top:2px;}
+.split-bar{height:2px;background:var(--border);border-radius:2px;margin-top:5px;}
+.split-bar-fill{height:100%;background:var(--red);border-radius:2px;transition:width .5s ease;}
+
+/* Charts */
+.charts-section{max-width:1240px;margin:0 auto;padding:0 20px 40px;}
+.charts-toggle{display:flex;align-items:center;justify-content:space-between;padding:10px 0 8px;cursor:pointer;border-bottom:1px solid var(--border);margin-bottom:14px;user-select:none;}
+.charts-toggle span:first-child{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--text3);}
+.charts-toggle span:last-child{font-size:11px;color:var(--text3);}
+.chart-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;margin-bottom:10px;}
+.chart-title{font-size:13px;font-weight:700;color:var(--text);margin-bottom:3px;}
+.chart-sub{font-size:11px;color:var(--text3);margin-bottom:14px;}
+.chart-wrap{position:relative;height:160px;}
+.dow-grid{display:flex;align-items:flex-end;justify-content:space-between;gap:4px;height:80px;margin-top:8px;}
+.dow-col{display:flex;flex-direction:column;align-items:center;flex:1;}
+.dow-bar-wrap{flex:1;display:flex;align-items:flex-end;width:100%;padding:0 2px;}
+.dow-bar{width:100%;border-radius:3px 3px 0 0;min-height:3px;background:var(--red);opacity:.8;}
+.dow-bar-empty{background:var(--border);}
+.dow-label{font-size:9px;color:var(--text3);margin-top:3px;font-weight:600;}
+.dow-pct{font-size:9px;color:var(--text2);font-weight:700;}
+
+.updated{text-align:center;font-size:11px;color:var(--text3);padding:12px 0 4px;}
+.empty{text-align:center;padding:40px 20px;color:var(--text3);font-size:14px;}
+.loading{text-align:center;padding:40px 20px;color:var(--text3);}
+
+@keyframes blink{0%,100%{opacity:1;}50%{opacity:.3;}}
+@keyframes fadeIn{from{opacity:0;transform:translateY(4px);}to{opacity:1;transform:translateY(0);}}
+.animate{animation:fadeIn .2s ease both;}
+
+/* Responsive */
+@media(max-width:960px){
+  .page-wrap{grid-template-columns:1fr;padding:12px 12px 0;}
+  .col-side{order:-1;}
+  .hdr-search{max-width:none;flex:1;}
+  .hdr-inner{padding:0 12px;}
+  .stats-inner{padding:0 12px;}
+  .toolbar-inner{padding:0 12px;}
+  .charts-section{padding:0 12px 32px;}
+}
+@media(max-width:600px){
+  .hdr-search{display:none;}
+  .site-title p{display:none;}
+}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="hdr-inner">
+    <a href="index.html" class="back-link" title="All Teams">←</a>
+    <div class="logo-mark" id="hdr-logo">⚾</div>
+    <div class="site-title">
+      <h1 id="hdr-name">SEC Baseball</h1>
+      <p>2026 · SEC</p>
+    </div>
+    <div class="hdr-search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input id="search" placeholder="Search opponent…" oninput="render()" autocomplete="off">
+    </div>
+    <div class="hdr-right">
+      <div class="record-chip" id="hdr-record">–</div>
+      <button class="icon-btn" onclick="toggleTheme()" id="theme-btn">🌙</button>
+    </div>
+  </div>
+</header>
+
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat"><div class="stat-val" id="s-overall">–</div><div class="stat-label">Overall</div></div>
+    <div class="stat"><div class="stat-val" id="s-sec">–</div><div class="stat-label">SEC</div></div>
+    <div class="stat"><div class="stat-val" id="s-ranked">–</div><div class="stat-label">vs Ranked</div></div>
+    <div class="stat"><div class="stat-val" id="s-home">–</div><div class="stat-label">Home</div></div>
+    <div class="stat"><div class="stat-val" id="s-away">–</div><div class="stat-label">Away</div></div>
+    <div class="stat"><div class="stat-val" id="s-diff">–</div><div class="stat-label">Run Diff</div></div>
+    <div class="stat"><div class="stat-val" id="s-streak">–</div><div class="stat-label">Streak</div></div>
+  </div>
+</div>
+
+<div class="toolbar">
+  <div class="toolbar-inner">
+    <div class="pills">
+      <button class="pill active" onclick="setFilter('all',this)">All</button>
+      <button class="pill" onclick="setFilter('upcoming',this)">Upcoming</button>
+      <button class="pill" onclick="setFilter('W',this)">Wins</button>
+      <button class="pill" onclick="setFilter('L',this)">Losses</button>
+      <button class="pill" onclick="setFilter('Home',this)">Home</button>
+      <button class="pill" onclick="setFilter('Away',this)">Away</button>
+      <button class="pill" onclick="setFilter('sec',this)">SEC</button>
+      <button class="pill" onclick="setFilter('ranked',this)">vs Ranked</button>
+    </div>
+    <div class="toolbar-right">
+      <select class="sort-select" id="sort" onchange="render()">
+        <option value="date-desc">Newest First</option>
+        <option value="date-asc">Oldest First</option>
+        <option value="rank">By Opp. Rank</option>
+        <option value="rundiff">By Run Diff</option>
+        <option value="result">Wins First</option>
+      </select>
+    </div>
+  </div>
+</div>
+
+<div class="page-wrap">
+  <div class="col-main" id="main-results">
+    <div class="table-wrap"><div class="loading">Loading…</div></div>
+  </div>
+  <div class="col-side" id="side-panel"></div>
+</div>
+
+<div class="charts-section" id="charts-section"></div>
+
+<script>
+let GAMES=[],META={},TEAM={};
+let activeFilter='all';
+let chartsOpen=true;
+let trendChart=null,wlChart=null;
+let RUNNING_RECORDS=new Map();
+let theme=localStorage.getItem('theme')||'light';
+const teamSlug=(new URLSearchParams(location.search).get('team')||'arkansas').toLowerCase();
+
+/* Theme */
+function toggleTheme(){
+  theme=theme==='light'?'dark':'light';
+  applyTheme();
+  localStorage.setItem('theme',theme);
+  if(trendChart||wlChart){destroyCharts();renderCharts();}
+}
+function applyTheme(){
+  document.documentElement.setAttribute('data-theme',theme);
+  document.getElementById('theme-btn').textContent=theme==='light'?'🌙':'☀️';
+}
+applyTheme();
+
+/* Load */
+async function loadData(){
+  try{
+    const r=await fetch(`./data/${teamSlug}.json?t=`+Date.now());
+    const d=await r.json();
+    TEAM=d.team_meta||{};
+    GAMES=(d.games||[]).map(g=>({...g, ark_score: g.team_score??g.ark_score}));
+    META={...(d.summary||{}),last_updated:d.last_updated};
+    applyTeamBranding();
+    buildRunningRecords();
+    renderStats();
+    render();
+  }catch(e){
+    document.getElementById('main-results').innerHTML='<div class="table-wrap"><div class="empty">Could not load schedule data.</div></div>';
+  }
+}
+function applyTeamBranding(){
+  const name=TEAM.name||teamSlug;
+  document.getElementById('page-title').textContent=name+' Baseball 2026';
+  document.getElementById('hdr-name').textContent=name+' Baseball';
+  const logo=document.getElementById('hdr-logo');
+  if(TEAM.logo){logo.innerHTML=`<img src="${TEAM.logo}" style="width:24px;height:24px;object-fit:contain;">`;}
+  if(TEAM.color){
+    const c='#'+TEAM.color;
+    document.documentElement.style.setProperty('--red',c);
+    document.documentElement.style.setProperty('--red-soft',c+'22');
+    document.documentElement.style.setProperty('--red-mid',c+'44');
+  }
+}
+
+/* Precompute running W-L records */
+function buildRunningRecords(){
+  RUNNING_RECORDS=new Map();
+  const played=GAMES.filter(g=>g.result==='W'||g.result==='L')
+    .sort((a,b)=>dateVal(a)-dateVal(b));
+  let w=0,l=0;
+  played.forEach(g=>{
+    if(g.result==='W') w++; else l++;
+    RUNNING_RECORDS.set(g.game_date+'|'+g.opponent,`${w}–${l}`);
+  });
+}
+
+/* Stats */
+function renderStats(){
+  const played=GAMES.filter(g=>g.result==='W'||g.result==='L');
+  const W=played.filter(g=>g.result==='W').length;
+  const L=played.filter(g=>g.result==='L').length;
+  const sec=played.filter(g=>g.is_conference);
+  const sW=sec.filter(g=>g.result==='W').length;
+  const sL=sec.filter(g=>g.result==='L').length;
+  const ranked=played.filter(g=>g.opponent_rank);
+  const rW=ranked.filter(g=>g.result==='W').length;
+  const rL=ranked.filter(g=>g.result==='L').length;
+  const home=played.filter(g=>g.location_type==='Home');
+  const hW=home.filter(g=>g.result==='W').length;
+  const hL=home.filter(g=>g.result==='L').length;
+  const away=played.filter(g=>g.location_type==='Away');
+  const aW=away.filter(g=>g.result==='W').length;
+  const aL=away.filter(g=>g.result==='L').length;
+  const diff=played.reduce((a,g)=>a+(g.ark_score||0),0)-played.reduce((a,g)=>a+(g.opp_score||0),0);
+  let streak='–';
+  const rev=[...played].reverse();
+  if(rev.length){let last=rev[0].result,cnt=0;for(const g of rev){if(g.result===last)cnt++;else break;}streak=last+cnt;}
+  document.getElementById('hdr-record').textContent=`${W}–${L}`;
+  document.getElementById('s-overall').textContent=`${W}–${L}`;
+  document.getElementById('s-sec').textContent=`${sW}–${sL}`;
+  document.getElementById('s-ranked').textContent=`${rW}–${rL}`;
+  document.getElementById('s-home').textContent=`${hW}–${hL}`;
+  document.getElementById('s-away').textContent=`${aW}–${aL}`;
+  const dEl=document.getElementById('s-diff');
+  dEl.textContent=(diff>=0?'+':'')+diff;
+  dEl.className='stat-val '+(diff>0?'pos':diff<0?'neg':'');
+  const sEl=document.getElementById('s-streak');
+  sEl.textContent=streak;
+  sEl.className='stat-val '+(streak.startsWith('W')?'pos':streak.startsWith('L')?'neg':'');
+}
+
+/* Filter */
+function setFilter(f,btn){
+  activeFilter=f;
+  document.querySelectorAll('.pill').forEach(p=>p.classList.remove('active'));
+  btn.classList.add('active');
+  render();
+}
+function getFiltered(){
+  const q=document.getElementById('search').value.toLowerCase().trim();
+  const sort=document.getElementById('sort').value;
+  let games=GAMES.filter(g=>{
+    if(q&&!cleanOpp(g.opponent).toLowerCase().includes(q)) return false;
+    if(activeFilter==='all') return true;
+    if(activeFilter==='upcoming') return g.result==='Upcoming';
+    if(activeFilter==='W') return g.result==='W';
+    if(activeFilter==='L') return g.result==='L';
+    if(activeFilter==='Home') return g.location_type==='Home';
+    if(activeFilter==='Away') return g.location_type==='Away';
+    if(activeFilter==='sec') return g.is_conference;
+    if(activeFilter==='ranked') return g.opponent_rank;
+    return true;
+  });
+  games=[...games];
+  if(sort==='date-desc') games.sort((a,b)=>dateVal(b)-dateVal(a));
+  else if(sort==='date-asc') games.sort((a,b)=>dateVal(a)-dateVal(b));
+  else if(sort==='rank') games.sort((a,b)=>(a.opponent_rank||999)-(b.opponent_rank||999));
+  else if(sort==='rundiff') games.sort((a,b)=>((b.ark_score||0)-(b.opp_score||0))-((a.ark_score||0)-(a.opp_score||0)));
+  else if(sort==='result'){const o={W:0,L:1,Upcoming:2,Canceled:3};games.sort((a,b)=>(o[a.result]||3)-(o[b.result]||3));}
+  return games;
+}
+
+/* Main Render */
+function render(){
+  destroyCharts();
+  const games=getFiltered();
+  const upcoming=games.filter(g=>g.result==='Upcoming').sort((a,b)=>dateVal(a)-dateVal(b));
+  const played=games.filter(g=>g.result!=='Upcoming');
+  const q=document.getElementById('search').value.trim();
+  const sort=document.getElementById('sort').value;
+  const searching=q.length>0;
+  const sorted=sort!=='date-desc'&&sort!=='date-asc';
+
+  let mainHtml='';
+  if(upcoming.length) mainHtml+=buildTable(upcoming,'Upcoming Games');
+  if(played.length){
+    if(searching||sorted) mainHtml+=buildTableFlat(played,upcoming.length?'Results':'Schedule');
+    else mainHtml+=buildSeriesTable(played,upcoming.length?'Results':'Schedule');
+  }
+  if(!upcoming.length&&!played.length) mainHtml='<div class="table-wrap"><div class="empty">No games match.</div></div>';
+  if(META.last_updated){
+    const d=new Date(META.last_updated);
+    mainHtml+=`<div class="updated">Updated ${d.toLocaleDateString('en-US',{month:'short',day:'numeric'})} at ${d.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'})}</div>`;
+  }
+  document.getElementById('main-results').innerHTML=mainHtml;
+
+  const allPlayed=GAMES.filter(g=>g.result==='W'||g.result==='L');
+  const allUpcoming=GAMES.filter(g=>g.result==='Upcoming');
+  let sideHtml='';
+  if(allUpcoming.length) sideHtml+=renderNextSidebar(allUpcoming[0],allPlayed);
+  sideHtml+=renderSplitsSidebar(allPlayed);
+  document.getElementById('side-panel').innerHTML=sideHtml;
+
+  const showCharts=!searching&&(activeFilter==='all'||activeFilter==='sec'||activeFilter==='ranked');
+  if(showCharts&&allPlayed.length>0){
+    document.getElementById('charts-section').innerHTML=renderChartsSection();
+    if(chartsOpen) renderCharts();
+  } else {
+    document.getElementById('charts-section').innerHTML='';
+  }
+}
+
+/* Table HEAD */
+const THEAD=`<thead><tr>
+  <th class="col-date">Date</th>
+  <th style="width:28px"></th>
+  <th>Opponent</th>
+  <th class="h-str" style="width:110px">Weather</th>
+  <th style="width:88px">Score</th>
+  <th class="h-opp-rec" style="width:64px" title="Opponent's current season record">Opp</th>
+  <th style="width:52px">W-L</th>
+  <th class="h-ven" style="width:130px">Venue</th>
+</tr></thead>`;
+
+function buildTable(games,label){
+  return `<div class="table-wrap animate">
+    <div class="table-section-label">${label}</div>
+    <table class="sched-table">${THEAD}<tbody>${games.map(g=>renderRow(g)).join('')}</tbody></table>
+  </div>`;
+}
+function buildTableFlat(games,label){
+  return `<div class="table-wrap animate">
+    <div class="table-section-label">${label}</div>
+    <table class="sched-table">${THEAD}<tbody>${games.map(g=>renderRow(g)).join('')}</tbody></table>
+  </div>`;
+}
+function buildSeriesTable(games,label){
+  const groups=[],used=new Set();
+  games.forEach(g=>{
+    if(used.has(g.game_date+'|'+g.opponent)) return;
+    const base=cleanOpp(g.opponent);
+    const dv=dateVal(g);
+    const series=games.filter(g2=>{
+      const diff=Math.abs(dateVal(g2)-dv);
+      return cleanOpp(g2.opponent)===base&&diff<=5*86400000;
+    });
+    series.forEach(s=>used.add(s.game_date+'|'+s.opponent));
+    const isMidweek=series.every(s=>['Mon','Tue','Wed','Thu'].includes(s.day_of_week));
+    const seriesLabel=isMidweek?`Midweek — ${base}`:`${base} Series`;
+    const ps=series.filter(s=>s.result==='W'||s.result==='L');
+    const w=ps.filter(s=>s.result==='W').length;
+    const l=ps.filter(s=>s.result==='L').length;
+    const hasUp=series.some(s=>s.result==='Upcoming');
+    let bc='split',bt=`${w}-${l}`;
+    if(hasUp&&ps.length===0){bc='upcoming-s';bt='Upcoming';}
+    else if(hasUp){bc='upcoming-s';bt=`${w}-${l}`;}
+    else if(w>l&&l===0){bc='sweep';bt=`Sweep ${w}-0`;}
+    else if(l>w&&w===0){bc='loss-s';bt=`${w}-${l}`;}
+    else if(w>l){bc='sweep';bt=`${w}-${l} W`;}
+    else if(l>w){bc='loss-s';bt=`${w}-${l} L`;}
+    groups.push({seriesLabel,series,bc,bt});
+  });
+  const rows=groups.map(grp=>{
+    const hdr=`<tr class="series-hdr"><td colspan="8">${grp.seriesLabel}<span class="series-badge ${grp.bc}">${grp.bt}</span></td></tr>`;
+    return hdr+grp.series.map(g=>renderRow(g)).join('');
+  }).join('');
+  return `<div class="table-wrap animate">
+    <div class="table-section-label">${label}</div>
+    <table class="sched-table">${THEAD}<tbody>${rows}</tbody></table>
+  </div>`;
+}
+
+/* Weather cell */
+function formatWeather(g){
+  if(g.temp_hi==null) return '<span style="color:var(--text3)">–</span>';
+  const icon=g.weather_icon||'⛅';
+  const temp=`${Math.round(g.temp_hi)}°`;
+  const precip=g.precip_in>0?` <span style="color:var(--text3);font-size:11px">${g.precip_in}"</span>`:'';
+  const label=g.weather_type==='forecast'?' <span style="color:var(--text3);font-size:10px">fcst</span>':g.weather_type==='avg'?' <span style="color:var(--text3);font-size:10px">avg</span>':'';
+  return `${icon} ${temp}${precip}${label}`;
+}
+
+/* Game Row */
+function renderRow(g){
+  const isUp=g.result==='Upcoming';
+  const rk=g.opponent_rank?`<span class="rank-tag">#${g.opponent_rank}</span>`:'';
+  const sec=g.is_conference?`<span class="sec-tag">SEC</span>`:'';
+  const ha=g.location_type==='Home'?'vs':g.location_type==='Away'?'@':'N';
+  const haClass=g.location_type==='Home'?'home':g.location_type==='Away'?'away':'';
+  const weather=formatWeather(g);
+  const venue=g.city||g.stadium||'–';
+  const wl=RUNNING_RECORDS.get(g.game_date+'|'+g.opponent)||'–';
+  let score='';
+  if(g.result==='W'||g.result==='L'){
+    const inn=g.innings&&g.innings>9?` (${g.innings})`:'';
+    score=`<span class="res-badge ${g.result}">${g.result}</span>${g.ark_score}–${g.opp_score}${inn}`;
+  } else if(isUp){
+    score=`<span class="up-time">${g.time_ct||'TBD'}</span>`;
+  } else {
+    score=`<span class="res-badge C">CXLD</span>`;
+  }
+  const oppRec=g.opp_wins!=null?`${g.opp_wins}–${g.opp_losses}`:'<span style="color:var(--text3)">–</span>';
+  const clickable=g.recap_url?` class="clickable" onclick="window.open('${g.recap_url}','_blank')" title="View recap"`:'';
+  return `<tr${clickable}>
+    <td class="col-date">${shortDate(g.game_date)}</td>
+    <td class="col-ha ${haClass}">${ha}</td>
+    <td class="col-opp"><div class="col-opp-inner">${rk}<span class="opp-name">${cleanOpp(g.opponent)}</span>${sec}</div></td>
+    <td class="col-starter">${weather}</td>
+    <td class="col-score">${score}</td>
+    <td class="col-opp-rec h-opp-rec">${oppRec}</td>
+    <td class="col-wl">${wl}</td>
+    <td class="col-venue">${venue}</td>
+  </tr>`;
+}
+
+/* Sidebar: Next Game */
+function renderNextSidebar(g,played){
+  const rk=g.opponent_rank?`<span class="rank-tag">#${g.opponent_rank}</span> `:'';
+  const lc=(g.location_type||'').toLowerCase();
+  const W=played.filter(x=>x.result==='W').length;
+  const L=played.filter(x=>x.result==='L').length;
+  return `<div class="side-card animate">
+    <div class="side-head">Next Game <div class="live-dot"></div></div>
+    <div class="next-matchup">
+      <div class="next-team">
+        <div class="next-team-name">Arkansas</div>
+        <div class="next-team-sub">${W}–${L}</div>
+      </div>
+      <div class="next-vs">
+        <div class="next-time">${g.time_ct||'TBD'}</div>
+        <div class="next-date-s">${g.day_of_week||''} · ${shortDate(g.game_date)}</div>
+      </div>
+      <div class="next-team">
+        <div class="next-team-name">${rk}${cleanOpp(g.opponent)}</div>
+        <div class="next-team-sub">${g.city||''}</div>
+      </div>
+    </div>
+    <div class="next-meta">
+      <span class="meta-chip ${lc}">${g.location_type||''}</span>
+      ${g.is_conference?'<span class="meta-chip sec">SEC</span>':''}
+      ${g.series_name?`<span class="meta-chip">${g.series_name}</span>`:''}
+    </div>
+  </div>`;
+}
+
+/* Sidebar: Splits */
+function renderSplitsSidebar(played){
+  function rec(arr){
+    const w=arr.filter(g=>g.result==='W').length;
+    const l=arr.filter(g=>g.result==='L').length;
+    const pct=(w+l)>0?Math.round(w/(w+l)*100):0;
+    return{w,l,pct};
+  }
+  function item(label,r){
+    return `<div class="split-item">
+      <div class="split-label">${label}</div>
+      <div class="split-rec">${r.w}–${r.l}</div>
+      <div class="split-pct">${r.pct}%</div>
+      <div class="split-bar"><div class="split-bar-fill" style="width:${r.pct}%"></div></div>
+    </div>`;
+  }
+  const ranked=rec(played.filter(g=>g.opponent_rank));
+  const home=rec(played.filter(g=>g.location_type==='Home'));
+  const away=rec(played.filter(g=>g.location_type==='Away'));
+  const fri=rec(played.filter(g=>g.day_of_week==='Fri'));
+  const sec=rec(played.filter(g=>g.is_conference));
+  const extras=rec(played.filter(g=>g.innings&&g.innings>9));
+  return `<div class="side-card animate">
+    <div class="side-head">Season Splits</div>
+    <div class="splits-grid">
+      ${item('vs Ranked',ranked)}${item('Home',home)}
+      ${item('Away',away)}${item('SEC',sec)}
+      ${item('Fridays',fri)}${item('Extra Inn.',extras)}
+    </div>
+  </div>`;
+}
+
+/* Charts Section */
+function renderChartsSection(){
+  return `<div class="charts-toggle" onclick="toggleCharts()">
+    <span>Trends &amp; Charts</span>
+    <span>${chartsOpen?'Hide':'Show'}</span>
+  </div>
+  ${chartsOpen?`
+  <div class="chart-card animate">
+    <div class="chart-title">Win % Over Season</div>
+    <div class="chart-sub">Rolling win percentage as the season progresses</div>
+    <div class="chart-wrap"><canvas id="trend-chart"></canvas></div>
+  </div>
+  <div class="chart-card animate">
+    <div class="chart-title">Run Differential by Game</div>
+    <div class="chart-sub">Green = win · Red = loss</div>
+    <div class="chart-wrap"><canvas id="wl-chart"></canvas></div>
+  </div>
+  <div class="chart-card animate">
+    <div class="chart-title">Win % by Day of Week</div>
+    <div class="chart-sub">How Arkansas performs on each day</div>
+    ${renderDowChart()}
+  </div>`:''}`;
+}
+function toggleCharts(){
+  chartsOpen=!chartsOpen;
+  const allPlayed=GAMES.filter(g=>g.result==='W'||g.result==='L');
+  destroyCharts();
+  document.getElementById('charts-section').innerHTML=renderChartsSection();
+  if(chartsOpen&&allPlayed.length>0) renderCharts();
+}
+
+/* Charts */
+function renderCharts(){
+  const played=GAMES.filter(g=>g.result==='W'||g.result==='L').sort((a,b)=>dateVal(a)-dateVal(b));
+  const isDark=theme==='dark';
+  const gc=isDark?'rgba(255,255,255,.06)':'rgba(0,0,0,.06)';
+  const tc=isDark?'#5a6275':'#8d97a5';
+  const tCtx=document.getElementById('trend-chart');
+  if(tCtx){
+    let wins=0;const labels=[],data=[];
+    played.forEach((g,i)=>{if(g.result==='W')wins++;labels.push(shortDate(g.game_date));data.push(Math.round(wins/(i+1)*100));});
+    trendChart=new Chart(tCtx,{type:'line',data:{labels,datasets:[{data,borderColor:'#CC0000',borderWidth:2,pointRadius:0,pointHoverRadius:4,fill:true,backgroundColor:isDark?'rgba(204,0,0,.15)':'rgba(204,0,0,.08)',tension:.4}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>` ${ctx.parsed.y}% win rate`}}},scales:{x:{display:false},y:{min:0,max:100,grid:{color:gc},ticks:{color:tc,callback:v=>v+'%',maxTicksLimit:4}}}}});
+  }
+  const wCtx=document.getElementById('wl-chart');
+  if(wCtx){
+    const labels=played.map(g=>shortDate(g.game_date));
+    const data=played.map(g=>(g.ark_score||0)-(g.opp_score||0));
+    const colors=played.map(g=>g.result==='W'?(isDark?'rgba(46,204,113,.7)':'rgba(11,110,49,.7)'):(isDark?'rgba(231,76,60,.7)':'rgba(177,39,4,.7)'));
+    wlChart=new Chart(wCtx,{type:'bar',data:{labels,datasets:[{data,backgroundColor:colors,borderRadius:3,borderSkipped:false}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>{const g=played[ctx.dataIndex];return ` ARK ${g.ark_score}–${g.opp_score} ${cleanOpp(g.opponent)}`;} }}},scales:{x:{display:false},y:{grid:{color:gc},ticks:{color:tc,maxTicksLimit:5}}}}});
+  }
+}
+function destroyCharts(){
+  if(trendChart){trendChart.destroy();trendChart=null;}
+  if(wlChart){wlChart.destroy();wlChart=null;}
+}
+function renderDowChart(){
+  const days=['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+  const played=GAMES.filter(g=>g.result==='W'||g.result==='L');
+  const bars=days.map(day=>{
+    const d=played.filter(g=>g.day_of_week===day);
+    const w=d.filter(g=>g.result==='W').length;
+    const pct=d.length>0?Math.round(w/d.length*100):null;
+    return{day,pct};
+  });
+  return `<div class="dow-grid">${bars.map(b=>`
+    <div class="dow-col">
+      <div class="dow-bar-wrap"><div class="dow-bar ${b.pct===null?'dow-bar-empty':''}" style="height:${b.pct!==null?b.pct:15}%"></div></div>
+      <div class="dow-label">${b.day}</div>
+      <div class="dow-pct">${b.pct!==null?b.pct+'%':'–'}</div>
+    </div>`).join('')}</div>`;
+}
+
+/* Helpers */
+function cleanOpp(s){return(s||'').replace(/\s*\[DH-\d\]/i,'').trim();}
+function shortDate(d){return(d||'').replace(', 2026','').replace(',','');}
+const MONTH_IDX={Jan:1,Feb:2,Mar:3,Apr:4,May:5,Jun:6,Jul:7,Aug:8,Sep:9,Oct:10,Nov:11,Dec:12};
+function dateVal(g){const m=(g.game_date||'').match(/^([A-Za-z]+)\s+(\d+)/);if(!m)return 0;return(MONTH_IDX[m[1]]||0)*100+parseInt(m[2]);}
+
+loadData();
+</script>
+</body>
+</html>
