@@ -1,9 +1,9 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T15:46:42.649796",
+  "last_updated": "2026-05-03T15:48:14.509845",
   "inning": "Top 6",
   "score": null,
-  "count": "1-0",
+  "count": "7-2",
   "feed": [
     {
       "ts": "14:51:26",
@@ -1488,6 +1488,40 @@
         "home_run"
       ],
       "text": "couple of runners. Next is the last of the sixth inning with Ole Miss leading three to two. First this from your Arkansas Ford Beelers. There's no containing the passion of the hog band where you'll find tried and true razorbacks, home run blasts and a whole lot of this Arkansas tradition is brought to you by Ford F series America's best-selling trucks."
+    },
+    {
+      "ts": "15:47:12",
+      "inning": null,
+      "count": "7-2",
+      "score": null,
+      "events": [],
+      "text": "39 years straight. Drive F-150. Official truck of the Razorbacks. Only at your Arkansas Ford dealer. Based on 1977-2025 total sales. You love your land and you have plans for it. During Kubota Orange Days, you'll love the great deals on our versatile, reliable lineup. Helping you turn dream projects into reality. Visit your Kubota dealer today for the best deals of the year. Now through June 30th, get select compact tractors with 0% financing available for save up to 5500."
+    },
+    {
+      "ts": "15:47:33",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [],
+      "text": "Visit your Kubota dealer today for the best deals of the year. Now through June 30th, get select compact tractors with 0% financing available or save up to $5,500. Seal in soon. Go to KubotaOrangeDays.com for more information. Kubota dealers of Arkansas are proud sponsors of the Razorbats. Visit GoKubota.com today."
+    },
+    {
+      "ts": "15:47:54",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [],
+      "text": "Today's Arkansas Ole Miss Rubber Game is brought to you in part by your Arkansas Ford dealers and the Ford F-150. Like the Razorbacks, this truck has a strong tradition, earned without stamping capability and smart features like a mobile generator. That's how you create a fan favorite and the official truck of Arkansas, Phil Elson and"
+    },
+    {
+      "ts": "15:48:14",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "ball"
+      ],
+      "text": "and smart features like a mobile generator. That's how you create a fan favorite and the official truck of Arkansas. Phil Elson and Bubba Carpenter with you here at Ball and Walker. Hogg is one of the first game of the series. Run room with Ole Miss 12 to 2. Rebels win it yesterday 11 to 4. And there's 3 to 2 Ole Miss with the Rebels making a pitching change for the last of the sixth inning bringing Redhander J.P. Robertson on in relief. He's a red shot."
     }
   ]
 }
