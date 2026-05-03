@@ -1,6 +1,6 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T15:49:48.382842",
+  "last_updated": "2026-05-03T15:51:20.467799",
   "inning": "Top 6",
   "score": null,
   "count": "7-2",
@@ -1561,6 +1561,55 @@
         "out"
       ],
       "text": "the Razorbacks Mike a new had a tough go of it against Rabe six pitches to strike out he'll lead off the sixth Robertson works from the stretch with a closed stance his pitch is over at 98 for a strike so they replaced a pitcher with a fastball 95 to 98 with a pitcher that just threw his first one at 98 and a lot of movement in the visiting bullpen and left field a lot of moving parts out there one strike count a new pitch on the way"
+    },
+    {
+      "ts": "15:50:18",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "ball",
+        "home_run",
+        "single",
+        "run_scored",
+        "out"
+      ],
+      "text": "He's in misses at a fastball. Eight pitches eight strikes today on noon. No contact. Home run in a single in the series out of 10 chances. Hogsbad lead off man reached twice including Ruiz in the first inning and he scored. Oh two on new the pitch is high ball one ninety seven. Does he have an off speed pitch. I don't know I need to check the scatter report."
+    },
+    {
+      "ts": "15:50:40",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "ball",
+        "strike",
+        "strikeout"
+      ],
+      "text": "to a new the pitch is high ball one ninety seven does he have an off speed pitch I don't know I need to check the scatter report through a slider warming up but it didn't look like much he's got a four pitch mix fastball up to a hundred on the scouting report the one to swung on a missed high fastball for strike three Robardson"
+    },
+    {
+      "ts": "15:51:00",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "strike",
+        "strikeout"
+      ],
+      "text": "to a hundred on this category the one two swung on a missed high fastball for strike three and it's Robert since thirty eighth strikeout in twenty five and two thirds innings there's ninety eight right there fastball curveball slider change up and fairly quick to the plate it's like a big arm right here that's for sure yeah"
+    },
+    {
+      "ts": "15:51:20",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "home_run",
+        "single",
+        "out"
+      ],
+      "text": "Fairly quick to the plate. It's like a big arm right here. That's for sure. Yeah. Kuyi O'Loy is one for two with a run scoring single and a ground out. Robertson out of that set position starts a loy in the dirt with a slider. Robertson's only given up one home run this year. Twenty-five base hits. Twenty of them are..."
     }
   ]
 }
