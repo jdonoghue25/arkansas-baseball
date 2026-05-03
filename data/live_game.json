@@ -1,9 +1,9 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T14:52:26.985237",
+  "last_updated": "2026-05-03T14:53:56.879946",
   "inning": null,
   "score": null,
-  "count": "1-6",
+  "count": "0-1",
   "feed": [
     {
       "ts": "14:51:26",
@@ -36,6 +36,47 @@
       "score": null,
       "events": [],
       "text": "For a performance call, 501-686-8000."
+    },
+    {
+      "ts": "14:52:55",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [],
+      "text": "Arkansas Department of Health, the Ocevaco Settlement Dollars at work, and be well Arkansas. [\"The Ocevaco Settlement\"] Strong inning by Gabe Gackle brings the hogs to bat in the third inning with Ryder Helper at Camden Coastal and Micah New, while getting a second look at Ole Miss's Taylor Rabe."
+    },
+    {
+      "ts": "14:53:15",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "run_scored",
+        "out"
+      ],
+      "text": "The hogs bat in the third inning with Ryder Helfrich, Camden Cogel and Micah New, all getting a second look at Ole Miss's Taylor Rabe. Here's back's bat. Five base runners so far. They've had one tagged out on the bases. They've had three stranded in one score. Here's the pitch to Ryder Helfrich. Swings it."
+    },
+    {
+      "ts": "14:53:36",
+      "inning": null,
+      "count": "one-one",
+      "score": null,
+      "events": [
+        "strikeout",
+        "run_scored",
+        "out"
+      ],
+      "text": "On the basis they've had three stranded one score. Here's the pitch to Ryder health Rick swings and misses on a change up to start the frame. But was broken out the sonic burger. It's been a bit a minute since the last Sonic but they usually they usually leads to runs right. Yeah, usually I gave it up after Florida though it didn't go very well that series. Stomach's been growling ever since the one is high and inside one and one on health Rick."
+    },
+    {
+      "ts": "14:53:56",
+      "inning": null,
+      "count": "0-1",
+      "score": null,
+      "events": [
+        "home_run"
+      ],
+      "text": "Usually I gave it up after Florida though it didn't go very well that series stomach's been growling ever since the 0-1 is high and inside one and one on health Rick Health Rick walked in the first inning and later got forced down Three walks in the series is one hit as a home run Rabe's 1-1 is driven in the air to straightaway center field and Federico has a bead back in"
     }
   ]
 }
