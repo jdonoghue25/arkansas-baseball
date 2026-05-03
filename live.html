@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Game — SEC Baseball</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --red:#CC0000;--red-soft:#fff5f5;--red-mid:#ffd5d5;
+  --gold:#b8860b;
+  --bg:#f0f2f2;--surface:#ffffff;--surface2:#f8f9fa;
+  --border:#e3e6e6;--row-border:#f0f0f0;
+  --text:#0f1111;--text2:#565959;--text3:#8d97a5;
+  --hdr-bg:#131921;--hdr-sub:#1a2332;
+  --win:#0b6e31;--win-bg:#e8f5ec;
+  --loss:#b12704;--loss-bg:#fdecea;
+  --upcoming:#0066c0;--upcoming-bg:#ebf3fd;
+  --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+  --radius:6px;
+}
+[data-theme="dark"]{
+  --bg:#0d0f14;--surface:#161a24;--surface2:#1e2330;
+  --border:#272d3d;--row-border:#1e2330;
+  --text:#e8eaf0;--text2:#9ba3b5;--text3:#5a6275;
+  --hdr-bg:#0a0d14;--hdr-sub:#111827;
+  --win:#2ecc71;--win-bg:rgba(46,204,113,.1);
+  --loss:#e74c3c;--loss-bg:rgba(231,76,60,.1);
+  --upcoming:#5b9bd5;--upcoming-bg:rgba(91,155,213,.1);
+  --red-soft:rgba(204,0,0,.12);--red-mid:rgba(204,0,0,.2);
+}
+body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:100vh;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s;font-size:13px;}
+
+/* Header */
+.hdr{background:var(--hdr-bg);border-bottom:1px solid rgba(255,255,255,.07);position:sticky;top:0;z-index:200;}
+.hdr-inner{max-width:1240px;margin:0 auto;padding:0 20px;height:54px;display:flex;align-items:center;gap:14px;}
+.back-link{color:rgba(255,255,255,.5);font-size:18px;text-decoration:none;line-height:1;padding:4px 6px;border-radius:4px;transition:color .15s;flex-shrink:0;}
+.back-link:hover{color:#fff;}
+.hdr-live-badge{display:flex;align-items:center;gap:6px;background:rgba(204,0,0,.2);border:1px solid rgba(204,0,0,.4);border-radius:100px;padding:3px 10px;flex-shrink:0;}
+.hdr-live-badge span{font-size:11px;font-weight:700;color:#ff9090;text-transform:uppercase;letter-spacing:.8px;}
+.live-dot{width:6px;height:6px;background:#ff4444;border-radius:50%;animation:blink 1.4s ease-in-out infinite;}
+@keyframes blink{0%,100%{opacity:1;}50%{opacity:.2;}}
+.hdr-title{font-size:14px;font-weight:700;color:#fff;letter-spacing:-.2px;}
+.hdr-right{margin-left:auto;display:flex;align-items:center;gap:10px;}
+.icon-btn{width:32px;height:32px;border-radius:50%;border:1px solid rgba(255,255,255,.14);background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:15px;transition:background .15s;}
+.icon-btn:hover{background:rgba(255,255,255,.1);}
+
+/* Scoreboard bar */
+.scoreboard-bar{background:var(--hdr-sub);border-bottom:2px solid rgba(204,0,0,.4);}
+.scoreboard-inner{max-width:1240px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:0;}
+.team-block{display:flex;flex-direction:column;align-items:center;min-width:140px;}
+.team-abbr{font-size:22px;font-weight:900;color:#fff;letter-spacing:-.5px;line-height:1;}
+.team-score{font-size:48px;font-weight:900;color:#fff;line-height:1;letter-spacing:-2px;font-family:'Bebas Neue',var(--font);}
+.team-score.winning{color:#2ecc71;}
+.team-score.losing{color:rgba(255,255,255,.5);}
+.game-mid{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;}
+.inning-badge{font-size:11px;font-weight:700;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.8px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);padding:3px 10px;border-radius:100px;}
+.inning-arrow{font-size:16px;color:rgba(255,255,255,.7);}
+.game-mid-label{font-size:10px;color:rgba(255,255,255,.3);text-transform:uppercase;letter-spacing:.6px;}
+.count-display{font-size:12px;font-weight:600;color:rgba(255,255,255,.5);letter-spacing:.5px;}
+
+/* Page layout */
+.page-wrap{max-width:1240px;margin:0 auto;padding:16px 20px;display:grid;grid-template-columns:1fr 280px;gap:16px;align-items:start;}
+
+/* Feed */
+.feed-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;}
+.feed-head{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text3);padding:9px 14px;border-bottom:1px solid var(--border);background:var(--surface2);display:flex;align-items:center;justify-content:space-between;}
+.feed-body{display:flex;flex-direction:column;}
+.feed-entry{display:flex;align-items:flex-start;gap:12px;padding:11px 14px;border-bottom:1px solid var(--row-border);transition:background .1s;}
+.feed-entry:last-child{border-bottom:none;}
+.feed-entry:hover{background:var(--surface2);}
+.feed-ts{font-size:11px;color:var(--text3);white-space:nowrap;padding-top:1px;min-width:40px;flex-shrink:0;}
+.feed-inning{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--text3);white-space:nowrap;padding-top:2px;min-width:44px;flex-shrink:0;}
+.feed-text{font-size:13px;color:var(--text);line-height:1.45;flex:1;}
+.feed-events{display:flex;flex-wrap:wrap;gap:4px;margin-top:5px;}
+.event-tag{font-size:10px;font-weight:700;padding:1px 6px;border-radius:3px;text-transform:uppercase;letter-spacing:.3px;}
+.event-tag.home_run{background:rgba(231,76,60,.12);color:#e74c3c;}
+.event-tag.strikeout{background:rgba(139,0,0,.1);color:#8b0000;}
+[data-theme="dark"] .event-tag.strikeout{background:rgba(231,76,60,.12);color:#e74c3c;}
+.event-tag.single,.event-tag.double,.event-tag.triple{background:var(--win-bg);color:var(--win);}
+.event-tag.run_scored{background:rgba(241,196,15,.12);color:#d4a800;}
+[data-theme="dark"] .event-tag.run_scored{color:#f1c40f;}
+.event-tag.walk{background:var(--upcoming-bg);color:var(--upcoming);}
+.event-tag.ball,.event-tag.strike,.event-tag.foul,.event-tag.out{background:var(--surface2);color:var(--text3);border:1px solid var(--border);}
+
+/* Offline state */
+.offline-state{padding:48px 20px;text-align:center;}
+.offline-icon{font-size:36px;margin-bottom:12px;}
+.offline-title{font-size:15px;font-weight:700;color:var(--text);margin-bottom:6px;}
+.offline-sub{font-size:13px;color:var(--text2);line-height:1.5;}
+
+/* Sidebar */
+.side-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;}
+.side-head{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text3);padding:9px 14px;border-bottom:1px solid var(--border);background:var(--surface2);display:flex;align-items:center;justify-content:space-between;}
+.side-body{padding:12px 14px;display:flex;flex-direction:column;gap:10px;}
+.side-row{display:flex;justify-content:space-between;align-items:center;font-size:12px;}
+.side-label{color:var(--text3);text-transform:uppercase;font-size:10px;font-weight:600;letter-spacing:.5px;}
+.side-val{font-weight:600;color:var(--text);}
+.side-val.live{color:#2ecc71;}
+.refresh-bar{height:3px;background:var(--border);border-radius:2px;overflow:hidden;margin-top:4px;}
+.refresh-progress{height:100%;background:var(--red);border-radius:2px;transition:width 1s linear;}
+
+/* No game / offline banner */
+.status-banner{padding:8px 20px;font-size:12px;font-weight:600;text-align:center;display:none;}
+.status-banner.offline{background:rgba(139,0,0,.08);color:var(--text2);border-bottom:1px solid var(--border);}
+
+/* Mobile */
+@media(max-width:960px){
+  .page-wrap{grid-template-columns:1fr;padding:12px 12px;}
+  .team-score{font-size:40px;}
+  .team-block{min-width:110px;}
+}
+@media(max-width:600px){
+  .scoreboard-inner{padding:10px 12px;}
+  .team-abbr{font-size:18px;}
+  .team-score{font-size:34px;}
+}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="hdr">
+  <div class="hdr-inner">
+    <a href="index.html" class="back-link" title="Back to SEC hub">←</a>
+    <div id="hdrLiveBadge" class="hdr-live-badge" style="display:none;">
+      <div class="live-dot"></div>
+      <span>Live</span>
+    </div>
+    <div class="hdr-title" id="hdrTitle">Live Game</div>
+    <div class="hdr-right">
+      <button class="icon-btn" id="themeBtn" title="Toggle theme">🌙</button>
+    </div>
+  </div>
+</header>
+
+<!-- Status banner (shown when stale/offline) -->
+<div class="status-banner offline" id="statusBanner">No live game in progress — check back on game day</div>
+
+<!-- Scoreboard bar -->
+<div class="scoreboard-bar" id="scoreboardBar" style="display:none;">
+  <div class="scoreboard-inner">
+    <div class="team-block">
+      <div class="team-abbr" id="homeAbbr">ARK</div>
+      <div class="team-score" id="homeScore">–</div>
+    </div>
+    <div class="game-mid">
+      <div class="inning-badge" id="inningBadge">–</div>
+      <div class="count-display" id="countDisplay"></div>
+    </div>
+    <div class="team-block">
+      <div class="team-abbr" id="awayAbbr">OPP</div>
+      <div class="team-score" id="awayScore">–</div>
+    </div>
+  </div>
+</div>
+
+<!-- Page body -->
+<div class="page-wrap">
+  <!-- Feed -->
+  <div class="feed-card">
+    <div class="feed-head">
+      <span>Play Feed</span>
+      <span id="feedCount" style="font-weight:400;color:var(--text3);">—</span>
+    </div>
+    <div class="feed-body" id="feedBody">
+      <div class="offline-state" id="offlineState">
+        <div class="offline-icon">📻</div>
+        <div class="offline-title">No game in progress</div>
+        <div class="offline-sub">The live radio feed runs during games.<br>Come back when Arkansas is on the air.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="col-side">
+    <div class="side-card">
+      <div class="side-head">Feed Status</div>
+      <div class="side-body">
+        <div class="side-row">
+          <span class="side-label">Status</span>
+          <span class="side-val" id="sideStatus">—</span>
+        </div>
+        <div class="side-row">
+          <span class="side-label">Source</span>
+          <span class="side-val">KQSM 92.1</span>
+        </div>
+        <div class="side-row">
+          <span class="side-label">Last update</span>
+          <span class="side-val" id="sideAge">—</span>
+        </div>
+        <div class="side-row">
+          <span class="side-label">Plays captured</span>
+          <span class="side-val" id="sidePlays">—</span>
+        </div>
+        <div>
+          <div class="side-label" style="margin-bottom:6px;">Refreshing in <span id="refreshCountdown">30</span>s</div>
+          <div class="refresh-bar"><div class="refresh-progress" id="refreshBar" style="width:100%;"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-card" id="currentPlayCard" style="display:none;">
+      <div class="side-head">Current Play</div>
+      <div class="side-body">
+        <div style="font-size:13px;color:var(--text);line-height:1.5;" id="currentPlayText">—</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ─── Theme ───────────────────────────────────────────────────────────────────
+const root = document.documentElement;
+const themeBtn = document.getElementById('themeBtn');
+const savedTheme = localStorage.getItem('theme') || 'light';
+root.setAttribute('data-theme', savedTheme);
+themeBtn.textContent = savedTheme === 'dark' ? '☀️' : '🌙';
+themeBtn.addEventListener('click', () => {
+  const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+  root.setAttribute('data-theme', next);
+  localStorage.setItem('theme', next);
+  themeBtn.textContent = next === 'dark' ? '☀️' : '🌙';
+});
+
+// ─── Event label map ──────────────────────────────────────────────────────────
+const EVENT_LABELS = {
+  home_run: 'Home Run', strikeout: 'K', single: 'Single', double: 'Double',
+  triple: 'Triple', walk: 'Walk', run_scored: 'Run', ball: 'Ball',
+  strike: 'Strike', foul: 'Foul', out: 'Out'
+};
+
+// ─── Render ───────────────────────────────────────────────────────────────────
+function timeSince(isoStr) {
+  const diff = Math.round((Date.now() - new Date(isoStr).getTime()) / 1000);
+  if (diff < 60) return diff + 's ago';
+  if (diff < 3600) return Math.floor(diff / 60) + 'm ago';
+  return Math.floor(diff / 3600) + 'h ago';
+}
+
+function parseScore(scoreText) {
+  // "Arkansas 4-2" or "Tied 3-3"
+  if (!scoreText) return null;
+  const m = scoreText.match(/(\d+)-(\d+)/);
+  if (!m) return null;
+  return { a: parseInt(m[1]), b: parseInt(m[2]), text: scoreText };
+}
+
+function renderFeed(data) {
+  const feed = data.feed || [];
+  const feedBody = document.getElementById('feedBody');
+  const offlineState = document.getElementById('offlineState');
+  const isLive = data.status === 'live';
+  const isStale = data.last_updated
+    ? (Date.now() - new Date(data.last_updated).getTime()) > 10 * 60 * 1000
+    : true;
+
+  // Header badge + banner
+  document.getElementById('hdrLiveBadge').style.display = (isLive && !isStale) ? 'flex' : 'none';
+  document.getElementById('statusBanner').style.display = (!isLive || isStale) ? 'block' : 'none';
+
+  // Scoreboard
+  const scoreboardBar = document.getElementById('scoreboardBar');
+  const latestScore = feed.map(e => e.score).filter(Boolean).pop();
+  const latestInning = data.inning || feed.map(e => e.inning).filter(Boolean).pop();
+  const latestCount = data.count || feed.map(e => e.count).filter(Boolean).pop();
+
+  if (isLive && !isStale && feed.length > 0) {
+    scoreboardBar.style.display = 'block';
+    document.getElementById('inningBadge').textContent = latestInning || '—';
+    document.getElementById('countDisplay').textContent = latestCount ? `Count: ${latestCount}` : '';
+
+    const scored = parseScore(latestScore);
+    if (scored) {
+      document.getElementById('homeScore').textContent = scored.a;
+      document.getElementById('awayScore').textContent = scored.b;
+      document.getElementById('homeScore').className = 'team-score' + (scored.a > scored.b ? ' winning' : scored.a < scored.b ? ' losing' : '');
+      document.getElementById('awayScore').className = 'team-score' + (scored.b > scored.a ? ' winning' : scored.b < scored.a ? ' losing' : '');
+    }
+  } else {
+    scoreboardBar.style.display = 'none';
+  }
+
+  // Header title
+  document.getElementById('hdrTitle').textContent = isLive && !isStale ? 'Live Game' : 'Live Feed — Offline';
+
+  // Sidebar
+  document.getElementById('sideStatus').textContent = isLive && !isStale ? 'LIVE' : 'Offline';
+  document.getElementById('sideStatus').className = 'side-val' + (isLive && !isStale ? ' live' : '');
+  document.getElementById('sideAge').textContent = data.last_updated ? timeSince(data.last_updated) : '—';
+  document.getElementById('sidePlays').textContent = feed.length || '0';
+  document.getElementById('feedCount').textContent = feed.length > 0 ? `${feed.length} plays` : '';
+
+  // Current play card
+  const lastEntry = feed[feed.length - 1];
+  if (lastEntry && isLive && !isStale) {
+    document.getElementById('currentPlayCard').style.display = 'block';
+    document.getElementById('currentPlayText').textContent = lastEntry.text || '—';
+  } else {
+    document.getElementById('currentPlayCard').style.display = 'none';
+  }
+
+  // Feed entries (newest first)
+  if (feed.length === 0) {
+    offlineState.style.display = 'block';
+    return;
+  }
+  offlineState.style.display = 'none';
+
+  const reversed = [...feed].reverse();
+  feedBody.innerHTML = '';
+  reversed.forEach(entry => {
+    const div = document.createElement('div');
+    div.className = 'feed-entry';
+
+    const importantEvents = (entry.events || []).filter(e =>
+      ['home_run','strikeout','single','double','triple','walk','run_scored'].includes(e)
+    );
+
+    div.innerHTML = `
+      <div class="feed-ts">${entry.ts || entry.timestamp || ''}</div>
+      <div class="feed-inning">${entry.inning || ''}</div>
+      <div>
+        <div class="feed-text">${escHtml(entry.text || entry.transcript || '')}</div>
+        ${importantEvents.length ? `<div class="feed-events">${
+          importantEvents.map(e => `<span class="event-tag ${e}">${EVENT_LABELS[e] || e}</span>`).join('')
+        }</div>` : ''}
+      </div>
+    `;
+    feedBody.appendChild(div);
+  });
+}
+
+function escHtml(s) {
+  return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+// ─── Fetch + poll ─────────────────────────────────────────────────────────────
+const POLL_INTERVAL = 30; // seconds
+let countdown = POLL_INTERVAL;
+
+async function fetchLiveData() {
+  try {
+    const res = await fetch('data/live_game.json?_=' + Date.now());
+    if (!res.ok) throw new Error(res.status);
+    const data = await res.json();
+    renderFeed(data);
+  } catch (e) {
+    // File not found or error — show offline
+    renderFeed({ status: 'offline', feed: [] });
+  }
+}
+
+// Countdown ticker
+setInterval(() => {
+  countdown--;
+  if (countdown <= 0) {
+    countdown = POLL_INTERVAL;
+    fetchLiveData();
+    document.getElementById('sideAge').textContent =
+      document.getElementById('sideAge').textContent; // refresh age display
+  }
+  document.getElementById('refreshCountdown').textContent = countdown;
+  document.getElementById('refreshBar').style.width =
+    ((countdown / POLL_INTERVAL) * 100) + '%';
+
+  // Update "X ago" live
+  const ageEl = document.getElementById('sideAge');
+  if (ageEl._isoStr) ageEl.textContent = timeSince(ageEl._isoStr);
+}, 1000);
+
+// Initial load
+fetchLiveData();
+</script>
+</body>
+</html>

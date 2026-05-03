@@ -72,6 +72,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:1
 .loading{text-align:center;padding:60px 20px;color:var(--text3);}
 
 @keyframes fadeIn{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
+@keyframes blink{0%,100%{opacity:1;}50%{opacity:.2;}}
 .animate{animation:fadeIn .25s ease both;}
 
 @media(max-width:960px){.grid{grid-template-columns:repeat(3,1fr);}.page{padding:14px;}}
@@ -88,6 +89,10 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);min-height:1
       <p>2026 Season</p>
     </div>
     <div class="hdr-right">
+      <a href="live.html" id="live-nav-btn" style="display:none;align-items:center;gap:6px;background:rgba(204,0,0,.2);border:1px solid rgba(204,0,0,.4);border-radius:100px;padding:3px 10px;text-decoration:none;font-size:11px;font-weight:700;color:#ff9090;text-transform:uppercase;letter-spacing:.8px;">
+        <span style="width:6px;height:6px;background:#ff4444;border-radius:50%;animation:blink 1.4s infinite;display:inline-block;"></span>
+        Live
+      </a>
       <span class="updated-badge" id="updated-badge"></span>
       <button class="icon-btn" onclick="toggleTheme()" id="theme-btn">🌙</button>
     </div>
@@ -201,6 +206,24 @@ async function loadData(){
   }
 }
 loadData();
+
+// Show LIVE button in header only when a game is actually in progress
+async function checkLiveStatus(){
+  try{
+    const r=await fetch('./data/live_game.json?_='+Date.now());
+    if(!r.ok)return;
+    const d=await r.json();
+    if(d.status==='live'&&d.last_updated){
+      const age=(Date.now()-new Date(d.last_updated).getTime())/1000;
+      if(age<600){
+        document.getElementById('live-nav-btn').style.display='flex';
+        return;
+      }
+    }
+  }catch(e){}
+  document.getElementById('live-nav-btn').style.display='none';
+}
+checkLiveStatus();
 </script>
 </body>
 </html>
