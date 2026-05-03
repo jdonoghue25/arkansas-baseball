@@ -1,9 +1,9 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T15:43:38.625247",
-  "inning": "Top 5",
+  "last_updated": "2026-05-03T15:45:08.659729",
+  "inning": "Top 6",
   "score": null,
-  "count": "one-one",
+  "count": "1-0",
   "feed": [
     {
       "ts": "14:51:26",
@@ -1399,6 +1399,55 @@
         "single"
       ],
       "text": "And here comes Owen Pano. That's a good read right there by Zach Stewart. He made a perfect first step kind of played the angle. He knew the ball was going to slice. Owen Pano has seen two pitches and he has a home run and a single coil of course is a strike thrower and we'll see if Pano is a first pitch winger here. The first one coming and he doesn't swing. He takes a cutter high ball one. Ole Miss three Arkansas two low and an dove case will move."
+    },
+    {
+      "ts": "15:44:08",
+      "inning": "Top 6",
+      "count": "1-0",
+      "score": null,
+      "events": [
+        "ball",
+        "run_scored",
+        "out"
+      ],
+      "text": "Top of the sixth inning each team with five hits each team with one error Well, this is stranded three arkansas left for Here's the set bike park around the 1-0 Pano takes a low slider ball to Which really bubba looking through those numbers? You know right now what the difference in this game is is pumping making the out at third base on the second inning He would have been it he would have been at second with nobody out and you could have scored him. Yep That would be a tie game"
+    },
+    {
+      "ts": "15:44:28",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "ball",
+        "home_run",
+        "run_scored",
+        "out"
+      ],
+      "text": "out at third base in the second inning he would have been it he would have been it second with nobody out and you could have scored him yep that would be a tie game to open to pain oh low ball three with folly on deck now Austin folly has a home run against Parker coil that happened last year and you can also look at the the error on the throw from Susan to to Cam"
+    },
+    {
+      "ts": "15:44:48",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "ball",
+        "strike",
+        "out"
+      ],
+      "text": "And you can also look at the error on the throw from Susat to Camden. The 3 0 pitch. Peano takes a strike. So this yeah this the margins of this game of those mistakes. You know one run ball game. Yeah it seemed that makes the fewest mistakes is going to win. Federico out to his lead. He hadn't been right."
+    },
+    {
+      "ts": "15:45:08",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "ball",
+        "walk",
+        "out"
+      ],
+      "text": "in a one run ball game. Yeah. The team that makes the fewest mistakes is going to win. Federico out to his lead. He hadn't been running with that quad strain. Three one. Low ball for. Coil has two base runners. One hit by a pitch. The other on a walk. And now Folly coming up. But you also said it. Yeah. You'd already mentioned it before. You know. Furnace wouldn't have been on because he got an O2 hit on a pitch like just caught."
     }
   ]
 }
