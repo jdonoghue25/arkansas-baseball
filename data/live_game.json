@@ -1,9 +1,9 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T15:01:42.735589",
+  "last_updated": "2026-05-03T15:03:15.352570",
   "inning": null,
   "score": null,
-  "count": "0-1",
+  "count": "two-two",
   "feed": [
     {
       "ts": "14:51:26",
@@ -287,6 +287,48 @@
         "out"
       ],
       "text": "Ole Miss has a four to three hit advantage. Both teams have made an error. And while the Rebels have stranded two, the hogs have left three. Gackle ready with an 0-1 on Reuter. It's in the dirt, a slider taken for a ball. Arkansas scored on the first inning, on a two-out single by Kuyia Waleleuhe, plating Damian Ruiz. Left a couple of runners in the first inning. Ole Miss answered in the second, taking advantage of a single and an error."
+    },
+    {
+      "ts": "15:02:13",
+      "inning": null,
+      "count": "two-two",
+      "score": null,
+      "events": [
+        "ball",
+        "home_run",
+        "out"
+      ],
+      "text": "For a home run driving in three his Royal take strength to Owen Peano and a fly ball in the second and then would up in the air and was carried over the fence. Giving well missed their three runs. One of those runs unearned. Hogs ran themselves into an out in the third in the second inning at third base. Pitch on Royal order. Miss blow. Well I don't know. That was close to look like he was going to ring him up and then he didn't. Two and two. There have also been some."
+    },
+    {
+      "ts": "15:02:33",
+      "inning": null,
+      "count": "two-two",
+      "score": null,
+      "events": [
+        "strike"
+      ],
+      "text": "pitch on a Reuter missed low. Well I don't know. That was close to look like he was going to ring him up and then he didn't. Two and two. There have also been some. Well I don't think nothing's been open but there we have some disagreements on the bottom of the strike zone for the two teams today from different pitchers. Two and two on Reuter. Gackle throws and the pitch popped up behind the plate. How free it won't have a play."
+    },
+    {
+      "ts": "15:02:55",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [],
+      "text": "popped up behind the plate. Health Rick won't have a play. Our game up the in a moment ago brought to you by UAMS Health, the official orthopedics and sports medicine provider for the Razorbacks. Locations all around the state do what the hogs do. Trust your care to UAMS Health. And Gackle looking forward to."
+    },
+    {
+      "ts": "15:03:15",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "strike",
+        "home_run",
+        "strikeout"
+      ],
+      "text": "locations all around the state do what the hogs do trust your care to U. A. M. S. health. Gackle looking for two to pitch and it's called for strike three on the inside corner. Fourth strikeouts second on a Reuter. That's a perfect pitch right there painted that inside corner. Oh and Pano first pitch home run."
     }
   ]
 }
