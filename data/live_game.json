@@ -1,6 +1,6 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T16:06:54.116328",
+  "last_updated": "2026-05-03T16:08:25.441058",
   "inning": "Bot 7",
   "score": null,
   "count": "3-3",
@@ -2034,6 +2034,45 @@
       "score": null,
       "events": [],
       "text": "Try it sparkling or sill in three mouthwatering flavors. Fairy citrus, mango peach, or strawberry passion fruit. You've earned it. Seriously. Carry it all your groceries in one trip. Turn your clothing pile back into a treadmill. Parallel parked on the first try. Zip to that. All new sonic refreshers. We free, eat sonic. You wanna live free? To a good life, a good life is a good life. How can the right care make our state stronger? By keeping our workforce healthy."
+    },
+    {
+      "ts": "16:07:23",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [],
+      "text": "moves our communities forward, and empowering employees with the best health care plans and the best solutions to keep their companies growing. Arkansas Blue Cross and Blue Shield has been taking care of business in our state for more than 75 years, with health insurance and peace of mind that has been trusted for generations, providing the health coverage you need to succeed. Take good care Arkansas."
+    },
+    {
+      "ts": "16:07:44",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [],
+      "text": "Take good care, Arkansas. This copyrighted broadcast is an exclusive presentation of Learfield under the broadcasting rights granted by the University of Arkansas. The University of Arkansas re-use of this presentation is prohibited without the express written consent of the University of Arkansas and Learfield. Annouters are provided by Learfield and approved by the University of Arkansas."
+    },
+    {
+      "ts": "16:08:04",
+      "inning": "Bot 7",
+      "count": null,
+      "score": null,
+      "events": [
+        "home_run"
+      ],
+      "text": "This presentation is prohibited without the express written consent of the University of Arkansas and Learfield. Annouters are provided by Learfield and approved by the University of Arkansas. Is this the different picture? Back here on the Razorback Sports Network with Arkansas banning in the bottom of the seventh inning. And it does look like they're sticking with JP Robertson here who surrendered the game time home run by Cohelo Loie in the sixth inning."
+    },
+    {
+      "ts": "16:08:25",
+      "inning": "Bot 7",
+      "count": "3-3",
+      "score": null,
+      "events": [
+        "home_run",
+        "double",
+        "run_scored",
+        "out"
+      ],
+      "text": "and the bottom of the seventh inning and it does look like they're sticking with JP Robertson here who surrendered the game tying home run by Cohela Loie in the sixth inning but then got TJ Poppy on a double play. Nolan Sousa leading off with a 3-3 tie score. Takes the first pitch in the dirt. A boy two RBIs Stewart the other. Sousa strikeout ground out."
     }
   ]
 }
