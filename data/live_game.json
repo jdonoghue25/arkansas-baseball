@@ -1,6 +1,6 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T15:35:49.759888",
+  "last_updated": "2026-05-03T15:37:20.632027",
   "inning": "Top 5",
   "score": null,
   "count": "1-0",
@@ -1198,6 +1198,41 @@
       "score": null,
       "events": [],
       "text": "Never hugged an umpire. Maybe that was my problem. That was nice to him though. This is some serious reflection here. It really is. You think you could put yourself back about 30 years. You'd start hugging the ums instead of maybe giving them the you know giving them the stink eye? I don't know if it if it helped me get hits. Yeah. One one. Cojal hits a major league pop fly left field. Golden started way back. Now he comes in for it and Golden makes the catch. He was way."
+    },
+    {
+      "ts": "15:36:19",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "home_run",
+        "single"
+      ],
+      "text": "He was way unsteady, but he made the play. Razorback settle for the solo home run by Zach Stewart. They do have a single as well by Ryder Helfrick. He becomes the fourth Razorback left on base. Ole Miss 3, Arkansas 2 with five innings in the books. This is the Razorback Sports Network from Learfield. Summit Utilities is proud to be a part of your community and helping you save energy is important to us. That's why we offer a variety of rebates and energy."
+    },
+    {
+      "ts": "15:36:39",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [],
+      "text": "Some of utilities is proud to be a part of your community and helping you save energy is important to us. That's why we offer a variety of rebates and energy saving programs so you can do more and spend less. From your business to home, we've got you covered. Water heaters, furnaces, food service equipment, commercial and industrial systems. Yes! Save on all of it! Visit SummitUtilities.com to learn about our energy saving programs."
+    },
+    {
+      "ts": "15:36:59",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [],
+      "text": "Yes! Save on all of it! Visit SummitUtilities.com to learn about our energy-saving programs. Our here clinics are your hometown source for primary medical care. Our doctors, nurses, and counselors can help patients of all ages, with anything from common colds and immunizations to depression, anxiety, and chronic diseases. Our network includes both home delivery and local pharmacies to fulfill your prescriptions. If you don't have insurance, it's okay. We can help with that too."
+    },
+    {
+      "ts": "15:37:20",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [],
+      "text": "Society and chronic diseases. Our network includes both home delivery and local pharmacies to fulfill your prescriptions. If you don't have insurance, it's OK. We can help with that, too. And no one is turned away. With more than 90 locations in Arkansas, there's a good chance we're in your hometown. Look us up at rcare.net."
     }
   ]
 }
