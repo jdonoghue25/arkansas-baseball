@@ -1,9 +1,9 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T15:28:04.524413",
+  "last_updated": "2026-05-03T15:29:38.682940",
   "inning": "Bot 5",
   "score": null,
-  "count": "3-2",
+  "count": "1-0",
   "feed": [
     {
       "ts": "14:51:26",
@@ -987,6 +987,49 @@
         "out"
       ],
       "text": "College baseball rallies sometimes especially the way Taylor Ray is throwing you. You're going to need a mistake somehow. They get a right hander now beginning to warm up. They just got him up for the first pitch. Stewart the batter Zach's the last razor back to reach took a walk in the second inning. First pitch slider hit in the air to left field. Will that carry Golden goes back to the wall and it's out of here. Stewart took advantage. Hits it over the left field fence. Homer number eight. Hobbs down."
+    },
+    {
+      "ts": "15:28:33",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [],
+      "text": "Pogs down three to two. Well you take advantage of the elements right there and that's why Zack Stewart did. First pitch fastball just shot it to left field didn't hit it that hard but hit it hard enough. Both home runs Bubba have been nearly identical first pitch. You see something you think you can get in the air and you get it up in the air and the air took care of it. Yeah."
+    },
+    {
+      "ts": "15:28:53",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "single"
+      ],
+      "text": "Both home runs Bubba have been nearly identical first pitch. You see something you think you can get in the air and you get it up in the air and the air took care of it. Yeah. That's exactly what Owen Pano did for his go ahead Homer. For all three Ole Miss runs. The third Homer stewards hit in an SEC game brings Ruiz top of the order. He's one for two with a single. Now the pitch is outside."
+    },
+    {
+      "ts": "15:29:14",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "ball",
+        "strike",
+        "single",
+        "run_scored"
+      ],
+      "text": "He's one for two with a single. Now the pitch is outside. Three single up the middle of the first stole a base scored on the Eloy base hit. Ray but throws one and oh a swing in a mess with a fastball. One ball one strike."
+    },
+    {
+      "ts": "15:29:38",
+      "inning": null,
+      "count": "1-0",
+      "score": null,
+      "events": [
+        "ball",
+        "strike",
+        "home_run"
+      ],
+      "text": "Rabe throws 1-0. A swinging in a miss with a fast ball. One ball, one strike. And his home run number eight. A round by Taylor Rabe. Third base backs up, Ruiz looks at a ball outside, 2-1. Come on. Please succumb."
     }
   ]
 }
