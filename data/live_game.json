@@ -1,6 +1,6 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T15:37:20.632027",
+  "last_updated": "2026-05-03T15:38:52.806899",
   "inning": "Top 5",
   "score": null,
   "count": "1-0",
@@ -1233,6 +1233,45 @@
       "score": null,
       "events": [],
       "text": "Society and chronic diseases. Our network includes both home delivery and local pharmacies to fulfill your prescriptions. If you don't have insurance, it's OK. We can help with that, too. And no one is turned away. With more than 90 locations in Arkansas, there's a good chance we're in your hometown. Look us up at rcare.net."
+    },
+    {
+      "ts": "15:37:51",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "out"
+      ],
+      "text": "Top of the six, meaning it's Ole Miss 3, Arkansas 2. Bub, I almost called Ole Miss Maryland. Because they had the M logo out there on the video board, the block M. Yeah, that doesn't look like an Ole Miss M. I guess I've seen that M somewhere on their campus before, but it looked more like Maryland than it does Ole Miss. For a couple of seasons, I just called the Mississippi. We go with the Ole Miss thing here."
+    },
+    {
+      "ts": "15:38:11",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "strike"
+      ],
+      "text": "More like Maryland than it does. Ole Miss for a couple seasons. I just called the Mississippi. We go with the Ole Miss thing here. You did that just to make them mad, right? Yeah. Yeah, not looking to make them mad anymore. This game's different from the last two. No one's taking real real command of it. No one's grabbed the supposed bull by the horns. I think we just got to get in our bullpen. We'll be in good shape. Parker coil facing Will Furnace and a cutter for a strike on the big left hand."
+    },
+    {
+      "ts": "15:38:32",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "strike",
+        "home_run"
+      ],
+      "text": "the supposed bull by the horns. I think we just got to get in our bull pit and we'll be in good shape. Parker coil facing Will Furnace and a cutter for a strike on the big left hand batting first baseman coil second inning. You get a perfect fifth. I did finish by rally burger though right before Stuart's home run. So you get some tighter touch to finish for the next razorback homer. Rally Tots. A one. Furnace takes strike two. Rally Tots go along with your rally stinger and your little PB&J biscuits."
+    },
+    {
+      "ts": "15:38:52",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [],
+      "text": "Rally Tots, a one furnace takes strength to Rally Tots go along with your rally stinger and your little PB and J biscuits. I got a little bit everything today Including some peppermint's face balls Bad pink colored liquids 0 2 on furnace bounces This is the there's like one two three four five six seven eight nine ten eleven two or five There's twenty different things on your side of the counter and yet you get angry at me Say and I take half the booth"
     }
   ]
 }
