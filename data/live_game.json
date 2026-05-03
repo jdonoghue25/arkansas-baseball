@@ -1,9 +1,9 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T15:18:49.205500",
+  "last_updated": "2026-05-03T15:20:20.219090",
   "inning": "Bot 4",
   "score": null,
-  "count": "1-0",
+  "count": "0-2",
   "feed": [
     {
       "ts": "14:51:26",
@@ -748,6 +748,47 @@
         "out"
       ],
       "text": "Seven Arkansas batters making it out. Gacko completes four innings. Charged with three runs on five basics. Two of those runs earn one walk, five strikeouts. A couple of wild pitches. You know, it's kind of it's funny, Bubba, because when I was talking with Coach Van Horne and Coach Hobbs before the series, and I was saying, you know, this Ole Miss team hits home runs. You can't walk this team. Don't walk them. That's going to be."
+    },
+    {
+      "ts": "15:19:18",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "out"
+      ],
+      "text": "That's going to be key in this series. Hunter D. Twalk for Ole Miss batters on Friday. None of that hurt him whatsoever. Cole Gibler walked one batter yesterday, gave Gacko walks one. It was the home runs that hurt them more than anything. It's home runs. It was the home runs and the miss plays. The miss plays, yeah. Just the routine play. I mean, that's the thing. You make the routine play and you're going to win. You don't make the routine play and you're going to give that other team an extra out. A lot of times it comes back to."
+    },
+    {
+      "ts": "15:19:38",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "strike",
+        "out"
+      ],
+      "text": "Just the just the routine play. I mean, that's the thing you make the routine play and you're going to win You don't make the routine play and you're gonna give that other team an extra out a lot of times it comes back to bite you You can look at two routine plays that haven't been made which right now this series swings on yep Dom Decker leads off Parker coil starts them with a cutter for a strike decker was the batter But Austin Foley tried to get second base on a pitch in the dirt and it was pegged that run that uh out went to gackle and so"
+    },
+    {
+      "ts": "15:19:59",
+      "inning": null,
+      "count": "0-1",
+      "score": null,
+      "events": [
+        "strike"
+      ],
+      "text": "But Austin Foley tried to get second base on a pitch in the dirt and was pegged. And that run that went to Gackle. And so Coyle starts the inning with an 0-1 count and Decker fouls back. A slider strike too. This is Coyle's 20th appearance of the year tying him with steel ease for outings. They've also both made now 19 relief appearances in one start. Coyle does have some time against Ole Miss as well."
+    },
+    {
+      "ts": "15:20:20",
+      "inning": null,
+      "count": "0-2",
+      "score": null,
+      "events": [
+        "ball"
+      ],
+      "text": "They've also both made now 19 relief appearances in one start. Oil does have. Some time against Ole Miss as well as Decker is able to get on base on 0-2. No, caught in short center field. Mikey new is playing up and makes the running catch. If he's playing deep, that ball is just dumped in a short left center, but he was there and Decker's 0-3. See, coil 2-0. This completed is 30."
     }
   ]
 }
