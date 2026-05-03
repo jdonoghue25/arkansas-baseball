@@ -1,9 +1,9 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T15:38:52.806899",
+  "last_updated": "2026-05-03T15:40:25.235076",
   "inning": "Top 5",
   "score": null,
-  "count": "1-0",
+  "count": "one-one",
   "feed": [
     {
       "ts": "14:51:26",
@@ -1272,6 +1272,49 @@
       "score": null,
       "events": [],
       "text": "Rally Tots, a one furnace takes strength to Rally Tots go along with your rally stinger and your little PB and J biscuits. I got a little bit everything today Including some peppermint's face balls Bad pink colored liquids 0 2 on furnace bounces This is the there's like one two three four five six seven eight nine ten eleven two or five There's twenty different things on your side of the counter and yet you get angry at me Say and I take half the booth"
+    },
+    {
+      "ts": "15:39:24",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "out"
+      ],
+      "text": "Oh, easy now. Can you do your math there? Look how much space I have. 20 things over there. But it's all crammed into one little spot. One, two, pitch to Furnace. Ground-bought a Sousa. Right there to him. Clean feel, clean throw, and Furnace is one for three with the ground out. I'm still a little bit flustered at mine. Trackman's not working. I'm not gonna lie to you. You're welcome. You're welcome. You can use mine today. Yours isn't working very good. You don't have the right data. Well, you can go ahead."
+    },
+    {
+      "ts": "15:39:44",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "ball",
+        "out"
+      ],
+      "text": "sure that my track man's not working I'm not going to lie to you you're welcome you're welcome you can use mine today years isn't working very good you don't have the right data up well you can go ahead and put your big meat meat pause on that thing you would ever daddy want i want you to be happy i might have to here's Hayden Federico banning right-handed for the first time today he's over to reaching on sues as ever in the second and then grounding out to sues a coil frozen high and outside ball one would create your habit though i need release height"
+    },
+    {
+      "ts": "15:40:04",
+      "inning": null,
+      "count": "1-0",
+      "score": null,
+      "events": [
+        "ball",
+        "strike",
+        "out"
+      ],
+      "text": "for two reaching on Suza's error in the second and then grounding out to Suza. Coil for those high and outside ball one. My creature habit, Phil. I need release hype. I want to know what the pitcher how high he's releasing from. Oh, you're a creature all right. That tells me the shape of the pitch into the zone. That helps me know what kind of shape. There you go. I put it up there for you. There you go. 1-0 count. Here's the pitch to Federico. Caught the low inside corner. Good cutter strike one. Already? I mean, it's the sixth."
+    },
+    {
+      "ts": "15:40:25",
+      "inning": null,
+      "count": "one-one",
+      "score": null,
+      "events": [
+        "strike"
+      ],
+      "text": "eight there you go. I put it up there for you. There you go. One oh count. Here's the pitch to Federico. Caught the low inside corner. Good cutter strike one already. I mean it's the six innings. Anything else you want? Don't answer that. I won't mind the word. I want five more runs on the board. And another rally burger. Yes. Somebody get him another rally burger. One and one on Federico. Three to two Ole Miss. Coil throws low. Two and one on Hayden Federico."
     }
   ]
 }
