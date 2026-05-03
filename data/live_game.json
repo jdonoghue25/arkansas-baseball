@@ -1,9 +1,9 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T15:00:08.230067",
+  "last_updated": "2026-05-03T15:01:42.735589",
   "inning": null,
   "score": null,
-  "count": "2-2",
+  "count": "0-1",
   "feed": [
     {
       "ts": "14:51:26",
@@ -244,6 +244,49 @@
       "score": null,
       "events": [],
       "text": "Legendary players, college baseball's best fans. SEC baseball is here and so are some great ballpark promotions. Final record night, bobblehead day and more. Dot this season's Razorback Baseball Promotional Giveaway schedule for details and tickets. Just visit arkansasraiserbacks.com."
+    },
+    {
+      "ts": "15:00:40",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [],
+      "text": "The station"
+    },
+    {
+      "ts": "15:01:02",
+      "inning": null,
+      "count": "3-1",
+      "score": null,
+      "events": [
+        "ball",
+        "out"
+      ],
+      "text": "The one that took it out. Unhumeless media station. Phil Elson with Bubba Carpenter here on a gorgeous day at Ball Walker Stadium. Hard breeze, sunny skies, no clouds. Ballpark filling up, but Ole Miss leading 3-1, which doesn't make it so pretty so far. Yes, does it, Bubba? No, it does not. Colin Warder leads off the fourth inning against Gabe Gackle with Owen Pano and Austin Folly to follow."
+    },
+    {
+      "ts": "15:01:22",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "strike",
+        "out"
+      ],
+      "text": "So pretty so far. Yes. Does it, but no, it does not. Colin Warder leads off the fourth inning against Gabe Gackell with Owen Pano and Austin Folly to follow. Gackell now working out of the set. Swing and a miss on a fastball from the Reuter for strike one. He was winding up earlier. He'll work out of the stretch now. Ole Miss has a four to three hit advantage. Both teams have made an error. And while the Rebels have stranded two, the hogs have left three. Gackell."
+    },
+    {
+      "ts": "15:01:42",
+      "inning": null,
+      "count": "0-1",
+      "score": null,
+      "events": [
+        "ball",
+        "single",
+        "run_scored",
+        "out"
+      ],
+      "text": "Ole Miss has a four to three hit advantage. Both teams have made an error. And while the Rebels have stranded two, the hogs have left three. Gackle ready with an 0-1 on Reuter. It's in the dirt, a slider taken for a ball. Arkansas scored on the first inning, on a two-out single by Kuyia Waleleuhe, plating Damian Ruiz. Left a couple of runners in the first inning. Ole Miss answered in the second, taking advantage of a single and an error."
     }
   ]
 }
