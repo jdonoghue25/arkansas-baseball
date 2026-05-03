@@ -1,7 +1,7 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T16:05:18.580166",
-  "inning": "Top 7",
+  "last_updated": "2026-05-03T16:06:54.116328",
+  "inning": "Bot 7",
   "score": null,
   "count": "3-3",
   "feed": [
@@ -1994,6 +1994,46 @@
         "out"
       ],
       "text": "It's about his number in this series. 0 for 11. Ground out, line out. Ground out today. The line out was hit on the screws right at root bar. And he dangerous left handed batter. His coil looks descended to the stretch. Here's the pitch. Swing in a mess. Perfect cutter, strike one. 3-3 score here in the top of the seventh inning. All miss hasn't scored."
+    },
+    {
+      "ts": "16:05:52",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "strike",
+        "out"
+      ],
+      "text": "Gackle went four, Coils trying to go three. Here's an O1 pitch. And it's on the outside again. Strike two, call. Boy, he's been perfect with these cutters. Boy, he is. He's just dotting it inside corner, outside corner. They're set and the O2. He struck him out looking. Good morning. Good afternoon. Good night, Tristan."
+    },
+    {
+      "ts": "16:06:13",
+      "inning": "Bot 7",
+      "count": null,
+      "score": null,
+      "events": [
+        "home_run",
+        "out"
+      ],
+      "text": "to set and the O two. He struck him out looking. Good morning. Good afternoon. Good night. Tristan Bassetta three up three down Parker coil strikes out the side and he's telling Ole Miss about it. Time for the seventh inning. Strength presented by Kubota. Get home run deals to stretcher savings right now during Kubota's orange days. Find a local Kubota dealer at Arkansas Kubota dealers dot com hogs looking for the go ahead run on the bottom of the seventh inning with it."
+    },
+    {
+      "ts": "16:06:33",
+      "inning": "Bot 7",
+      "count": "3-3",
+      "score": null,
+      "events": [
+        "run_scored"
+      ],
+      "text": "Saving right now during Kubota's Orange Days. Find a local Kubota dealer at ArkansasKubotaDeelers.com. Hogs, looking for the go-ahead run on the bottom of the seventh inning with a 3-3 score now there's from Sonic. Ah, it's a hydrate or caffeinate. Why not both? New Sonic refreshers blend real fruit with a splash of energizing green tea. Try it sparkling or still in three mouthwatering flavors. Fairy citrus, mango peach, or strawberry passion fruit. You've earned it. Seriously."
+    },
+    {
+      "ts": "16:06:54",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [],
+      "text": "Try it sparkling or sill in three mouthwatering flavors. Fairy citrus, mango peach, or strawberry passion fruit. You've earned it. Seriously. Carry it all your groceries in one trip. Turn your clothing pile back into a treadmill. Parallel parked on the first try. Zip to that. All new sonic refreshers. We free, eat sonic. You wanna live free? To a good life, a good life is a good life. How can the right care make our state stronger? By keeping our workforce healthy."
     }
   ]
 }
