@@ -1,9 +1,9 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T15:03:15.352570",
+  "last_updated": "2026-05-03T15:04:48.832461",
   "inning": null,
   "score": null,
-  "count": "two-two",
+  "count": "1-2",
   "feed": [
     {
       "ts": "14:51:26",
@@ -329,6 +329,50 @@
         "strikeout"
       ],
       "text": "locations all around the state do what the hogs do trust your care to U. A. M. S. health. Gackle looking for two to pitch and it's called for strike three on the inside corner. Fourth strikeouts second on a Reuter. That's a perfect pitch right there painted that inside corner. Oh and Pano first pitch home run."
+    },
+    {
+      "ts": "15:03:47",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "ball",
+        "home_run",
+        "single"
+      ],
+      "text": "Reuter that wind-blown Grand Slam yesterday first pitch home run. That's taking advantage of a pitch that you can get in the air. Here's the pitch. Line drive off Sousa's glove. Made a hard cut to his left lunge. Deflex the ball in a right field for a base hit. And Owen Pano sees two pitches, two swings, two hits. Nothing cheap about that base hit. Hard line drive. Yeah, that's a slider right there."
+    },
+    {
+      "ts": "15:04:06",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "single",
+        "out"
+      ],
+      "text": "two hits nothing cheap about that base hit hard line drive. Yeah, that's a slider right there. That's kind of breaking right into his barrel. Fifth hit for the Rebels and the second of the game for Pano gives him four in the series brings. Folly the catcher he's all for one with a line out. Right hand batter. Gackle starts him slider called low outside."
+    },
+    {
+      "ts": "15:04:28",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "ball",
+        "out"
+      ],
+      "text": "only the catcher he's over one with a line out right hand batter gackle starts him slider called low outside. You know leaning back to first with his lead here's a 1 0 high outside ball to first to account of the game from gackle he's been here"
+    },
+    {
+      "ts": "15:04:48",
+      "inning": null,
+      "count": "1-2",
+      "score": null,
+      "events": [
+        "ball"
+      ],
+      "text": "with his lead here's a 1 0 high outside ball to first to a count of the game from Gackle. He's been ahead 0 2 or 1 and 2 and it hasn't had those kinds of counts. That's because that is a put the first or second pitch into play 2 0 in the dirt backhanded by health Rick now 3 and 0."
     }
   ]
 }
