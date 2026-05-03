@@ -1,9 +1,9 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T15:06:18.073580",
+  "last_updated": "2026-05-03T15:07:53.389815",
   "inning": null,
   "score": null,
-  "count": "3-0",
+  "count": "2-6",
   "feed": [
     {
       "ts": "14:51:26",
@@ -415,6 +415,51 @@
         "walk"
       ],
       "text": "He's having a hard time landing the change up against the lefties. You can see his battling and I mean he's battled to the point where these pitch pretty well. There's a wind blown home run. There's an oh two pitch. He'd like to come. He'd like to get back. There's an error that's no fault of his own. This is his first walk. You know, part of this, it's like David said before the game. Yeah, you want to win the game independent if you win."
+    },
+    {
+      "ts": "15:06:51",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "ball",
+        "single",
+        "out"
+      ],
+      "text": "enough to get the ball this next weekend against Oklahoma. And he may have done, you think he's done that yet? Yeah, I think he's done a pretty good job. Cannon Golden is the batter with one out, two runners, left handed batter single to the second and the pitch low. Honestly, I still feel like they're gonna use Gabe when they need him. If they need him on a Friday night, I think you'll see him on Friday night and then he'd be the TBA if he doesn't. If it's like this weekend."
+    },
+    {
+      "ts": "15:07:11",
+      "inning": null,
+      "count": "2-1",
+      "score": null,
+      "events": [
+        "ball",
+        "single"
+      ],
+      "text": "feel like they're going to use Gabe when they need him. If they need him on a Friday night, I think you'll see him on Friday night. And then he'd be the TBA if he doesn't. If it's like this weekend, they don't use him. He starts on Sunday. Golden hitting 2-12 after his second inning single. Gackles pitch swung on a nest. Yeah, see, that's the breaking ball like more of the, it's not really a 12-6, but it's got more vertical depth on it. The veteran Ole Miss team in Golden's the only freshman we've seen in their lineup."
+    },
+    {
+      "ts": "15:07:32",
+      "inning": null,
+      "count": "2-6",
+      "score": null,
+      "events": [
+        "ball",
+        "strike",
+        "out"
+      ],
+      "text": "It's not really a 12-6, but it's got more vertical depth on it. The veteran Ole Miss team in Golden's the only freshman we've seen in their lineup. Ball and a strike, Gekko throws. Slide her low. They had been starting Toeford Jones in left field the last two games, but after striking out in all six of his at bat, I'll never notice him."
+    },
+    {
+      "ts": "15:07:53",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "out"
+      ],
+      "text": "They had been starting to for Jones and left field the last two games but after striking out in all six of his at bats he was taken out and won't start today. So Golden gets his chance and he's singled earlier to one pitch outside. What's a big pitch right here. You got their best hitters coming up next. Decker. Bissetta. Yutermark. Couple of lefties."
     }
   ]
 }
