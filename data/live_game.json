@@ -1,9 +1,9 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T15:52:53.890330",
+  "last_updated": "2026-05-03T15:54:28.730524",
   "inning": "Top 6",
   "score": null,
-  "count": "two-one",
+  "count": "0-2",
   "feed": [
     {
       "ts": "14:51:26",
@@ -1652,6 +1652,50 @@
         "home_run"
       ],
       "text": "Clear way back left field that may clear the stadium. Cuhio, oh, boy hit a home run to Razorback road to tie the game in the sixth inning. Oh, my goodness. Cuhio, oh, boy cleared the hub pen. Wow, Bill. 116, 468 feet."
+    },
+    {
+      "ts": "15:53:27",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "ball",
+        "home_run"
+      ],
+      "text": "That ball was absolutely destroyed. Coheal. Oh, it is a weekend for Coheal. Oh, Lloyd, the kid is back. Three home runs in three games. He'd gone 44 at bats between home runs and he has three this weekend. Three three game rooting bar to follow. Here's the pitch."
+    },
+    {
+      "ts": "15:53:47",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "strike",
+        "home_run"
+      ],
+      "text": "three three game rooting bar to follow. Here's the pitch strike called on the low outside solo homers in the fifth inning in the sixth inning. The wind could have been blowing in at a million miles an hour from left field. That's going to be a home run. Trankman said that was launching a left 10 degrees. Here comes a no one on Carter root bar. Robertson pausing."
+    },
+    {
+      "ts": "15:54:08",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "ball",
+        "strike"
+      ],
+      "text": "Trankman said that was launching a lift 10 degrees. Here comes a no one on Carter root bar. Robertson pausing and a swing and a miss on a change up strike two. Boy that's what happens when power meets power right there. Oh yeah. That was 98 and that was all barrel that ball was absolutely destroyed. Six that's a seven hints in the series for a low three home runs six RB eyes. And a note."
+    },
+    {
+      "ts": "15:54:28",
+      "inning": null,
+      "count": "0-2",
+      "score": null,
+      "events": [
+        "ball",
+        "foul"
+      ],
+      "text": "was absolutely destroyed. Six that's a seven hits in the series for a Loi three home runs. Six RBI's and an 0-2 count on Rootenbar. Grown a little flair foul. Less than a foot outside third. It almost hit the base. Bobby Wernis looks at the spot where the ball hit. There is less than a foot away from third base. Still nothing into one Carter Rootenbar. That's number eight."
     }
   ]
 }
