@@ -1,29 +1,41 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T14:48:07.852567",
-  "inning": "Bot 4",
+  "last_updated": "2026-05-03T14:52:26.985237",
+  "inning": null,
   "score": null,
-  "count": "1-2",
+  "count": "1-6",
   "feed": [
     {
-      "ts": "14:22:10",
-      "inning": "Bot 4",
-      "count": "1-2",
-      "score": null,
-      "events": [
-        "strike"
-      ],
-      "text": "Strike two to Stovall, count is 1 and 2."
-    },
-    {
-      "ts": "14:22:45",
-      "inning": "Bot 4",
+      "ts": "14:51:26",
+      "inning": null,
       "count": null,
       "score": null,
-      "events": [
-        "single"
-      ],
-      "text": "Davis singles to left field. Runner moves to third."
+      "events": [],
+      "text": "Mad Money Mania Friday 6 p.m. to 10 p.m. Play for your chance to win up to $10,000 cash at your premier gaming destination, Indigo Sky Casino and Resort. Highway 60 West of Seneca, Missouri. IndigoSkyCasino.com for details. Zach's Bees Giant Chicken Finger Wraps are no snack. In fact, they're so big, they get their own menu. Get one in your choice of Asian sensation, Buffalo Blue and Chicken Bacon Ranch. And you know they're coming packed with three crispy, hand-british faaa-"
+    },
+    {
+      "ts": "14:51:46",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [],
+      "text": "by the tradition presented by shelter insurance growing in the coming months and years as we continue to heat up the border with the battle line rivalry. Ole Miss leading three to one. Hogs will bat in the third after a word from UAMS Health. Hi, this is Quinn Grover. When you need expert health care, UAMS Health is here for you. From cancer and heart care to neurology, obstetrics, orthopedics and more. UAMS Health provides advanced care across a wide range of specialties, backed by research,"
+    },
+    {
+      "ts": "14:52:07",
+      "inning": null,
+      "count": "1-6",
+      "score": null,
+      "events": [],
+      "text": "From cancer and heart care to neurology, obstetrics, orthopedics and more, UAMS Health provides advanced care across a wide range of specialties, backed by research, innovation, education and a commitment to improving lives. That's care you can trust. From UAMS Health, the official orthopedics sports medicine provider for razorback athletes. For appointments called 501-686-8000. Quit tobacco today with B-Well Arkansas. B-Well Arkansas can help."
+    },
+    {
+      "ts": "14:52:26",
+      "inning": null,
+      "count": "1-6",
+      "score": null,
+      "events": [],
+      "text": "For a performance call, 501-686-8000."
     }
   ]
 }
