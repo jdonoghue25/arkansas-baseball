@@ -1,9 +1,9 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T15:04:48.832461",
+  "last_updated": "2026-05-03T15:06:18.073580",
   "inning": null,
   "score": null,
-  "count": "1-2",
+  "count": "3-0",
   "feed": [
     {
       "ts": "14:51:26",
@@ -373,6 +373,48 @@
         "ball"
       ],
       "text": "with his lead here's a 1 0 high outside ball to first to a count of the game from Gackle. He's been ahead 0 2 or 1 and 2 and it hasn't had those kinds of counts. That's because that is a put the first or second pitch into play 2 0 in the dirt backhanded by health Rick now 3 and 0."
+    },
+    {
+      "ts": "15:05:17",
+      "inning": null,
+      "count": "3-0",
+      "score": null,
+      "events": [
+        "strike"
+      ],
+      "text": "with four hits in the series. Three home runs and there's no way he is not swinging hard here. The 3-0 and he takes a strike. I figured he'd add the green light. I guess when you're hitting 205 you don't get the green light. Three home runs in the series and four against Arkansas in two years. I thought maybe he would. Yeah maybe."
+    },
+    {
+      "ts": "15:05:38",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "ball",
+        "out"
+      ],
+      "text": "I guess when you're hitting 205 you don't get the green light. Three home runs in the series and four against Arkansas in two years. I thought maybe he would. Yeah maybe. The three one. Outside ball four. Boy just barely miss that outside corner. Matt Hobbs out for a visit. Parker coil begins to warm up. Cat."
+    },
+    {
+      "ts": "15:05:58",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "out"
+      ],
+      "text": "That Hobbs out for a visit. Parker coil begins to warm up. Cackle stuff still looks good. Phil still got a good fastball 94. 95 seen 196 so far. Change up pretty good. He's having a hard time landing the change up against the lefties. You can see his battling and I mean, he's battled to the point where he's pitched pretty well."
+    },
+    {
+      "ts": "15:06:18",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "home_run",
+        "walk"
+      ],
+      "text": "He's having a hard time landing the change up against the lefties. You can see his battling and I mean he's battled to the point where these pitch pretty well. There's a wind blown home run. There's an oh two pitch. He'd like to come. He'd like to get back. There's an error that's no fault of his own. This is his first walk. You know, part of this, it's like David said before the game. Yeah, you want to win the game independent if you win."
     }
   ]
 }
