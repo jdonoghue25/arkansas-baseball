@@ -1,9 +1,9 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T15:51:20.467799",
+  "last_updated": "2026-05-03T15:52:53.890330",
   "inning": "Top 6",
   "score": null,
-  "count": "7-2",
+  "count": "two-one",
   "feed": [
     {
       "ts": "14:51:26",
@@ -1610,6 +1610,48 @@
         "out"
       ],
       "text": "Fairly quick to the plate. It's like a big arm right here. That's for sure. Yeah. Kuyi O'Loy is one for two with a run scoring single and a ground out. Robertson out of that set position starts a loy in the dirt with a slider. Robertson's only given up one home run this year. Twenty-five base hits. Twenty of them are..."
+    },
+    {
+      "ts": "15:51:53",
+      "inning": null,
+      "count": "1-0",
+      "score": null,
+      "events": [
+        "ball",
+        "foul",
+        "out"
+      ],
+      "text": "Eddie's is a fastball slider. Curveball guy against left. He's he's more fastball slider with a rare change up. 1 and 0. Alloy foul on a well, he's trying to get out of the way of a pitch and then batter road up with the ball for a foul 1 and 1. Is that McElvain up in the pen right now? That is Ethan McElvain's getting ready. I like it. I mean, he hasn't pitched yet this weekend. You know he's got it."
+    },
+    {
+      "ts": "15:52:13",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "out"
+      ],
+      "text": "That Mackeland up in the pen right now. That is Ethan Mckeland getting ready. I like it. I mean he hasn't pitched yet this weekend and you know he's got a pitch at some point. Maybe the seventh inning. One one on a low. Look out almost hit him. He wanted to hit him. Kooheel even looks down to the ground looks like he feels the pitch should have hit him. Yeah. Yeah. Yeah he turned and somehow."
+    },
+    {
+      "ts": "15:52:33",
+      "inning": null,
+      "count": "two-one",
+      "score": null,
+      "events": [
+        "home_run"
+      ],
+      "text": "Kuyo even looks down to the ground looks like he feels the pitch should have hit him. Yeah. Yeah, he turned and somehow that missed his front leg. Rooten bars next. Two and one on a loy, two homers in the series. And the pitch is driven in the air way back left field that may clear the stadium. Kuyo, oh, loy hit a home run to Razorback Road to tie the game in the sixth."
+    },
+    {
+      "ts": "15:52:53",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "home_run"
+      ],
+      "text": "Clear way back left field that may clear the stadium. Cuhio, oh, boy hit a home run to Razorback road to tie the game in the sixth inning. Oh, my goodness. Cuhio, oh, boy cleared the hub pen. Wow, Bill. 116, 468 feet."
     }
   ]
 }
