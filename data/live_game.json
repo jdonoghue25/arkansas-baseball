@@ -1,6 +1,6 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T16:00:39.463653",
+  "last_updated": "2026-05-03T16:02:10.542824",
   "inning": "Top 6",
   "score": null,
   "count": "3-3",
@@ -1860,6 +1860,52 @@
         "out"
       ],
       "text": "Oh, by Jeff had it landed in the bullpen. Ole Misses pitchers reacting like it was a home run. And Reese is caught up in the fence. Damian Ruiz is stuck in the left field fence. Yeah, look at this. He's got his foot stuck. His right foot stuck in the fence with Ole Misses pitchers trying to help him out. Now, Micah Newk comes over to help him as well. The reviews initiated by the crew. Previous play is going to review. And the umpires have initiated the review themselves, which I'm not sure if I like that at all."
+    },
+    {
+      "ts": "16:01:09",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "ball",
+        "home_run"
+      ],
+      "text": "The way the Ole Miss pitchers reacted made me think that ball was a home run. But I was looking at the third base umpire who made the call Jeff Head. Tate Sermons has had two home runs hitting 171 for the year. What do you think? Anything you can see on this replay, this isn't one of the replays where it's taller than the pole. It might have nicked the pole when it went by. Ruiz leaping into the fence got his right foot stuck."
+    },
+    {
+      "ts": "16:01:29",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "ball",
+        "foul",
+        "home_run",
+        "out"
+      ],
+      "text": "the replays were it's taller than the pole it might have nicked the pole when it went by Ruiz leaping into the fence got his right foot stuck it looked like the ball was also out of his reach and he was still in fair territory reaching to the top of the netted part of the pole well the Ole Miss pitchers are saying it's a home run the Razorback fans are saying it's foul so I'm going to go with the Razorback fans of course the Ole Miss"
+    },
+    {
+      "ts": "16:01:50",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "ball",
+        "foul",
+        "home_run"
+      ],
+      "text": "pole with the Ole Miss pitchers are saying it's a home run the razorback fans are saying it's foul so I'm going to go with the razorback fans of course the Ole Miss players are saying that's a home run they're slowing it down for us here oh that's foul that's a foul ball and you can tell I think you can tell you know the one thing I know that looks foul it looks like you can tell the ball goes in front of the pole not behind it but look how high-res guy yeah his his glove crap"
+    },
+    {
+      "ts": "16:02:10",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "ball"
+      ],
+      "text": "It looks like you can tell the ball goes in front of the pole, not behind it. Boy, look how high Rieskeit. Yeah, his glove crashed into the netted part of the pole, into the chain link at part of it. Hope he's alright. It looks like he's okay. Yeah, I mean, those are some very important, that's an important right foot. There's somebody of his speed and anybody really. That was pretty cool though, the Ole Miss pitchers came over to pull the fence back."
     }
   ]
 }
