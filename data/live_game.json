@@ -1,6 +1,6 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T15:17:16.326647",
+  "last_updated": "2026-05-03T15:18:49.205500",
   "inning": "Bot 4",
   "score": null,
   "count": "1-0",
@@ -711,6 +711,43 @@
         "run_scored"
       ],
       "text": "Visit hot springs dot org and oakline dot com Ole Miss is leading three to one. The hogs will make a pitch and change for the fifth inning on the Razorback Sports Network from Learfield What a matchup we've got folks just non-stop action the energy is electric and the fans are all in an intense game like this calls for a Coca-Cola Crisp and refreshing that's the game changer Yeah, that tastes scores every time and just like that. They're back at it passionate fans"
+    },
+    {
+      "ts": "15:17:45",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [],
+      "text": "passionate fans in an ice cold Coca-Cola. Now that's a winning combo. No matter the team, no matter the sport, everyone knows fan work is thirsty work. Enjoy a Coca-Cola. Wood Power Sports is passionate about serving your off-road and on-road needs. Between our four locations, we carry brands like Polaris, Canam, Kawasaki, Honda, Yamaha, CF Moto and Suzuki. We are your one-stop shop for everything Power Sports. Our service and parts teams are experienced and will work hard to keep you and your vehicle."
+    },
+    {
+      "ts": "15:18:06",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [],
+      "text": "Ah-ha, CF Moto and Suzuki. We are your one-stop shop for everything Power Sports. Our service and parts teams are experienced and will work hard to keep you and your vehicle on the road or trail. Come see us at Wood Power Sports at Fayetteville, Wood Power Sports at Springdale, Heartland Honda or Wood Power Sports at Harrison. We look forward to earning your business. Go Hogs!"
+    },
+    {
+      "ts": "15:18:29",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "out"
+      ],
+      "text": "Arkansas makes a change for the pitchers mound here for the fifth inning Parker coil. Relieved a game at Gackell. Taylor Rabe is begun to settle in for Ole Miss with the last seven Arkansas batters making it out. Gackell completes four innings. Charged with three runs on five basics. Two of those runs."
+    },
+    {
+      "ts": "15:18:49",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "walk",
+        "out"
+      ],
+      "text": "Seven Arkansas batters making it out. Gacko completes four innings. Charged with three runs on five basics. Two of those runs earn one walk, five strikeouts. A couple of wild pitches. You know, it's kind of it's funny, Bubba, because when I was talking with Coach Van Horne and Coach Hobbs before the series, and I was saying, you know, this Ole Miss team hits home runs. You can't walk this team. Don't walk them. That's going to be."
     }
   ]
 }
