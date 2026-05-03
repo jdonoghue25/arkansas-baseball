@@ -1,9 +1,9 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T16:08:25.441058",
+  "last_updated": "2026-05-03T16:10:04.598636",
   "inning": "Bot 7",
   "score": null,
-  "count": "3-3",
+  "count": "1-0",
   "feed": [
     {
       "ts": "14:51:26",
@@ -2073,6 +2073,45 @@
         "out"
       ],
       "text": "and the bottom of the seventh inning and it does look like they're sticking with JP Robertson here who surrendered the game tying home run by Cohela Loie in the sixth inning but then got TJ Poppy on a double play. Nolan Sousa leading off with a 3-3 tie score. Takes the first pitch in the dirt. A boy two RBIs Stewart the other. Sousa strikeout ground out."
+    },
+    {
+      "ts": "16:09:04",
+      "inning": null,
+      "count": "1-0",
+      "score": null,
+      "events": [],
+      "text": "Call on the mound. Here's the 1-0. Suza is the base head over the first base back The set up to his left keeps it in front of him Going suza aboard and will pause 10 seconds station ID razor back sports network Fayetteville the razorbacks live on 92 won the ticket and 92 won the ticket app cumulus media station Jack Stewart now the batter"
+    },
+    {
+      "ts": "16:09:24",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "walk",
+        "out"
+      ],
+      "text": "on the ticket jack stuart now the batter that robert sends a little bit quicker to the plate than somebody at his size you might think so who's of course runs really well twelve or fourteen stealing bases out to a big lead not running stuart takes low walk it up"
+    },
+    {
+      "ts": "16:09:44",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "home_run",
+        "walk",
+        "out"
+      ],
+      "text": "This size you might think. Susa, of course, runs really well. 12 for 14 stealing bases out to a big lead. Not running. Stewart takes low. Walk on a homer for Stewart today. The homerun has only hit the series. The walk, the third he's taken. And folly out to the mound to go meet with JP Robertson. Sermons is the new left fielder. He pinch hit for Golden to start the seventh inning."
+    },
+    {
+      "ts": "16:10:04",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [],
+      "text": "Sermons is the new left fielder. He pinch hit for Golden to start the seventh inning. And Stewart's got a moment to wait. Volley and Robertson chatting on top of the hill. And you can now feel the tension of this. Winter takes off the weekend rubber game."
     }
   ]
 }
