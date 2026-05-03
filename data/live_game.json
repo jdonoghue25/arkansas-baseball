@@ -1,9 +1,9 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T15:59:03.897617",
+  "last_updated": "2026-05-03T16:00:39.463653",
   "inning": "Top 6",
   "score": null,
-  "count": "0-2",
+  "count": "3-3",
   "feed": [
     {
       "ts": "14:51:26",
@@ -1817,6 +1817,49 @@
       "score": null,
       "events": [],
       "text": "Legendary players, college baseball's best fans. SEC baseball is here and so are some great ballpark promotions. Final record night, bobblehead day and more. Dot this season's Razorback baseball promotional giveaway schedule. For details and tickets, just visit arkinsawraiserbacks.com."
+    },
+    {
+      "ts": "15:59:35",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "home_run",
+        "run_scored"
+      ],
+      "text": "Well it's been about the home run today Ole Miss with a free run homer from Owen Pano in the second inning and after trailing three to one the hogs tie the game with solo home runs by Zach Stewart in the fifth. Kuhia will lay in the sixth. Three three score at the start of the seventh inning and Ole Miss announcing a pinch hitter to start the seventh inning."
+    },
+    {
+      "ts": "15:59:56",
+      "inning": null,
+      "count": "3-3",
+      "score": null,
+      "events": [
+        "run_scored"
+      ],
+      "text": "Cojia will lay in the sixth. 3-3 score at the start of the seventh inning. And Ole Miss announcing a pinch hitter to start the seventh inning. Parker Coyle continues to pitch for the Razorbacks. Tate Sermons will pinch hits instead of the left fielder Cannon Golden, a right-handed batter. And Parker Coyle nearly hits him with a counter to start the inning. All right."
+    },
+    {
+      "ts": "16:00:18",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "foul",
+        "home_run"
+      ],
+      "text": "and Parker coil nearly hits him with a counter to start the inning. Tate sermons. S. I. R. M. A. N. S. Red shirt, fresh room from Valdosta, one Oh pitch at high in the air. Left field near the line going over Ruiz Ruiz near the corner, leaping the balls. Foul is called foul by Jeff had it landed in the bullpen. Ole Miss is pitchers reacting like it was a home run and Reese is caught up in the Madameonto."
+    },
+    {
+      "ts": "16:00:39",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "home_run",
+        "out"
+      ],
+      "text": "Oh, by Jeff had it landed in the bullpen. Ole Misses pitchers reacting like it was a home run. And Reese is caught up in the fence. Damian Ruiz is stuck in the left field fence. Yeah, look at this. He's got his foot stuck. His right foot stuck in the fence with Ole Misses pitchers trying to help him out. Now, Micah Newk comes over to help him as well. The reviews initiated by the crew. Previous play is going to review. And the umpires have initiated the review themselves, which I'm not sure if I like that at all."
     }
   ]
 }
