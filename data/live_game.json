@@ -1,6 +1,6 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T15:54:28.730524",
+  "last_updated": "2026-05-03T15:55:59.951374",
   "inning": "Top 6",
   "score": null,
   "count": "0-2",
@@ -1696,6 +1696,50 @@
         "foul"
       ],
       "text": "was absolutely destroyed. Six that's a seven hits in the series for a Loi three home runs. Six RBI's and an 0-2 count on Rootenbar. Grown a little flair foul. Less than a foot outside third. It almost hit the base. Bobby Wernis looks at the spot where the ball hit. There is less than a foot away from third base. Still nothing into one Carter Rootenbar. That's number eight."
+    },
+    {
+      "ts": "15:54:57",
+      "inning": null,
+      "count": "one-two",
+      "score": null,
+      "events": [
+        "ball"
+      ],
+      "text": "That's number eight for Loy. He's got 29 for his career now. Rootenbar takes a slider in the dirt ball one and two. I mean, technically that was 116.8. So you can round that up to 117. I like your math."
+    },
+    {
+      "ts": "15:55:18",
+      "inning": null,
+      "count": "one-two",
+      "score": null,
+      "events": [
+        "home_run",
+        "out"
+      ],
+      "text": "I like your math. Robertson sets one and two root bar takes it low saw the split is it a splitter or change up is that pitch dropped yeah it's a splitty that's his change up and they said a rare one he doesn't like throwing it very much just the second home run all year that Robertson's given up out of 15 appearances."
+    },
+    {
+      "ts": "15:55:38",
+      "inning": null,
+      "count": "two-two",
+      "score": null,
+      "events": [
+        "ball",
+        "home_run",
+        "out"
+      ],
+      "text": "this change up and they said a rare one he doesn't like throwing it very much as the second home run all year that robertson's given up out of fifteen appearances and that would have been a home run to straightaway center at the polo grounds two and two on root and bar the pitch low and so the best at bat for root and bar in the series from 0 and 2 to 3 and 2 I don't know Phil I still say we got to go measure that because we're that ball land"
+    },
+    {
+      "ts": "15:55:59",
+      "inning": null,
+      "count": "0-2",
+      "score": null,
+      "events": [
+        "ball",
+        "walk"
+      ],
+      "text": "From 0 and 2 to 3 and 2. I don't know Phil. I still say we got to go measure that because where that ball landed. It says 468 feet. I think that's farther. I think it was farther. Measure what it takes to get to the Razorback Road. Three to count the pitch to Rootenbar. Inside a walk. And what a way to climb back into that at bat and take base. Rootenbar board for the first time and now Poppy."
     }
   ]
 }
