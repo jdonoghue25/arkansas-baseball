@@ -1,9 +1,9 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T16:02:10.542824",
+  "last_updated": "2026-05-03T16:03:44.872310",
   "inning": "Top 6",
   "score": null,
-  "count": "3-3",
+  "count": "two-one",
   "feed": [
     {
       "ts": "14:51:26",
@@ -1906,6 +1906,49 @@
         "ball"
       ],
       "text": "It looks like you can tell the ball goes in front of the pole, not behind it. Boy, look how high Rieskeit. Yeah, his glove crashed into the netted part of the pole, into the chain link at part of it. Hope he's alright. It looks like he's okay. Yeah, I mean, those are some very important, that's an important right foot. There's somebody of his speed and anybody really. That was pretty cool though, the Ole Miss pitchers came over to pull the fence back."
+    },
+    {
+      "ts": "16:02:42",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "ball",
+        "foul"
+      ],
+      "text": "and unwegis foot. I didn't see anybody get stuck in the fence in a long, long time. I saw a guy plaster himself into the fence a few times. And the next day, the team showed up and there was a police outline on the outfield fence. Sounds like we're about to hear from Jeff Head. Foul ball. Open the field. He has one challenge for me. But I think you just saw how Tate Sermons tries to hit, right? From the heels. Yes. Seven hits for the year. Four."
+    },
+    {
+      "ts": "16:03:04",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "strike",
+        "double"
+      ],
+      "text": "That's one challenge for Manny. But I think you just saw how Tate Sermons tries to hit, right? From the heels. Yes. Seven hits for the year, four extra bases, two doubles, two home runs. And he was about what? Less than a foot away from his third. And it would have been a tie-breaking hit. I don't think we should throw him another cutter in. Coils next pitch. Drops in for strike two. Yeah, that's better right there. Back door, that thing. Yes. Secondly, \u0394 Cologne. Sermons up."
+    },
+    {
+      "ts": "16:03:25",
+      "inning": null,
+      "count": "two-one",
+      "score": null,
+      "events": [
+        "ball",
+        "out"
+      ],
+      "text": "right there back door that thing. Sermons also hit that ball right at the spot where the wind is going to pull it out a little bit farther. One two pitch. He struck him out looking back door breaking ball one out in the seventh Parker coil has been through the order once now. Two and one third innings. Ethan McElvane had been getting ready. While the hogs hit in the sixth, they stick with coil to face down decker."
+    },
+    {
+      "ts": "16:03:44",
+      "inning": null,
+      "count": "two-one",
+      "score": null,
+      "events": [
+        "strike"
+      ],
+      "text": "two and one third innings. Ethan McElvain had been getting ready while the hogs hit in the sixth. They stick with coil to face Tom Decker a second time. Decker is 0 for 3. Two flyballs to center in a strikeout. This is lefty lefty coil kicks and throws. Cutter for a strike outside edge on Decker."
     }
   ]
 }
