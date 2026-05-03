@@ -1,9 +1,9 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T16:10:04.598636",
+  "last_updated": "2026-05-03T16:11:39.097682",
   "inning": "Bot 7",
   "score": null,
-  "count": "1-0",
+  "count": "2-0",
   "feed": [
     {
       "ts": "14:51:26",
@@ -2112,6 +2112,46 @@
       "score": null,
       "events": [],
       "text": "Sermons is the new left fielder. He pinch hit for Golden to start the seventh inning. And Stewart's got a moment to wait. Volley and Robertson chatting on top of the hill. And you can now feel the tension of this. Winter takes off the weekend rubber game."
+    },
+    {
+      "ts": "16:10:37",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "out"
+      ],
+      "text": "All the back of the catcher squat. Susa out to his lead at first base. Third base lines wide open. A steward waits on a 1 0 pick off row and back to the base safely. His Susa. Only one attempted steal for the razorbacks today and that was back in the first inning. Damian Ruiz. Stole."
+    },
+    {
+      "ts": "16:10:58",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "double",
+        "out"
+      ],
+      "text": "Only one attempted steal for the Razorbacks today and I was back in the first inning. Damian Ruiz stole his 14th base. Susan has shortened the lead a little bit now this set by Robertson one. O'Count the pitch down and in Stewart ahead to an O. Yeah, they'd love to steal Sousa right here and take the double play out of play. But this guy's a one one one one one two to the plate. So that's going to be tough."
+    },
+    {
+      "ts": "16:11:18",
+      "inning": null,
+      "count": "2-0",
+      "score": null,
+      "events": [
+        "double",
+        "out"
+      ],
+      "text": "And 2-0, yeah, they'd love to steal Sousa right here and take the double play out of play, but this guy's a 1-1, 1-1-2 to the plate, so that's gonna be tough. Orasoscan Fali is a good throwing catcher. 2-0, Ansturin. Sousa draws another throw and he's safe."
+    },
+    {
+      "ts": "16:11:39",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [],
+      "text": "to an 0 on Stewart. Susan draws another throw and he's safe. Stewart took advantage of that wind in the fifth inning. It is eighth of the year to account now and the pitch swing in a miss on a high fastball try to yank it. We got him to chase one right there."
     }
   ]
 }
