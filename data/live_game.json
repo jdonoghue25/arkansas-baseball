@@ -1,9 +1,9 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T15:31:12.734611",
-  "inning": "Bot 5",
+  "last_updated": "2026-05-03T15:32:43.788441",
+  "inning": "Top 5",
   "score": null,
-  "count": "3-2",
+  "count": "1-2",
   "feed": [
     {
       "ts": "14:51:26",
@@ -1072,6 +1072,52 @@
         "foul"
       ],
       "text": "of it's also you know the analytics about the third time through the batting order and and then sometimes that means something and sometimes it doesn't I'm not sure what it mean with Taylor Ray the 3-2 again then remains stays alive with a chopper foul well he's just challenging Damian with fastballs four fastballs in a row Parker Coyle"
+    },
+    {
+      "ts": "15:31:42",
+      "inning": "Top 5",
+      "count": null,
+      "score": null,
+      "events": [
+        "strike",
+        "strikeout",
+        "out"
+      ],
+      "text": "Parker coil pitch they one two three top of the fifth inning after Gackolot thrown two scoreless innings in a row. One out Homer by Stewart Ruiz batting with health Rick next three balls two strikes pitch is on the inside looked inside but called for strike three by Ronnie Teague and Ruiz was already halfway to first base. Yeah boy I don't know about that setyou're in Baltimore called"
+    },
+    {
+      "ts": "15:32:03",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "ball",
+        "strike"
+      ],
+      "text": "Ruiz was already halfway to first base. Yeah boy, I don't know about that one. That is not a strike. Yeah, it's a ball. It is not a strike. I mean, you'll get Folly the catcher. He didn't even catch it the right way. He's like Folly didn't even try to frame it. He set up inside and still had to move his glove inside farther. That's not a strike. Here's Hellfrick. And a fast."
+    },
+    {
+      "ts": "15:32:23",
+      "inning": null,
+      "count": "0-1",
+      "score": null,
+      "events": [
+        "ball",
+        "strike"
+      ],
+      "text": "He's like falling even trying to frame it. He's set up inside and still had to move his glove inside farther. That's not a strike. Here's Hellfrick and a fastball for strike one. Well, I mean, just to put it in these terms, Ronnie Teague has called pitches where he is set up. He is set up over the left shoulder of the catcher, and that's where he's been calling pitches today off the plate occasionally. And it's been both ways. Here's the 0-1 low on Hellfrick, a ball and a strike. Better. It's been both ways with all the sports."
+    },
+    {
+      "ts": "15:32:43",
+      "inning": null,
+      "count": "1-2",
+      "score": null,
+      "events": [
+        "ball",
+        "strike",
+        "out"
+      ],
+      "text": "That's where he's been calling pitches today off the plate occasionally and it's been both ways. Here's the 0 1 low on Hellfrick a ball and a strike. But it's been both ways but a little more towards towards Taylor Ray. Well I tell you what's so big about that is that's Ries. Ries would have sold second so we'd have Hellfrick up with the runner at second. A 1 1 to Hellfrick fouled out of play over the screen high fastball 1 and 2."
     }
   ]
 }
