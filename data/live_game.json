@@ -1,9 +1,9 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T15:11:00.426473",
-  "inning": null,
+  "last_updated": "2026-05-03T15:12:32.086663",
+  "inning": "Bot 4",
   "score": null,
-  "count": "1-2",
+  "count": "1-8",
   "feed": [
     {
       "ts": "14:51:26",
@@ -547,6 +547,46 @@
         "out"
       ],
       "text": "Runner tries for second base to throw, and Gackle gets Folly for out number three. Ryder, Helfrig, blocked the ball. Folly, with Pano running for third base, must have thought no one's gonna throw to second base, but that's exactly where Helfrig threw. And Folly making a huge base running mistake is the last out of the inning at second base. No runs, one base hit, one left by Ole Miss. Toyota's a proud sponsor of Razorback Athletics, Razorback."
+    },
+    {
+      "ts": "15:11:31",
+      "inning": "Bot 4",
+      "count": null,
+      "score": null,
+      "events": [
+        "home_run"
+      ],
+      "text": "is at a local Toyota dealer today. It's the bottom of the fourth and it will be all misleading. Three to one. This is Arkansas baseball from Learfield. There's no containing the passion of the hog. And where you'll find tried and true razorbacks, home run blasts and a whole lot of. This Arkansas tradition is brought to you by Ford F series. America's best selling trucks, 49 years straight. Drive F 150."
+    },
+    {
+      "ts": "15:11:51",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "walk"
+      ],
+      "text": "This Arkansas tradition is brought to you by Ford F series. America's best-selling trucks 49 years straight. Drive F 150. Official truck of the Razorbacks. Only at your Arkansas Ford dealer. Based on 1977 to 2025 total sales. Attention Arkansas homeowners. Does your bathroom need a makeover? Bath makeover of Arkansas offers bathtubs, walk-in showers and walk-in bathtubs. Bath makeover of Arkansas."
+    },
+    {
+      "ts": "15:12:12",
+      "inning": null,
+      "count": "1-8",
+      "score": null,
+      "events": [
+        "walk"
+      ],
+      "text": "Does your bathroom need a makeover? Bath makeover of Arkansas offers bathtubs, walk-in showers and walk-in bathtubs. Bath makeover of Arkansas is an official sponsor of Razorback Athletics. Arkansas homeowners trust bath makeover of Arkansas with their bathroom project. Call 1-800-NUBATH to schedule your free design consultation backed with a price log guarantee. That's 1-800-NUBATH, 1-800-NEWBA-TH."
+    },
+    {
+      "ts": "15:12:32",
+      "inning": "Bot 4",
+      "count": "1-8",
+      "score": null,
+      "events": [
+        "single"
+      ],
+      "text": "free design consultation backed with a price log guarantee. That's 1-800-NUBATH, 1-800-NEW-BA-TH. ATH. Cuhio O'Loy will bat lead off for the Razorbacks in the bottom of the fourth inning. Here's the RBI single that got them a briefly held at one nothing lead at the end of the first inning."
     }
   ]
 }
