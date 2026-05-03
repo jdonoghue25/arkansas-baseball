@@ -1,9 +1,9 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T14:55:32.453543",
+  "last_updated": "2026-05-03T14:57:03.053987",
   "inning": null,
   "score": null,
-  "count": "0-1",
+  "count": "two-two",
   "feed": [
     {
       "ts": "14:51:26",
@@ -119,6 +119,49 @@
         "out"
       ],
       "text": "you don't have to know what it is just no one ate the fastball. Oh two. Look out on Camden. Always hit his front shoulder ball one. Two hits in the series for Kojal both home runs. No one on for Kojal and one out and a one two pitch. Found a way off the end of the bat. Good job right there by Camden."
+    },
+    {
+      "ts": "14:56:01",
+      "inning": null,
+      "count": "two-two",
+      "score": null,
+      "events": [
+        "home_run",
+        "out"
+      ],
+      "text": "Camden spoiler good pitchers pitch. Thirty nine hits in the first two games this year is 13 home runs. And already one home run out of seven hits in this game hit by Owen Pano giving Ole Miss their 3 1 lead. Cojal takes a high fastball runs it to two and two on Taylor Rabe."
+    },
+    {
+      "ts": "14:56:21",
+      "inning": null,
+      "count": "2-2",
+      "score": null,
+      "events": [
+        "foul"
+      ],
+      "text": "Fastball runs it to 2-2 on Taylor Rabe. All he's targeted on the outside. Cozrel chops it foul past first. That's one of the few changeups he's left up. That was above the belt."
+    },
+    {
+      "ts": "14:56:41",
+      "inning": null,
+      "count": "two-two",
+      "score": null,
+      "events": [
+        "foul",
+        "out"
+      ],
+      "text": "It foul pass first. That's one of the few changeups he's left up. That was above the belt. Beltide changeups usually are home runs. Yeah, or something akin to it. Can't resist a little bit out front on that pitch. The seventh pitch of the app at the counts two and two. Here it comes. Another pop foul. Wind will make sure it blows out of."
+    },
+    {
+      "ts": "14:57:03",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "foul",
+        "out"
+      ],
+      "text": "out front on that pitch. The seventh pitch of the app at the counts to in two here it comes. Another pop foul. Wind will make sure it blows out of play. Up in the sweet level but nobody could catch it. Another change up. Is there anything about his change up where he kind of tips it kind of like how Hunter Elliott was the other night? Yeah. It's what you said about that a little hit"
     }
   ]
 }
