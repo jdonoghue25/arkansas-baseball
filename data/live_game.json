@@ -1,9 +1,9 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T15:09:26.320971",
+  "last_updated": "2026-05-03T15:11:00.426473",
   "inning": null,
   "score": null,
-  "count": "2-6",
+  "count": "1-2",
   "feed": [
     {
       "ts": "14:51:26",
@@ -504,6 +504,49 @@
         "out"
       ],
       "text": "Truck him out looking fastball at the top of the zone. The Golden thought he might have first base. Yeah, that's a good pitch. I love it when Gackle uses that top of the zone like that fifth strikeout for Gackle. Now we'll see if DVH sticks with Gabe for Dom Decker. Decker has seen him twice. Gackle struck him out in the second. Decker fly down to new in the first inning. And they're going to stick with Gabe here. Two on two out. Righty verse lefty. Three to one old man."
+    },
+    {
+      "ts": "15:09:56",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "single"
+      ],
+      "text": "It's the decker is fouled away. Good fastball to get ahead. Two hits in the series for Decker. Singles yesterday. One of them hit off Cole Gibler's backside. The other was a grounder against Gibler. Stretch by Gackle pitched to Decker, high and away."
+    },
+    {
+      "ts": "15:10:17",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "strike"
+      ],
+      "text": "stretch by Gackle pitched to Decker high and away. Go's thrown over a hundred pitches a few times this year. He's at 72 1 1. Decker looks at strike two. Nick the outside corner with heat. That's good pitch right there. I think he caught Decker looking off speed."
+    },
+    {
+      "ts": "15:10:38",
+      "inning": null,
+      "count": "1-2",
+      "score": null,
+      "events": [
+        "ball",
+        "strike"
+      ],
+      "text": "Decker looks at strike two. Knicked the outside corner with heat. That's a good pitch right there. I think he caught Decker looking off speed. Ever since Folly came to the plate, they've been very selective this inning. Gackle ready with the 1-2, and Decker takes in the dirt. And it's blocked, but not blocked enough. Runner tries for second base to throw, and Gackle gets Folly for round number three. Ryder, Helperick blocked the ball. Folly."
+    },
+    {
+      "ts": "15:11:00",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "ball",
+        "single",
+        "out"
+      ],
+      "text": "Runner tries for second base to throw, and Gackle gets Folly for out number three. Ryder, Helfrig, blocked the ball. Folly, with Pano running for third base, must have thought no one's gonna throw to second base, but that's exactly where Helfrig threw. And Folly making a huge base running mistake is the last out of the inning at second base. No runs, one base hit, one left by Ole Miss. Toyota's a proud sponsor of Razorback Athletics, Razorback."
     }
   ]
 }
