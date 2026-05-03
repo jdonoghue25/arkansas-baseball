@@ -1,9 +1,9 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T15:26:32.540510",
+  "last_updated": "2026-05-03T15:28:04.524413",
   "inning": "Bot 5",
   "score": null,
-  "count": "0-2",
+  "count": "3-2",
   "feed": [
     {
       "ts": "14:51:26",
@@ -948,6 +948,45 @@
         "out"
       ],
       "text": "They get only South Carolina and Mizzou for the last two weeks. And I'm not sure if that will help their RPI very much if at all. Two and oh one. Sooza here's the pitch. Fastball first strike. Sooza struck out looking is only at bat. Mizzou gets bandy and then Texas. They got to go to Texas to close out the regular season in Texas lucky. Hogs will be a Kentucky that weekend. The two one from Rabe is low."
+    },
+    {
+      "ts": "15:27:03",
+      "inning": null,
+      "count": "3-1",
+      "score": null,
+      "events": [],
+      "text": "All three. Think about it, Phil. What's you think about Tennessee, LSU, Vandy? Vandy. I mean, they're just scuffling. It's crazy. Kind of the shift of power. Here's the 3-1 to Susa. Fastball at his knees. He thought it was low. The count full. Rabe hasn't walked anybody since Stuart in the second. And that was the last Arkansas bat at a reach base. Well, and it's not like the league necessarily."
+    },
+    {
+      "ts": "15:27:24",
+      "inning": null,
+      "count": "3-2",
+      "score": null,
+      "events": [
+        "out"
+      ],
+      "text": "Full. Rabe hasn't walked anybody since Stewart in the second. And that was the last Arkansas bat at a reach base. Well, and it's not like the league necessarily flipped the bottom to the top. Carolina and Mizzou still at the bottom. It's the middle went to the top. 3-2 pitch to Sousa. Off the mound towards shortstop, Ratted Peano. And the throws low. Sousa out on a great scoop by Eddie Furnace. By Wilfurnace, pardon me. That's Eddie's son, of course. It's a really nice play and a rough throw from Peano."
+    },
+    {
+      "ts": "15:27:44",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "out"
+      ],
+      "text": "Oh, Susa out on a great scoop by Eddie Furnace. By Wil Furnace, pardon me. That's Eddie's son, of course. It's a really nice play and a rough throw from Pano. That's the kind of, well, you're hoping for a throwing error. That kind of defines college baseball rallies sometimes, especially the way Taylor Rabe is throwing. You're going to need a mistake somehow. They get a right-hander now beginning to warm up."
+    },
+    {
+      "ts": "15:28:04",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "walk",
+        "out"
+      ],
+      "text": "College baseball rallies sometimes especially the way Taylor Ray is throwing you. You're going to need a mistake somehow. They get a right hander now beginning to warm up. They just got him up for the first pitch. Stewart the batter Zach's the last razor back to reach took a walk in the second inning. First pitch slider hit in the air to left field. Will that carry Golden goes back to the wall and it's out of here. Stewart took advantage. Hits it over the left field fence. Homer number eight. Hobbs down."
     }
   ]
 }
