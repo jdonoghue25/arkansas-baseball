@@ -1,9 +1,9 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T16:03:44.872310",
-  "inning": "Top 6",
+  "last_updated": "2026-05-03T16:05:18.580166",
+  "inning": "Top 7",
   "score": null,
-  "count": "two-one",
+  "count": "3-3",
   "feed": [
     {
       "ts": "14:51:26",
@@ -1949,6 +1949,51 @@
         "strike"
       ],
       "text": "two and one third innings. Ethan McElvain had been getting ready while the hogs hit in the sixth. They stick with coil to face Tom Decker a second time. Decker is 0 for 3. Two flyballs to center in a strikeout. This is lefty lefty coil kicks and throws. Cutter for a strike outside edge on Decker."
+    },
+    {
+      "ts": "16:04:15",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "ball",
+        "strike"
+      ],
+      "text": "home is pitcher watching from the pen but not warming up to standing on the mound. Oh one. Decker takes high ball in a strike. And now that pitcher is going to begin warming up in the bullpen. They have a lefty getting ready and it is Walter Hooks who was the guy who finished the last inning in two thirds for them yesterday but didn't have to work too hard. A little Gale\u2026"
+    },
+    {
+      "ts": "16:04:36",
+      "inning": null,
+      "count": "one-one",
+      "score": null,
+      "events": [
+        "strike",
+        "strikeout"
+      ],
+      "text": "who was the guy who finished the last inning in two thirds from yesterday, but didn't have to work too hard. One and one on Don Decker, Coyle throws a cutter at the knees, strike two. See hooks yesterday, 23 pitches against six batters. The one two, Decker swings and misses at a pitch that was up and then two outs."
+    },
+    {
+      "ts": "16:04:57",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "strikeout",
+        "out"
+      ],
+      "text": "the one two decker swings and misses at a pitch that was up and in two outs in the seventh inning both on strikes but it's a backup cutter right there just stayed up and in Tristan Bessetta over the Hogsman his number in this series both for 11 ground out line out ground out today the line out was hit on the screws right at root"
+    },
+    {
+      "ts": "16:05:18",
+      "inning": "Top 7",
+      "count": "3-3",
+      "score": null,
+      "events": [
+        "strike",
+        "run_scored",
+        "out"
+      ],
+      "text": "It's about his number in this series. 0 for 11. Ground out, line out. Ground out today. The line out was hit on the screws right at root bar. And he dangerous left handed batter. His coil looks descended to the stretch. Here's the pitch. Swing in a mess. Perfect cutter, strike one. 3-3 score here in the top of the seventh inning. All miss hasn't scored."
     }
   ]
 }
