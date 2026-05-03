@@ -1,9 +1,9 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T15:29:38.682940",
+  "last_updated": "2026-05-03T15:31:12.734611",
   "inning": "Bot 5",
   "score": null,
-  "count": "1-0",
+  "count": "3-2",
   "feed": [
     {
       "ts": "14:51:26",
@@ -1030,6 +1030,48 @@
         "home_run"
       ],
       "text": "Rabe throws 1-0. A swinging in a miss with a fast ball. One ball, one strike. And his home run number eight. A round by Taylor Rabe. Third base backs up, Ruiz looks at a ball outside, 2-1. Come on. Please succumb."
+    },
+    {
+      "ts": "15:30:10",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "ball",
+        "home_run"
+      ],
+      "text": "I'm not surprised because it's a Sunday. The two one on Ruiz is high ball three now now. I'm not surprised, but the yes at the same time because he's look good because there's a little bit of fluke in his to that home run, but it's a rubber match. You know, I think the coaches are thinking I'm just going to go to refresh arm when I need it. Here's the three one Ruiz pops one up along the right field line that fades to the seats and we'll make it wait."
+    },
+    {
+      "ts": "15:30:31",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "out"
+      ],
+      "text": "I need it. Here's the three one. Ruiz pops one up along the right field line that fades to the seats and will make it way out of play. Strength to buy sometimes coaches overthink it. Do they have anyone in the bullpen better than what this dude's got? That's right. And actually kind of thinking about that yesterday why they went to hooks when they're up so big. Anything. Well, this is a team that lost four in a row. I guess they weren't taking any chances. Yeah. I think that's how maybe that's how he's looking at it. I see it. I see it."
+    },
+    {
+      "ts": "15:30:52",
+      "inning": null,
+      "count": "3-2",
+      "score": null,
+      "events": [
+        "foul",
+        "out"
+      ],
+      "text": "up when they're up so big anything well this is the class for a row I guess they weren't taking any chances yeah I think that's how that maybe that's how he's looking at it but I see it from your perspective completely rape still has great stuff it's a 3-2 count on Ruiz now the pitch another foul out of play on the right side yeah I feel like if they go to the pin they're doing us a favor well and part of it's also you know the analytics about the third time through the batting order and and then sometimes that means something and sometimes it doesn't"
+    },
+    {
+      "ts": "15:31:12",
+      "inning": null,
+      "count": "3-2",
+      "score": null,
+      "events": [
+        "foul"
+      ],
+      "text": "of it's also you know the analytics about the third time through the batting order and and then sometimes that means something and sometimes it doesn't I'm not sure what it mean with Taylor Ray the 3-2 again then remains stays alive with a chopper foul well he's just challenging Damian with fastballs four fastballs in a row Parker Coyle"
     }
   ]
 }
