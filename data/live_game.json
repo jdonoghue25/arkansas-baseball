@@ -1,9 +1,9 @@
 {
   "status": "live",
-  "last_updated": "2026-05-03T14:57:03.053987",
+  "last_updated": "2026-05-03T14:58:35.451965",
   "inning": null,
   "score": null,
-  "count": "two-two",
+  "count": "2-2",
   "feed": [
     {
       "ts": "14:51:26",
@@ -162,6 +162,51 @@
         "out"
       ],
       "text": "out front on that pitch. The seventh pitch of the app at the counts to in two here it comes. Another pop foul. Wind will make sure it blows out of play. Up in the sweet level but nobody could catch it. Another change up. Is there anything about his change up where he kind of tips it kind of like how Hunter Elliott was the other night? Yeah. It's what you said about that a little hit"
+    },
+    {
+      "ts": "14:57:33",
+      "inning": null,
+      "count": "2-2",
+      "score": null,
+      "events": [
+        "foul",
+        "out"
+      ],
+      "text": "That's a little lower. 2-2. Tojal, fouls another one on. That's three in a row. But at this point, you've seen all his pitches. Tojal about to see a ninth pitch with Mike a new waiting next. Rabe throws and strikes him out swinging with a foul tip."
+    },
+    {
+      "ts": "14:57:54",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "foul",
+        "out"
+      ],
+      "text": "Those are about to see a ninth pitch with Mike a new waiting next Rabe throws and strikes him out swinging or the foul tip Good fastball right there 98 So the thing about if you if you're thinking change up he's got 98 miles an hour and it's tough to catch up. Yeah Mike a new is 0 for 1 with a three pitch strikeout took a"
+    },
+    {
+      "ts": "14:58:14",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "ball",
+        "strike",
+        "foul",
+        "out"
+      ],
+      "text": "catch up yeah Mike a new is over one with a three pitch strikeout took a third strike now bats in the third trend they would get a two out rally with Ole Miss leading three to one in the third inning to pitch to new foul back strike one well just like Gackle has done Bubba Taylor Ray was doing the same thing he's thrown ball one to only two hitters"
+    },
+    {
+      "ts": "14:58:35",
+      "inning": null,
+      "count": null,
+      "score": null,
+      "events": [
+        "ball"
+      ],
+      "text": "Well just like Gackle has done. Bubba Taylor Rabe is doing the same thing. He's throwing ball one to only two hitters. That's the name of the game getting ahead being able with the thing he's doing. He's doing it with multiple pitches. He has no pattern is there? Hmm and the old one on new is fouled away right side. You know what I don't get you look at this this Ole Miss pitch and pitches staff."
     }
   ]
 }
